@@ -1,0 +1,4 @@
+# Ignore large textbook scans and temporary files
+*.pdf
+.DS_Store
+Thumbs.db

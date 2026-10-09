@@ -1,0 +1,4493 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สื่อการเรียนรู้เตรียมสอบปลายภาค ภาษาจีน 3 (ฉบับสมบูรณ์ มีพินอิน & คำอธิบายละเอียด)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #dc2626;
+      --primary-hover: #b91c1c;
+      --primary-light: #fef2f2;
+      --secondary: #0284c7;
+      --secondary-light: #f0f9ff;
+      --accent: #f59e0b;
+      --accent-light: #fffbeb;
+      --success: #16a34a;
+      --success-light: #f0fdf4;
+      --danger: #ef4444;
+      --danger-light: #fef2f2;
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --border-color: #e2e8f0;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+
+    html[lang="th"] {
+      font-size: 106.25%;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Sarabun', 'TH Sarabun New', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+
+    .zh {
+      font-family: 'Noto Sans SC', 'SimHei', 'Microsoft YaHei', sans-serif;
+    }
+
+    /* Header & Navigation */
+    header {
+      background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+      color: white;
+      padding: 22px 18px;
+      box-shadow: var(--shadow-md);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .header-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .header-title-row h1 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .badge-exam {
+      background: #fef08a;
+      color: #854d0e;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    /* Nav Tabs */
+    .nav-tabs {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: thin;
+    }
+
+    .nav-tabs::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    .nav-tabs::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 4px;
+    }
+
+    .tab-btn {
+      background: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.92rem;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .tab-btn:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .tab-btn.active {
+      background: #ffffff;
+      color: #991b1b;
+      font-weight: 700;
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Main Container */
+    main {
+      max-width: 1200px;
+      margin: 24px auto;
+      padding: 0 16px;
+    }
+
+    .tab-pane {
+      display: none;
+      animation: fadeIn 0.25s ease-in-out;
+    }
+
+    .tab-pane.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Cards */
+    .card {
+      background: var(--bg-card);
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card-header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Blueprint Table */
+    .blueprint-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .bp-card {
+      background: #fff;
+      border: 1px solid var(--border-color);
+      border-left: 5px solid var(--primary);
+      border-radius: 10px;
+      padding: 16px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .bp-card h3 {
+      font-size: 1.1rem;
+      color: #991b1b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .bp-points {
+      background: #fee2e2;
+      color: #991b1b;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+
+    .bp-meta {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .bp-badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+      margin-right: 4px;
+    }
+
+    .badge-no-pinyin { background: #ffedd5; color: #c2410c; }
+    .badge-pinyin { background: #e0f2fe; color: #0369a1; }
+
+    /* Flashcard Style */
+    .fc-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+      align-items: center;
+    }
+
+    .btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+
+    .btn:hover { background: var(--primary-hover); }
+
+    .btn-secondary {
+      background: var(--bg-card);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+    }
+
+    .btn-secondary:hover {
+      background: #f1f5f9;
+    }
+
+    .btn-sm {
+      padding: 4px 10px;
+      font-size: 0.85rem;
+    }
+
+    .btn-speak {
+      background: #e0e7ff;
+      color: #3730a3;
+      border-radius: 9999px;
+      width: 32px;
+      height: 32px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: none;
+      transition: transform 0.1s ease;
+    }
+
+    .btn-speak:hover {
+      transform: scale(1.1);
+      background: #c7d2fe;
+    }
+
+    .flashcard-stage {
+      perspective: 1000px;
+      max-width: 540px;
+      height: 300px;
+      margin: 20px auto;
+    }
+
+    .flashcard {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+    }
+
+    .flashcard.flipped {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 16px;
+      border: 2px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+      background: #ffffff;
+    }
+
+    .card-back {
+      transform: rotateY(180deg);
+      background: #fffdfa;
+      border-color: #fde68a;
+    }
+
+    .fc-hanzi {
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: #991b1b;
+      margin-bottom: 4px;
+    }
+
+    .fc-pinyin {
+      font-size: 1.35rem;
+      color: #0284c7;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .fc-th-sound {
+      font-size: 1rem;
+      color: #64748b;
+      background: #f1f5f9;
+      padding: 2px 10px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+
+    .fc-thai {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #1e293b;
+    }
+
+    .fc-tag {
+      position: absolute;
+      top: 12px;
+      left: 16px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: #f1f5f9;
+      color: var(--text-muted);
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+
+    .fc-hint {
+      position: absolute;
+      bottom: 12px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Word List Table */
+    .table-container {
+      overflow-x: auto;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      margin-top: 16px;
+    }
+
+    table.data-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    table.data-table th, table.data-table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    table.data-table th {
+      background: #f8fafc;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    table.data-table tr:hover {
+      background: #f1f5f9;
+    }
+
+    /* Quiz Items */
+    .quiz-card {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 16px;
+      transition: border-color 0.2s;
+    }
+
+    .quiz-question {
+      font-size: 1.18rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      line-height: 1.7;
+    }
+
+    .quiz-pinyin {
+      font-size: 1rem;
+      color: #0369a1;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .quiz-thai-trans {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .quiz-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .opt-btn {
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 8px 18px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .opt-btn .opt-py {
+      font-size: 0.78rem;
+      color: #0284c7;
+      font-weight: normal;
+    }
+
+    .opt-btn:hover {
+      background: #f1f5f9;
+      border-color: #94a3b8;
+    }
+
+    .opt-btn.selected-correct {
+      background: #dcfce7 !important;
+      border-color: #22c55e !important;
+      color: #15803d !important;
+    }
+
+    .opt-btn.selected-wrong {
+      background: #fee2e2 !important;
+      border-color: #ef4444 !important;
+      color: #b91c1c !important;
+    }
+
+    .feedback-box {
+      display: none;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    .feedback-box.correct {
+      display: block;
+      background: var(--success-light);
+      border-left: 4px solid var(--success);
+      color: #14532d;
+    }
+
+    .feedback-box.wrong {
+      display: block;
+      background: var(--danger-light);
+      border-left: 4px solid var(--danger);
+      color: #7f1d1d;
+    }
+
+    /* Map Simulator */
+    .map-simulator-wrap {
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 20px;
+      align-items: start;
+    }
+
+    @media (max-width: 900px) {
+      .map-simulator-wrap {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .map-canvas-container {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 12px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+
+    .map-svg {
+      width: 100%;
+      height: auto;
+      max-height: 600px;
+      display: block;
+    }
+
+    .dest-btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .dest-btn {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--secondary);
+      border-radius: 8px;
+      padding: 12px 14px;
+      text-align: left;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .dest-btn:hover {
+      background: #f0f9ff;
+      border-color: #38bdf8;
+    }
+
+    .dest-btn.active {
+      background: #e0f2fe;
+      border-left-color: #0284c7;
+      border-color: #38bdf8;
+      font-weight: 700;
+    }
+
+    .route-answer-box {
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 16px;
+      margin-top: 14px;
+    }
+
+    .route-answer-box h4 {
+      color: #991b1b;
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+
+    /* Deep Explain Box */
+    .deep-explain {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-left: 4px solid #475569;
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin-top: 10px;
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    .deep-explain strong {
+      color: #0f172a;
+    }
+
+    .rule-card {
+      background: #f8fafc;
+      border-left: 4px solid var(--accent);
+      padding: 14px 18px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 16px;
+      font-size: 0.95rem;
+    }
+
+    .rule-card h4 {
+      color: #b45309;
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+    }
+
+    .filter-chip {
+      padding: 6px 14px;
+      border-radius: 9999px;
+      border: 1px solid var(--border-color);
+      background: #ffffff;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .filter-chip.active {
+      background: #991b1b;
+      color: white;
+      border-color: #991b1b;
+      font-weight: 600;
+    }
+
+    .score-summary-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f1f5f9;
+      padding: 12px 18px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="header-title-row">
+        <h1>
+          <span>🇨🇳 สื่อการเรียนรู้ติวสอบปลายภาค จีน 3 (พร้อมพินอิน & เจาะลึกวิธีคิด)</span>
+        </h1>
+        <span class="badge-exam">ตรงตามแนวข้อสอบจริง 100% • 6 ตอน 30 ข้อ 30 คะแนน</span>
+      </div>
+
+      <!-- Navigation Bar -->
+      <nav class="nav-tabs" id="navTabs">
+        <button class="tab-btn active" onclick="switchTab('tab-blueprint')">📋 โครงสร้างข้อสอบ</button>
+        <button class="tab-btn" onclick="switchTab('tab-flashcards')">🗂️ การ์ดศัพท์ + พินอิน (ตอน 1)</button>
+        <button class="tab-btn" onclick="switchTab('tab-cloze')">🧩 เติมคำในช่องว่าง (ตอน 2)</button>
+        <button class="tab-btn" onclick="switchTab('tab-grammar')">⚖️ เจาะลึกไวยากรณ์ (ตอน 3)</button>
+        <button class="tab-btn" onclick="switchTab('tab-map')">🗺️ จำลองบอกทาง (ตอน 4)</button>
+        <button class="tab-btn" onclick="switchTab('tab-reading')">📖 อ่านจับใจความ (ตอน 5)</button>
+        <button class="tab-btn" onclick="switchTab('tab-translate')">✍️ แปลประโยค (ตอน 6)</button>
+        <button class="tab-btn" onclick="switchTab('tab-mock')">🏆 จำลองสอบเสมือนจริง</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- TAB 1: BLUEPRINT -->
+    <div id="tab-blueprint" class="tab-pane active">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">📌 วิเคราะห์โครงสร้างข้อสอบปลายภาค จีน 3 & จุดที่ต้องระวังพินอิน</h2>
+          <span style="font-size: 0.9rem; color: var(--text-muted);">คะแนนเต็ม 30 คะแนน (6 ตอน ตอนละ 5 คะแนน)</span>
+        </div>
+        
+        <div class="rule-card" style="border-left-color: #dc2626;">
+          <h4 style="color: #991b1b;">⚠️ กฎเหล็กเรื่อง "พินอิน" ในห้องสอบจริง:</h4>
+          <p>
+            ในข้อสอบแต่ละตอน มีเงื่อนไขการให้พินอินไม่เหมือนกันเด็ดขาด เพื่อป้องกันการเสียคะแนนฟรี ให้จำจุดสังเกตนี้ไว้:
+          </p>
+          <ul style="padding-left: 20px; margin-top: 6px; line-height: 1.8;">
+            <li><strong>ตอนที่ 1 (ข้อ 1-5):</strong> <u>ไม่มีพินอิน</u> (ให้ตัวจีนล้วนมา แล้วให้แปลไทย) ➔ ต้องจำรูปตัวอักษรจีนของบท 15 และ 17 ให้ได้</li>
+            <li><strong>ตอนที่ 2 & ตอนที่ 3:</strong> <u>โจทย์มีพินอิน แต่ Choice ไม่มีพินอิน</u> ➔ ต้องจำตัวจีนในตัวเลือกให้ได้ว่าแปลว่าอะไร</li>
+            <li><strong>ตอนที่ 4 (บอกทาง):</strong> <u>โจทย์ไม่มีพินอิน</u> แต่มีตัวอย่างให้ดู 1 ข้อ ➔ จำสูตรโครงสร้างประโยคมาตรฐานไปเขียนตอบ</li>
+            <li><strong>ตอนที่ 5 (อ่านบทความ):</strong> <u>เนื้อเรื่องมีพินอิน แต่โจทย์คำถามไม่มีพินอิน</u> ➔ ต้องอ่านคำถามตัวจีนออกว่าถามทิศไหน/ใครทำอะไร</li>
+            <li><strong>ตอนที่ 6 (แปลประโยค):</strong> <u>โจทย์มีพินอินให้ครบ</u> ➔ แปลความหมายให้ถูกต้องสละสลวยตามสำนวนไทย</li>
+          </ul>
+        </div>
+
+        <div class="blueprint-grid">
+          <div class="bp-card">
+            <h3>ตอนที่ 1: แปลคำศัพท์ <span class="bp-points">5 คะแนน</span></h3>
+            <p class="bp-meta">10 ข้อ (ข้อละ 0.5 คะแนน)</p>
+            <div>• ข้อ 1-5: แปลจีนเป็นไทย (บท 15, 17) [ตัวจีนล้วน]</div>
+            <div>• ข้อ 6-10: แปลไทยเป็นจีน (บท 16)</div>
+          </div>
+          <div class="bp-card">
+            <h3>ตอนที่ 2: เติมคำในช่องว่าง <span class="bp-points">5 คะแนน</span></h3>
+            <p class="bp-meta">10 ข้อ (ข้อละ 0.5 คะแนน)</p>
+            <div>• ดึงจากใบงานบทที่ 15, 16, 17</div>
+            <div>• โจทย์มีพินอิน ช้อยส์ไม่มีพินอิน</div>
+          </div>
+          <div class="bp-card">
+            <h3>ตอนที่ 3: เลือกไวยากรณ์ <span class="bp-points">5 คะแนน</span></h3>
+            <p class="bp-meta">10 ข้อ (ข้อละ 0.5 คะแนน)</p>
+            <div>• 又 / 再 (5 ข้อ)</div>
+            <div>• 能 / 会 / 可以 (5 ข้อ)</div>
+          </div>
+          <div class="bp-card">
+            <h3>ตอนที่ 4: บอกเส้นทาง <span class="bp-points">5 คะแนน</span></h3>
+            <p class="bp-meta">5 ข้อ (ข้อละ 1 คะแนน)</p>
+            <div>• เขียนบอกทางจากแผนที่ใบงาน 17</div>
+            <div>• โจทย์ไม่มีพินอิน มีตัวอย่างให้ 1 ข้อ</div>
+          </div>
+          <div class="bp-card">
+            <h3>ตอนที่ 5: อ่านจับใจความ <span class="bp-points">5 คะแนน</span></h3>
+            <p class="bp-meta">5 ข้อ (ข้อละ 1 คะแนน)</p>
+            <div>• บทความ 小明 หรือ 我家离学校不远</div>
+            <div>• เนื้อเรื่องมีพินอิน โจทย์ไม่มีพินอิน</div>
+          </div>
+          <div class="bp-card">
+            <h3>ตอนที่ 6: แปลประโยคเป็นไทย <span class="bp-points">5 คะแนน</span></h3>
+            <p class="bp-meta">5 ข้อ (ข้อละ 1 คะแนน)</p>
+            <div>• จากบทสนทนาบทที่ 15, 16, 17</div>
+            <div>• โจทย์มีพินอิน แปลเป็นสำนวนไทย</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: FLASHCARDS (PART 1) -->
+    <div id="tab-flashcards" class="tab-pane">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">🗂️ การ์ดคำศัพท์ & ตารางคำศัพท์ (พร้อมพินอินและคำอ่านไทย)</h2>
+          <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+            <button class="filter-chip active" onclick="filterVocab('all', this)">ทั้งหมด</button>
+            <button class="filter-chip" onclick="filterVocab('15', this)">บท 15 (จีน➔ไทย)</button>
+            <button class="filter-chip" onclick="filterVocab('16', this)">บท 16 (ไทย➔จีน)</button>
+            <button class="filter-chip" onclick="filterVocab('17', this)">บท 17 (จีน➔ไทย)</button>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 10px;">
+          <button class="btn btn-sm btn-secondary" onclick="togglePinyinDisplay()">
+            👁️ สลับโหมด: <span id="pinyinModeLabel">แสดงพินอินตลอด</span>
+          </button>
+          <span style="font-size: 0.85rem; color: var(--text-muted); margin-left: 8px;">(กดเพื่อซ่อนพินอิน ฝึกจำตัวจีนล้วนตามข้อสอบ)</span>
+        </div>
+
+        <!-- Flashcard View -->
+        <div class="flashcard-stage" onclick="flipCard()">
+          <div class="flashcard" id="flashcardElement">
+            <div class="card-face">
+              <span class="fc-tag" id="fcTag">บทที่ 15</span>
+              <div class="fc-hanzi zh" id="fcHanzi">准备</div>
+              <div class="fc-pinyin" id="fcPinyin">zhǔnbèi</div>
+              <div class="fc-th-sound" id="fcThSound">คำอ่าน: จุ่น-เป้ย</div>
+              <button class="btn-speak" onclick="speakCurrent(event)" title="ฟังเสียงอ่าน">🔊</button>
+              <div class="fc-hint">👆 แตะที่การ์ดเพื่อดูคำแปลไทยและรากศัพท์</div>
+            </div>
+            <div class="card-face card-back">
+              <span class="fc-tag" id="fcBackTag">คำแปล & ไวยากรณ์</span>
+              <div class="fc-thai" id="fcThai">เตรียม, เตรียมตัว</div>
+              <div style="margin-top: 8px; font-size: 0.95rem; color: #0369a1;" id="fcExample">
+                准备生日礼物 (zhǔnbèi shēngrì lǐwù) = เตรียมของขวัญวันเกิด
+              </div>
+              <div style="margin-top: 6px; font-size: 0.85rem; color: var(--text-muted);" id="fcDeepRoot">
+                准 (เกณฑ์/กำหนด) + 备 (ตระเตรียม) ➔ เตรียมตัวล่วงหน้า
+              </div>
+              <div class="fc-hint">👆 แตะอีกครั้งเพื่อพลิกกลับ</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flashcard Controls -->
+        <div style="display: flex; justify-content: center; gap: 12px; margin-bottom: 24px;">
+          <button class="btn btn-secondary" onclick="prevCard()">◀ ก่อนหน้า</button>
+          <button class="btn btn-secondary" onclick="shuffleCards()">🔀 สุ่มคำศัพท์</button>
+          <button class="btn" onclick="nextCard()">ถัดไป ▶</button>
+        </div>
+
+        <!-- Vocabulary Search & Table -->
+        <h3 style="font-size: 1.15rem; margin-bottom: 12px;">📑 ตารางคำศัพท์ทั้งหมดพร้อมเสียงอ่าน พินอิน และคำอ่านไทย</h3>
+        <div class="table-container">
+          <table class="data-table" id="vocabTable">
+            <thead>
+              <tr>
+                <th>บท</th>
+                <th>ตัวจีน</th>
+                <th>พินอิน</th>
+                <th>คำอ่านไทย</th>
+                <th>ความหมายภาษาไทย & บริบท</th>
+                <th>ฟังเสียง</th>
+              </tr>
+            </thead>
+            <tbody id="vocabTableBody">
+              <!-- Rendered via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: CLOZE TEST (PART 2) -->
+    <div id="tab-cloze" class="tab-pane">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">🧩 แบบฝึกหัดเติมคำลงในช่องว่าง (สำหรับตอนที่ 2)</h2>
+          <span style="font-size: 0.9rem; color: var(--text-muted);">โจทย์มีพินอิน ช้อยส์ไม่มีพินอิน พร้อมคำอธิบายลึกซึ้ง</span>
+        </div>
+
+        <div class="rule-card">
+          <h4>💡 รวมคำศัพท์ออกสอบในตัวเลือก (Word Bank):</h4>
+          <p class="zh" style="font-size: 1.05rem; line-height: 1.8;">
+            • <strong>离 (lí - หลี)</strong> = ห่างจาก (ใช้คู่กับ 不远 / 很近)<br>
+            • <strong>从 (cóng - ฉง)</strong> = จาก (ใช้คู่กับ 到 เช่น 从...到...)<br>
+            • <strong>一直 (yìzhí - อี้จื๋อ)</strong> = ตรงไป / ตลอด (一直往前走)<br>
+            • <strong>拐 (guǎi - กวั่ย)</strong> = เลี้ยว (往左拐 เลี้ยวซ้าย / 往右拐 เลี้ยวขวา)<br>
+            • <strong>然后 (ránhòu - รั๋นโฮ่ว)</strong> = จากนั้น (ใช้คู่กับ 先 เช่น 先...然后...)<br>
+            • <strong>大概 (dàgài - ต้าก้าย)</strong> = ประมาณ / ราวๆ (大概 100 米)<br>
+            • <strong>地铁 (dìtiě - ตี้เถี่ย)</strong> = รถไฟใต้ดิน<br>
+            • <strong>方向 (fāngxiàng - ฟังเซี่ยง)</strong> = ทิศทาง (天安门方向)<br>
+            • <strong>还是 (háishi - ไหซื่อ)</strong> = หรือว่า (ใช้ในคำถามเลือก A 还是 B?)
+          </p>
+        </div>
+
+        <div id="clozeQuizList"></div>
+      </div>
+    </div>
+
+    <!-- TAB 4: GRAMMAR (PART 3) -->
+    <div id="tab-grammar" class="tab-pane">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">⚖️ เจาะลึกไวยากรณ์: 又 / 再 & 能 / 会 / 可以 (สำหรับตอนที่ 3)</h2>
+          <span style="font-size: 0.9rem; color: var(--text-muted);">10 ข้อ 5 คะแนนเต็ม (วิเคราะห์เจาะลึก 100%)</span>
+        </div>
+
+        <!-- Rule 1: You vs Zai -->
+        <div class="rule-card" style="border-left-color: #0284c7;">
+          <h4 style="color: #0369a1;">สูตรที่ 1: เปรียบเทียบ 又 (yòu - โย่ว) กับ 再 (zài - จ้าย)</h4>
+          <p style="margin-bottom: 8px;">ทั้งสองคำแปลว่า <strong>"อีก"</strong> เหมือนกัน แต่ต่างกันที่ <u>มิติเวลาและความเป็นจริง</u>:</p>
+          <ul style="padding-left: 20px; font-size: 0.95rem; line-height: 1.7;">
+            <li>
+              <strong>又 (yòu):</strong> ทำซ้ำไปแล้วใน <strong>"อดีต"</strong> หรือเกิดขึ้นซ้ำแล้วใน <strong>"ปัจจุบัน"</strong> (เป็นความจริงที่เกิดขึ้นแล้ว)<br>
+              <em>จุดสังเกต:</em> มักมีคำบอกเวลาอดีต (昨天 zuótiān), ปัจจุบัน (今天 jīntiān), หรือมี <code>了 (le)</code> ต่อท้ายกริยา<br>
+              <em>ตัวอย่าง:</em> 他昨天迟到了，今天<strong>又</strong>迟到了。(Tā zuótiān chídào le, jīntiān <strong>yòu</strong> chídào le.) = เมื่อวานสาย วันนี้ก็สาย<strong>อีกแล้ว</strong>
+            </li>
+            <li style="margin-top: 8px;">
+              <strong>再 (zài):</strong> จะทำซ้ำอีกใน <strong>"อนาคต"</strong> (ยังไม่เกิดขึ้น เป็นแผนการ ชักชวน หรือขอร้อง)<br>
+              <em>จุดสังเกต:</em> มักมีคำว่า <code>明天 (míngtiān - พรุ่งนี้)</code>, <code>想 (xiǎng - อยาก)</code>, หรือลงท้ายด้วย <code>吧 (ba - เถอะ)</code>, <code>好吗 (hǎo ma - ได้ไหม)</code><br>
+              <em>ตัวอย่าง:</em> 明天我们<strong>再</strong>去一次，好吗？(Míngtiān wǒmen <strong>zài</strong> qù yí cì, hǎo ma?) = พรุ่งนี้พวกเราไป<strong>อีก</strong>ครั้งได้ไหม?
+            </li>
+          </ul>
+        </div>
+
+        <h3 style="margin: 16px 0 10px 0; color: #991b1b;">แบบฝึกหัด 又 / 再 (จากใบงาน 10 ข้อ):</h3>
+        <div id="grammarYouZaiList"></div>
+
+        <!-- Rule 2: Neng vs Hui vs Keyi -->
+        <div class="rule-card" style="border-left-color: #16a34a; margin-top: 24px;">
+          <h4 style="color: #15803d;">สูตรที่ 2: เปรียบเทียบ 会 (huì) vs 能 (néng) vs 可以 (kěyǐ)</h4>
+          <ul style="padding-left: 20px; font-size: 0.95rem; line-height: 1.7;">
+            <li>
+              <strong>会 (huì - ฮุ่ย):</strong> <strong>"ทำเป็น"</strong> จากการเรียนรู้/ฝึกฝนทักษะ (เช่น ว่ายน้ำ 游泳, ขับรถ 开车, พูดภาษา 说英语)<br>
+              <em>ปฏิเสธ:</em> <strong>不会 (bú huì)</strong> = ทำไม่เป็น (เช่น 大卫不会开车 เดวิดขับรถไม่เป็น)
+            </li>
+            <li style="margin-top: 8px;">
+              <strong>能 (néng - เหนิง):</strong> <strong>"ทำได้/ไหว"</strong> ตามสภาพร่างกาย หรือเงื่อนไขแวดล้อมอำนวย (ร่างกายพร้อมไหม, สถานการณ์ให้ไหม)<br>
+              <em>ปฏิเสธ:</em> <strong>不能 (bù néng)</strong> = ทำไม่ได้/ไม่ไหว (เช่น ป่วย生病 ➔ 不能去上课, ฝนตกหนัก下大雨 ➔ 不能出去)
+            </li>
+            <li style="margin-top: 8px;">
+              <strong>可以 (kěyǐ - เขอยี่):</strong> <strong>"ได้รับอนุญาต / สามารถ / ข้อเสนอแนะ"</strong> (กฎระเบียบ หรือการชวนกัน)<br>
+              <em>ปฏิเสธ:</em> <strong>不可以 (bù kěyǐ) / 不能</strong> = ห้ามทำ (เช่น 图书馆里不可以大声说话 ห้ามส่งเสียงดังในห้องสมุด)
+            </li>
+          </ul>
+        </div>
+
+        <h3 style="margin: 16px 0 10px 0; color: #991b1b;">แบบฝึกหัด 能 / 会 / 可以 (จากใบงาน 10 ข้อ):</h3>
+        <div id="grammarModalList"></div>
+      </div>
+    </div>
+
+    <!-- TAB 5: MAP SIMULATOR (PART 4) -->
+    <div id="tab-map" class="tab-pane">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">🗺️ แผนที่จำลองการบอกเส้นทาง (สำหรับตอนที่ 4)</h2>
+          <span style="font-size: 0.9rem; color: var(--text-muted);">เขียนบอกทางจากแผนที่ใบงาน 17 (มีพินอินครบทุกคำ)</span>
+        </div>
+
+        <div class="rule-card">
+          <h4>🎯 สูตรประโยคมาตรฐานในการตอบ (จำโครงสร้างนี้ได้คะแนนเต็มแน่นอน):</h4>
+          <p style="font-size: 1.1rem;" class="zh">
+            <strong>一直往前走，到体育馆往右拐，往前走，[สถานที่] 在 [左边 / 右边 / 前面]。</strong>
+          </p>
+          <p style="font-size: 0.95rem; color: #0284c7; margin-top: 4px;">
+            Yìzhí wǎng qián zǒu, dào tǐyùguǎn wǎng yòu guǎi, wǎng qián zǒu, [สถานที่] zài [zuǒbian / yòubian / qiánmiàn].
+          </p>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 4px;">
+            (แปล: เดินตรงไปข้างหน้าเรื่อยๆ ถึงยิมให้เลี้ยวขวา เดินตรงไปข้างหน้า [สถานที่] อยู่ทางซ้าย/ขวา/ข้างหน้า)
+          </p>
+        </div>
+
+        <div class="map-simulator-wrap">
+          <!-- Interactive SVG Map -->
+          <div class="map-canvas-container">
+            <svg id="interactiveMap" class="map-svg" viewBox="0 0 700 850" xmlns="http://www.w3.org/2000/svg">
+              <!-- Background Roads -->
+              <rect x="0" y="0" width="700" height="850" fill="#f1f5f9" />
+
+              <!-- North Arrow Indicator -->
+              <g transform="translate(40, 40)">
+                <circle cx="20" cy="20" r="18" fill="#ffffff" stroke="#94a3b8" stroke-width="2" />
+                <path d="M 20 6 L 26 22 L 20 18 L 14 22 Z" fill="#dc2626" />
+                <text x="20" y="34" font-size="10" text-anchor="middle" font-weight="bold" fill="#64748b">北 (Běi/เหนือ)</text>
+              </g>
+
+              <!-- Buildings -->
+              <!-- Top Left: 教学楼 (Teaching Building) -->
+              <g id="b_jiaoxuelou" class="bldg-group">
+                <rect x="60" y="50" width="370" height="120" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+                <rect x="220" y="164" width="50" height="10" fill="#0f172a" />
+                <text x="245" y="105" font-size="28" font-family="'Noto Sans SC'" font-weight="bold" text-anchor="middle" fill="#0f172a">教学楼</text>
+                <text x="245" y="130" font-size="13" text-anchor="middle" fill="#0284c7">Jiàoxuélóu (เจี้ยว-เสวีย-โหลว)</text>
+                <text x="245" y="150" font-size="12" text-anchor="middle" fill="#64748b">อาคารเรียน</text>
+              </g>
+
+              <!-- Top Right: 食堂 (Canteen) -->
+              <g id="b_shitang" class="bldg-group">
+                <rect x="470" y="50" width="170" height="120" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+                <rect x="466" y="85" width="10" height="45" fill="#0f172a" />
+                <text x="555" y="105" font-size="28" font-family="'Noto Sans SC'" font-weight="bold" text-anchor="middle" fill="#0f172a">食堂</text>
+                <text x="555" y="130" font-size="13" text-anchor="middle" fill="#0284c7">Shítáng (สือ-ถัง)</text>
+                <text x="555" y="150" font-size="12" text-anchor="middle" fill="#64748b">โรงอาหาร</text>
+              </g>
+
+              <!-- Mid-Upper Left: 卫生间 (Restroom) -->
+              <g id="b_weishengjian" class="bldg-group">
+                <rect x="60" y="200" width="160" height="110" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+                <rect x="214" y="235" width="10" height="40" fill="#0f172a" />
+                <text x="140" y="250" font-size="26" font-family="'Noto Sans SC'" font-weight="bold" text-anchor="middle" fill="#0f172a">卫生间</text>
+                <text x="140" y="275" font-size="12" text-anchor="middle" fill="#0284c7">Wèishēngjiān</text>
+                <text x="140" y="295" font-size="12" text-anchor="middle" fill="#64748b">ห้องน้ำ (ตัวอย่าง)</text>
+              </g>
+
+              <!-- Mid-Upper Center: 书店 (Bookstore) -->
+              <g id="b_shudian" class="bldg-group">
+                <rect x="270" y="200" width="160" height="110" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+                <rect x="424" y="235" width="10" height="40" fill="#0f172a" />
+                <text x="350" y="250" font-size="26" font-family="'Noto Sans SC'" font-weight="bold" text-anchor="middle" fill="#0f172a">书店</text>
+                <text x="350" y="275" font-size="12" text-anchor="middle" fill="#0284c7">Shūdiàn (ซู-เตี้ยน)</text>
+                <text x="350" y="295" font-size="12" text-anchor="middle" fill="#64748b">ร้านหนังสือ</text>
+              </g>
+
+              <!-- Mid Right: 图书馆 (Library) -->
+              <g id="b_tushuguan" class="bldg-group">
+                <rect x="470" y="200" width="170" height="250" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+                <rect x="466" y="280" width="10" height="50" fill="#0f172a" />
+                <text x="555" y="320" font-size="28" font-family="'Noto Sans SC'" font-weight="bold" text-anchor="middle" fill="#0f172a">图书馆</text>
+                <text x="555" y="348" font-size="13" text-anchor="middle" fill="#0284c7">Túshūguǎn</text>
+                <text x="555" y="370" font-size="12" text-anchor="middle" fill="#64748b">ห้องสมุด</text>
+              </g>
+
+              <!-- Mid-Lower Left: 电影院 (Cinema) -->
+              <g id="b_dianyingyuan" class="bldg-group">
+                <rect x="60" y="340" width="160" height="110" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+                <rect x="214" y="375" width="10" height="40" fill="#0f172a" />
+                <text x="140" y="390" font-size="26" font-family="'Noto Sans SC'" font-weight="bold" text-anchor="middle" fill="#0f172a">电影院</text>
+                <text x="140" y="415" font-size="12" text-anchor="middle" fill="#0284c7">Diànyǐngyuàn</text>
+                <text x="140" y="435" font-size="12" text-anchor="middle" fill="#64748b">โรงภาพยนตร์</text>
+              </g>
+
+              <!-- Mid-Lower Center: 银行 (Bank) -->
+              <g id="b_yinhang" class="bldg-group">
+                <rect x="270" y="340" width="160" height="110" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+                <rect x="424" y="375" width="10" height="40" fill="#0f172a" />
+                <text x="350" y="390" font-size="26" font-family="'Noto Sans SC'" font-weight="bold" text-anchor="middle" fill="#0f172a">银行</text>
+                <text x="350" y="415" font-size="12" text-anchor="middle" fill="#0284c7">Yínháng (อิ๋น-หัง)</text>
+                <text x="350" y="435" font-size="12" text-anchor="middle" fill="#64748b">ธนาคาร</text>
+              </g>
+
+              <!-- Bottom Left: 体育馆 (Gymnasium) -->
+              <g id="b_tiyuguan" class="bldg-group">
+                <rect x="60" y="480" width="160" height="230" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+                <rect x="110" y="476" width="45" height="10" fill="#0f172a" />
+                <text x="140" y="590" font-size="28" font-family="'Noto Sans SC'" font-weight="bold" text-anchor="middle" fill="#0f172a">体育馆</text>
+                <text x="140" y="618" font-size="13" text-anchor="middle" fill="#0284c7">Tǐyùguǎn (ถี่-ยวี่-กวั่น)</text>
+                <text x="140" y="640" font-size="12" text-anchor="middle" fill="#64748b">โรงยิม / โรงพละ</text>
+              </g>
+
+              <!-- Bottom Center: 操场 (Sports Field / Playground) -->
+              <g id="b_caochang" class="bldg-group">
+                <rect x="270" y="480" width="370" height="120" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+                <rect x="360" y="594" width="45" height="10" fill="#0f172a" />
+                <text x="455" y="530" font-size="28" font-family="'Noto Sans SC'" font-weight="bold" text-anchor="middle" fill="#0f172a">操场</text>
+                <text x="455" y="558" font-size="13" text-anchor="middle" fill="#0284c7">Cāochǎng (เชา-ฉั่ง)</text>
+                <text x="455" y="580" font-size="12" text-anchor="middle" fill="#64748b">สนามเด็กเล่น/สนามกีฬา</text>
+              </g>
+
+              <!-- Bottom Center-Lower: 商店 (Shop) -->
+              <g id="b_shangdian" class="bldg-group">
+                <rect x="270" y="660" width="180" height="120" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+                <rect x="340" y="656" width="45" height="10" fill="#0f172a" />
+                <text x="360" y="710" font-size="28" font-family="'Noto Sans SC'" font-weight="bold" text-anchor="middle" fill="#0f172a">商店</text>
+                <text x="360" y="738" font-size="13" text-anchor="middle" fill="#0284c7">Shāngdiàn (ซาง-เตี้ยน)</text>
+                <text x="360" y="760" font-size="12" text-anchor="middle" fill="#64748b">ร้านค้า</text>
+              </g>
+
+              <!-- Starting Point: Person & Arrow -->
+              <g id="start_point">
+                <g transform="translate(560, 680)">
+                  <circle cx="15" cy="8" r="7" fill="#0284c7" />
+                  <path d="M 15 16 L 15 38 M 15 24 L 5 32 M 15 24 L 25 32 M 15 38 L 8 55 M 15 38 L 22 55" stroke="#0284c7" stroke-width="4" stroke-linecap="round" />
+                </g>
+                <path d="M 540 630 L 460 630" stroke="#0284c7" stroke-width="6" stroke-linecap="round" />
+                <polygon points="450,630 468,623 468,637" fill="#0284c7" />
+                <text x="575" y="755" font-size="13" font-weight="bold" fill="#0284c7" text-anchor="middle">จุดเริ่มต้น (这儿 zhèr)</text>
+              </g>
+
+              <!-- Animated Route Path -->
+              <path id="routePath" d="" fill="none" stroke="#dc2626" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1000" stroke-dashoffset="1000">
+                <animate id="pathAnimation" attributeName="stroke-dashoffset" from="1000" to="0" dur="1.2s" fill="freeze" begin="indefinite" />
+              </path>
+
+              <!-- Target Marker Pin -->
+              <g id="targetPin" style="display: none;">
+                <circle id="pinCircle" cx="0" cy="0" r="14" fill="#dc2626" />
+                <text id="pinText" x="0" y="5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">🎯</text>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Controls & Questions -->
+          <div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 12px; color: var(--text-main);">
+              🔘 คลิกเลือกสถานที่เพื่อดูอนิเมชันเส้นทาง:
+            </h3>
+
+            <div class="dest-btn-group">
+              <button class="dest-btn" onclick="showRoute('weishengjian')">
+                <strong>ตัวอย่าง:</strong> 去卫生间怎么走？ (Qù wèishēngjiān zěnme zǒu?)
+              </button>
+              <button class="dest-btn" onclick="showRoute('shudian')">
+                <strong>ข้อ 1:</strong> 从这儿去书店怎么走？ (Cóng zhèr qù shūdiàn zěnme zǒu?)
+              </button>
+              <button class="dest-btn" onclick="showRoute('jiaoxuelou')">
+                <strong>ข้อ 2:</strong> 从这儿去教学楼怎么走？ (Cóng zhèr qù jiàoxuélóu zěnme zǒu?)
+              </button>
+              <button class="dest-btn" onclick="showRoute('tushuguan')">
+                <strong>ข้อ 3:</strong> 从这儿去图书馆怎么走？ (Cóng zhèr qù túshūguǎn zěnme zǒu?)
+              </button>
+              <button class="dest-btn" onclick="showRoute('shitang')">
+                <strong>ข้อ 4:</strong> 从这儿去食堂怎么走？ (Cóng zhèr qù shítáng zěnme zǒu?)
+              </button>
+              <button class="dest-btn" onclick="showRoute('yinhang')">
+                <strong>ข้อ 5.1:</strong> 从这儿去银行怎么走？ (Cóng zhèr qù yínháng zěnme zǒu?)
+              </button>
+              <button class="dest-btn" onclick="showRoute('dianyingyuan')">
+                <strong>ข้อ 5.2:</strong> 从这儿去电影院怎么走？ (Cóng zhèr qù diànyǐngyuàn zěnme zǒu?)
+              </button>
+            </div>
+
+            <!-- Route Answer Display -->
+            <div id="routeAnswerDisplay" class="route-answer-box" style="display: none;">
+              <h4 id="routeAnsTitle">คำตอบที่ต้องเขียนในข้อสอบ:</h4>
+              <p class="zh" id="routeAnsZh" style="font-size: 1.25rem; font-weight: 700; color: #991b1b; line-height: 1.7; margin-bottom: 6px;"></p>
+              <p id="routeAnsPinyin" style="font-size: 0.98rem; color: #0284c7; font-weight: 600; margin-bottom: 6px;"></p>
+              <p id="routeAnsThai" style="font-size: 1rem; color: var(--text-main); font-weight: 500;"></p>
+              <button class="btn btn-sm" style="margin-top: 10px;" onclick="speakRoute()">🔊 ฟังเสียงอ่านภาษาจีน</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 6: READING COMPREHENSION (PART 5) -->
+    <div id="tab-reading" class="tab-pane">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">📖 อ่านเนื้อเรื่องและตอบคำถาม (สำหรับตอนที่ 5)</h2>
+          <span style="font-size: 0.9rem; color: var(--text-muted);">เนื้อเรื่องมีพินอิน แต่โจทย์ไม่มีพินอิน (เจาะลึกจุดหลอก)</span>
+        </div>
+
+        <!-- Passage 1 -->
+        <div class="card" style="border-left: 4px solid #0284c7; margin-bottom: 24px;">
+          <h3 style="color: #0369a1; margin-bottom: 8px;">บทความที่ 1: 小明去邮局 (Xiǎomíng qù yóujú - เสี่ยวหมิงไปที่ทำการไปรษณีย์)</h3>
+          
+          <div style="background: #f8fafc; padding: 14px; border-radius: 8px; margin-bottom: 14px; line-height: 1.9;">
+            <p class="zh" style="font-size: 1.18rem; font-weight: 700; color: #0f172a;">
+              小明第一次来这里，他不知道邮局在哪儿，所以问了一个朋友。你从这儿一直往前走，到超市往左拐，往西走大概 100 米，马路南边的那座楼是邮局。
+            </p>
+            <p style="font-size: 0.95rem; color: #0284c7; font-weight: 500; margin-top: 6px;">
+              Xiǎomíng dì-yī cì lái zhèlǐ, tā bù zhīdào yóujú zài nǎr, suǒyǐ wèn le yí ge péngyou. Nǐ cóng zhèr yìzhí wǎng qián zǒu, dào chāoshì wǎng zuǒ guǎi, wǎng xī zǒu dàgài 100 mǐ, mǎlù nánbian de nà zuò lóu shì yóujú.
+            </p>
+            <div class="deep-explain">
+              <strong>ถอดความประโยคต่อประโยค:</strong><br>
+              1. <em>小明第一次来这里...</em> = เสี่ยวหมิงเพิ่งเคยมาที่นี่เป็นครั้งแรก (第一次 = ครั้งแรก ไม่ใช่มาบ่อยๆ)<br>
+              2. <em>他不知道邮局在哪儿...</em> = เขาไม่รู้ว่าไปรษณีย์อยู่ที่ไหน จึงถามเพื่อนคนหนึ่ง<br>
+              3. <em>到超市往左拐，往西走大概 100 米...</em> = ถึงซูเปอร์มาร์เก็ตแล้วเลี้ยวซ้าย เดินไปทางทิศตะวันตก (西) ประมาณ 100 เมตร<br>
+              4. <em>马路南边的那座楼是邮局。</em> = ตึกที่อยู่ทางฝั่งใต้ของถนน (南边) คือที่ทำการไปรษณีย์
+            </div>
+          </div>
+
+          <h4 style="margin-bottom: 10px;">แบบฝึกหัดตรวจสอบถูก / ผิด (判断对错):</h4>
+          <div id="readingQuiz1"></div>
+        </div>
+
+        <!-- Passage 2 -->
+        <div class="card" style="border-left: 4px solid #16a34a;">
+          <h3 style="color: #15803d; margin-bottom: 8px;">บทความที่ 2: 我家离学校不远 (Wǒ jiā lí xuéxiào bù yuǎn - การเดินทางไปโรงเรียนของฉัน)</h3>
+          
+          <div style="background: #f8fafc; padding: 14px; border-radius: 8px; margin-bottom: 14px; line-height: 1.9;">
+            <p class="zh" style="font-size: 1.18rem; font-weight: 700; color: #0f172a;">
+              我家离学校不远，坐 758 路、831 路公共汽车都能到学校，大概二十分钟就到。我家附近没有地铁。从我家去天安门，要先坐 109 路，然后换 47 路汽车。
+            </p>
+            <p style="font-size: 0.95rem; color: #0284c7; font-weight: 500; margin-top: 6px;">
+              Wǒ jiā lí xuéxiào bù yuǎn, zuò 758 lù, 831 lù gōnggòng qìchē dōu néng dào xuéxiào, dàgài èrshí fēnzhōng jiù dào. Wǒ jiā fùjìn méiyǒu dìtiě. Cóng wǒ jiā qù Tiān'ānmén, yào xiān zuò 109 lù, ránhòu huàn 47 lù qìchē.
+            </p>
+            <div class="deep-explain">
+              <strong>ถอดความประโยคต่อประโยค:</strong><br>
+              1. <em>我家离学校不远...</em> = บ้านฉันอยู่ห่างจากโรงเรียนไม่ไกล (不远 = 近 ใกล้มาก)<br>
+              2. <em>坐 758 路、831 路公共汽车都能到学校...</em> = นั่งรถเมล์สาย 758 หรือ 831 ล้วนไปถึงโรงเรียนได้ ประมาณ 20 นาทีก็ถึง<br>
+              3. <em>我家附近没有地铁。</em> = แถวบ้านฉันไม่มีรถไฟใต้ดิน (⚠️ ระวังข้อสอบหลอกว่านั่งรถไฟใต้ดิน)<br>
+              4. <em>从我家去天安门，要先坐 109 路，然后换 47 路汽车。</em> = จากบ้านไปเทียนอันเหมิน ต้องนั่งสาย 109 ก่อน แล้วค่อยต่อสาย 47
+            </div>
+          </div>
+
+          <h4 style="margin-bottom: 10px;">แบบฝึกหัดตรวจสอบถูก / ผิด (判断对错):</h4>
+          <div id="readingQuiz2"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 7: TRANSLATION (PART 6) -->
+    <div id="tab-translate" class="tab-pane">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">✍️ ประโยคตัวเก็งแปลเป็นไทย (สำหรับตอนที่ 6)</h2>
+          <span style="font-size: 0.9rem; color: var(--text-muted);">โจทย์มีพินอิน พร้อมวิเคราะห์ไวยากรณ์และสำนวน</span>
+        </div>
+
+        <p style="margin-bottom: 16px;">
+          รวมประโยคเด่นจากบทสนทนา (课文) ของบทที่ 15, 16, 17 ที่อาจารย์นิยมนำมาออกแปลไทย:
+        </p>
+
+        <div id="translationList"></div>
+      </div>
+    </div>
+
+        <!-- TAB 8: FULL MOCK EXAM -->
+    <div id="tab-mock" class="tab-pane">
+      <div class="card">
+        <div class="card-header" style="flex-wrap: wrap; gap: 14px; align-items: flex-start;">
+          <div>
+            <h2 class="card-title">🏆 ข้อสอบจำลองเสมือนจริงระบบสุ่มอัตโนมัติ (Dynamic Mock Exam Engine)</h2>
+            <p style="font-size: 0.92rem; color: var(--text-muted); margin-top: 4px;">
+              คำถามและลำดับตัวเลือกจะสุ่มใหม่ทุกครั้งจากคลังข้อสอบ 130+ ข้อ ครบทั้ง 6 ตอนตามโครงสร้างจริง
+            </p>
+          </div>
+          <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+            <select id="mockExamMode" class="form-control" onchange="generateNewMockExam()" style="padding: 7px 14px; border-radius: 8px; border: 1px solid var(--border-color); font-weight: 600; background: white; font-size: 0.95rem; cursor: pointer;">
+              <option value="standard">🎯 ชุดมาตรฐานข้อสอบจริง (30 ข้อ 30 คะแนน)</option>
+              <option value="full">📚 ชุดจัดเต็มทุกพาร์ต (45 ข้อ 45 คะแนน)</option>
+              <option value="speed">⚡ ชุดด่วนสปีดรัน (15 ข้อ 15 คะแนน)</option>
+            </select>
+            <button class="btn btn-sm" onclick="generateNewMockExam()" style="display: flex; align-items: center; gap: 6px;">
+              <span>🎲</span> สุ่มข้อสอบชุดใหม่
+            </button>
+          </div>
+        </div>
+
+        <!-- Exam Controls & Timer Bar -->
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: 10px; padding: 12px 20px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+          <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+            <span id="examSessionBadge" style="background: #fee2e2; color: #991b1b; padding: 4px 12px; border-radius: 999px; font-weight: 700; font-size: 0.9rem;">รอบทำสอบที่ 1</span>
+            <span id="examTotalCountBadge" style="font-weight: 600; color: #475569;">จำนวนข้อ: 30 ข้อ</span>
+            <button class="btn btn-sm" id="btnToggleMockPinyin" style="background: white; border: 1px solid #cbd5e1; color: #334155;" onclick="toggleMockPinyin()">
+              👁️ <span id="mockPinyinBtnText">ซ่อนพินอิน (ฝึกจำตัวจีน)</span>
+            </button>
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <span style="font-size: 0.95rem; font-weight: 600; color: #64748b;">⏱️ เวลาที่เหลือ:</span>
+            <span id="examTimerDisplay" style="font-size: 1.35rem; font-weight: 800; color: #dc2626; font-family: monospace;">40:00</span>
+            <button id="timerToggleBtn" class="btn btn-sm" style="padding: 4px 12px; background: white; border: 1px solid #cbd5e1; color: #334155;" onclick="toggleTimer()">⏸️ พักเวลา</button>
+          </div>
+        </div>
+
+        <!-- Result Summary Bar (Hidden until submit) -->
+        <div class="score-summary-bar" id="mockScoreBar" style="display: none; flex-direction: column; gap: 14px; background: #fff1f2; border: 2px solid #fecdd3; padding: 18px 24px; border-radius: 12px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; flex-wrap: wrap; gap: 12px;">
+            <div>
+              <span style="font-size: 1.1rem; color: #881337;">คะแนนรวมรอบนี้: </span>
+              <strong id="mockScoreVal" style="font-size: 1.8rem; color: #991b1b;">0 / 30</strong>
+              <span id="mockGradeVal" style="margin-left: 12px; font-weight: bold; font-size: 1.1rem;"></span>
+            </div>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <button class="btn btn-sm" id="btnFilterAll" onclick="filterMockQuestions('all')">ดูทั้งหมด</button>
+              <button class="btn btn-sm" id="btnFilterWrong" style="background: #ef4444; color: white;" onclick="filterMockQuestions('wrong')">ดูเฉพาะข้อที่ผิด ✕</button>
+              <button class="btn btn-sm" id="btnFilterCorrect" style="background: #16a34a; color: white;" onclick="filterMockQuestions('correct')">ดูเฉพาะข้อที่ถูก ✓</button>
+              <button class="btn btn-sm" onclick="generateNewMockExam()">🎲 สุ่มชุดใหม่ทันที</button>
+            </div>
+          </div>
+          <!-- Part breakdown badges -->
+          <div id="mockPartBreakdown" style="display: flex; gap: 10px; flex-wrap: wrap; width: 100%; border-top: 1px dashed #f43f5e; padding-top: 12px;">
+          </div>
+        </div>
+
+        <!-- Container for dynamically generated exam questions -->
+        <div id="mockExamContainer"></div>
+
+        <div style="text-align: center; margin: 35px 0;">
+          <button class="btn" id="btnSubmitMock" style="font-size: 1.25rem; padding: 14px 44px; box-shadow: 0 4px 14px rgba(153, 27, 27, 0.3);" onclick="submitMockExam()">
+            📝 ส่งกระดาษคำตอบ & ประมวลผลคะแนน
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- DATA & APP LOGIC -->
+  <script>
+    // --- 1. VOCABULARY DATA (WITH THAI SOUND & ROOTS) ---
+    const VOCAB_DATA = [
+      // บท 15
+      { lesson: "15", hanzi: "晚饭", pinyin: "wǎnfàn", thSound: "หว่าน-ฟั่น", thai: "อาหารเย็น, ข้าวเย็น", ex: "吃晚饭 (chī wǎnfàn) กินข้าวเย็น", root: "晚 (ค่ำ/ดึก) + 饭 (ข้าว/อาหาร)" },
+      { lesson: "15", hanzi: "以后", pinyin: "yǐhòu", thSound: "อี่-โฮ่ว", thai: "หลังจาก, ภายหลัง", ex: "晚饭以后 (wǎnfàn yǐhòu) หลังจากอาหารเย็น", root: "ใช้ต่อท้ายเวลาหรือเหตุการณ์ (Time + 以后)" },
+      { lesson: "15", hanzi: "一直", pinyin: "yìzhí", thSound: "อี้-จื๋อ", thai: "ตลอด, เรื่อยๆ", ex: "一直在忙 (yìzhí zài máng) ยุ่งอยู่ตลอด", root: "一 (หนึ่ง) + 直 (ตรง) ➔ ทำอย่างต่อเนื่องไม่หยุด" },
+      { lesson: "15", hanzi: "准备", pinyin: "zhǔnbèi", thSound: "จุ่น-เป้ย", thai: "เตรียม, เตรียมตัว", ex: "准备礼物 (zhǔnbèi lǐwù) เตรียมของขวัญ", root: "准 (เกณฑ์) + 备 (ตระเตรียม)" },
+      { lesson: "15", hanzi: "礼物", pinyin: "lǐwù", thSound: "หลี่-อู้", thai: "ของขวัญ", ex: "生日礼物 (shēngrì lǐwù) ของขวัญวันเกิด", root: "礼 (มารยาท/พิธี) + 物 (สิ่งของ)" },
+      { lesson: "15", hanzi: "生日", pinyin: "shēngrì", thSound: "เซิง-รื่อ", thai: "วันเกิด", ex: "明天是我朋友的生日 (พรุ่งนี้วันเกิดเพื่อนฉัน)", root: "生 (เกิด) + 日 (วัน)" },
+      { lesson: "15", hanzi: "蛋糕", pinyin: "dàngāo", thSound: "ต้าน-เกา", thai: "ขนมเค้ก", ex: "做蛋糕 (zuò dàngāo) ทำเค้ก", root: "蛋 (ไข่) + 糕 (ขนมแป้งฟู)" },
+      { lesson: "15", hanzi: "送", pinyin: "sòng", thSound: "ซ่ง", thai: "ส่ง, มอบให้ (เป็นของขวัญ)", ex: "送给她 (sòng gěi tā) มอบให้เธอ", root: "送给 = มอบให้แก่..." },
+      { lesson: "15", hanzi: "特别", pinyin: "tèbié", thSound: "เท่อ-เปี๋ย", thai: "พิเศษ, เป็นพิเศษ", ex: "比较特别 (ค่อนข้างพิเศษ)", root: "特 (พิเศษ) + 别 (ต่างออกไป)" },
+      { lesson: "15", hanzi: "还是", pinyin: "háishi", thSound: "ไห-ซื่อ", thai: "หรือ, หรือว่า", ex: "男的还是女的？ (ผู้ชายหรือผู้หญิง?)", root: "ใช้ในประโยคคำถามเพื่อเลือก (A 还是 B?)" },
+      { lesson: "15", hanzi: "比如", pinyin: "bǐrú", thSound: "ปี่-หรู", thai: "เช่น, ยกตัวอย่างเช่น", ex: "比如巧克力 (เช่น ช็อกโกแลต)", root: "比 (เปรียบ) + 如 (เหมือน)" },
+      { lesson: "15", hanzi: "巧克力", pinyin: "qiǎokèlì", thSound: "เฉี่ยว-เค่อ-ลี่", thai: "ช็อกโกแลต", ex: "买巧克力 (ซื้อช็อกโกแลต)", root: "คำทับศัพท์เสียง chocolate" },
+      { lesson: "15", hanzi: "甜", pinyin: "tián", thSound: "เถียน", thai: "หวาน", ex: "有点儿甜 (หวานไปหน่อย)", root: "甘 (หวาน) + 舌 (ลิ้นรับรส)" },
+      { lesson: "15", hanzi: "号", pinyin: "hào", thSound: "ฮ่าว", thai: "เบอร์, ขนาด, ไซส์", ex: "衣服号 (ไซส์เสื้อ)", root: "หมายเลข/ขนาด" },
+      { lesson: "15", hanzi: "那么", pinyin: "nàme", thSound: "น่า-เมอ", thai: "ถ้าอย่างนั้น, งั้นก็...", ex: "那么送一束花吧 (ถ้าอย่างนั้นก็ให้ดอกไม้นะ)", root: "คำเชื่อมสรุปความคิด" },
+      { lesson: "15", hanzi: "束", pinyin: "shù", thSound: "ซู่", thai: "ช่อ (ลักษณนามดอกไม้)", ex: "一束花 (yí shù huā) ดอกไม้หนึ่งช่อ", root: "ลักษณนามดอกไม้ที่มัดเป็นช่อ" },
+      { lesson: "15", hanzi: "花", pinyin: "huā", thSound: "ฮวา", thai: "ดอกไม้", ex: "喜欢花 (ชอบดอกไม้)", root: "มีตัว 艹 หมวดพืชหญ้าอยู่ด้านบน" },
+      { lesson: "15", hanzi: "主意", pinyin: "zhǔyi", thSound: "จู่-ยิ", thai: "ไอเดีย, ความคิด", ex: "主意挺不错的 (ไอเดียดีมากทีเดียว)", root: "主 (หลัก) + 意 (ความคิด)" },
+
+      // บท 16
+      { lesson: "16", hanzi: "又", pinyin: "yòu", thSound: "โย่ว", thai: "อีก, ทั้งยัง (เกิดขึ้นแล้ว)", ex: "又是周末 (เป็นสุดสัปดาห์อีกแล้ว)", root: "ใช้กับการกระทำที่เกิดซ้ำแล้วในอดีต/ปัจจุบัน" },
+      { lesson: "16", hanzi: "看起来", pinyin: "kàn qilai", thSound: "คั่น-ชี-หลาย", thai: "ดูเหมือนว่า, ดูท่าทาง", ex: "看起来你很喜欢 (ดูท่าทางเธอจะชอบมาก)", root: "看 (ดู) + 起来 (ขึ้นมา/ดูแล้ว)" },
+      { lesson: "16", hanzi: "好好儿", pinyin: "hǎohāor", thSound: "หาว-ฮาวร์", thai: "อย่างเต็มที่, อย่างดี", ex: "好好儿玩儿玩儿 (เที่ยวเล่นให้เต็มที่)", root: "ซ้ำคำคุณศัพท์ 好 ขยายกริยา" },
+      { lesson: "16", hanzi: "觉得", pinyin: "juéde", thSound: "เจวี๋ย-เตอะ", thai: "รู้สึกว่า, คิดว่า", ex: "我觉得没意思 (ฉันรู้สึกว่าน่าเบื่อ)", root: "觉 (รู้สึก) + 得 (ได้)" },
+      { lesson: "16", hanzi: "没意思", pinyin: "méi yìsi", thSound: "เหมย-อี้-สิ", thai: "น่าเบื่อ, ไร้สาระ", ex: "这个电影没意思 (หนังเรื่องนี้น่าเบื่อ)", root: "没 (ไม่) + 意思 (ความหมาย/ความสนุก)" },
+      { lesson: "16", hanzi: "电视", pinyin: "diànshì", thSound: "เตี้ยน-ซื่อ", thai: "โทรทัศน์, ทีวี", ex: "看电视 (ดูทีวี)", root: "电 (ไฟฟ้า) + 视 (การมองเห็น)" },
+      { lesson: "16", hanzi: "睡懒觉", pinyin: "shuì lǎnjiào", thSound: "ซุ่ย-หล่าน-เจี้ยว", thai: "นอนตื่นสาย", ex: "周末睡懒觉 (วันหยุดนอนตื่นสาย)", root: "睡 (นอน) + 懒 (ขี้เกียจ) + 觉 (หลับ)" },
+      { lesson: "16", hanzi: "出去", pinyin: "chūqu", thSound: "ชู-ชวี่", thai: "ออกไปข้างนอก", ex: "出去玩儿 (ออกไปเที่ยวเล่น)", root: "出 (ออก) + 去 (ไป)" },
+      { lesson: "16", hanzi: "逛", pinyin: "guàng", thSound: "กว้าง", thai: "เดินเล่น, เดินเที่ยว", ex: "逛商店 (เดินห้าง/ช้อปปิ้ง)", root: "เดินชมเรื่อยเปื่อย" },
+      { lesson: "16", hanzi: "不同", pinyin: "bù tóng", thSound: "ปู้-ถง", thai: "ไม่เหมือนกัน, แตกต่าง", ex: "不同的安排 (แผนการที่ไม่เหมือนกัน)", root: "不 (ไม่) + 同 (เหมือน)" },
+      { lesson: "16", hanzi: "安排", pinyin: "ānpái", thSound: "อัน-ไผ", thai: "จัดการ, แผนการ, นัดหมาย", ex: "有什么安排 (มีแผนการอะไร)", root: "安 (สงบ) + 排 (จัดแถว/ลำดับ)" },
+      { lesson: "16", hanzi: "饺子", pinyin: "jiǎozi", thSound: "เจี่ยว-จึ", thai: "เกี๊ยว", ex: "包饺子 (bāo jiǎozi) ห่อเกี๊ยว", root: "อาหารประเภทแป้งห่อไส้" },
+      { lesson: "16", hanzi: "迪厅", pinyin: "dítīng", thSound: "ตี๋-ทิง", thai: "เธค, ผับ", ex: "去迪厅跳舞 (ไปเต้นรำที่เธค)", root: "迪 (ดิสโก้) + 厅 (ห้องโถง)" },
+      { lesson: "16", hanzi: "跳舞", pinyin: "tiào wǔ", thSound: "เที่ยว-อู่", thai: "เต้นรำ", ex: "去跳舞 (ไปเต้นรำ)", root: "跳 (กระโดด) + 舞 (ระบำ)" },
+      { lesson: "16", hanzi: "音乐会", pinyin: "yīnyuèhuì", thSound: "อิน-เอเยว่-ฮุ่ย", thai: "คอนเสิร์ต, การแสดงดนตรี", ex: "听音乐会 (ฟังคอนเสิร์ต)", root: "音乐 (ดนตรี) + 会 (การชุมนุม/งาน)" },
+
+      // บท 17
+      { lesson: "17", hanzi: "十字路口", pinyin: "shízìlùkǒu", thSound: "สือ-จื้อ-ลู่-โข่ว", thai: "สี่แยก", ex: "到了十字路口 (พอถึงสี่แยก)", root: "十字 (รูปกากบาทเลขสิบ 十) + 路口 (ทางแยก)" },
+      { lesson: "17", hanzi: "拐", pinyin: "guǎi", thSound: "กวั่ย", thai: "เลี้ยว", ex: "往右拐 (เลี้ยวขวา) / 往左拐 (เลี้ยวซ้าย)", root: "拐 (กริยา: เลี้ยวโค้ง/เปลี่ยนทิศ)" },
+      { lesson: "17", hanzi: "大概", pinyin: "dàgài", thSound: "ต้า-ก้าย", thai: "ประมาณ, ราวๆ", ex: "大概 100 米 (ประมาณ 100 เมตร)", root: "ใช้ระบุตัวเลขคร่าวๆ" },
+      { lesson: "17", hanzi: "米", pinyin: "mǐ", thSound: "หมี่", thai: "เมตร", ex: "一百米 (100 เมตร)", root: "หน่วยวัดความยาวเมตร" },
+      { lesson: "17", hanzi: "车站", pinyin: "chēzhàn", thSound: "เชอ-จ้าน", thai: "ป้ายรถเมล์, สถานีรถ", ex: "去车站怎么走？ (ไปป้ายรถเมล์ไปยังไง?)", root: "车 (รถ) + 站 (สถานี/จุดจอด)" },
+      { lesson: "17", hanzi: "方向", pinyin: "fāngxiàng", thSound: "ฟัง-เซี่ยง", thai: "ทิศทาง", ex: "天安门方向 (ทิศทางไปเทียนอันเหมิน)", root: "方 (ด้าน) + 向 (มุ่งไป)" },
+      { lesson: "17", hanzi: "马路", pinyin: "mǎlù", thSound: "หม่า-ลู่", thai: "ถนนใหญ่, ถนน", ex: "过马路 (ข้ามถนน)", root: "马 (ม้า) + 路 (ทาง) ➔ ถนนสัญจร" },
+      { lesson: "17", hanzi: "过", pinyin: "guò", thSound: "กั้ว", thai: "ข้าม, ผ่าน", ex: "你过马路 (คุณข้ามถนน)", root: "过马路 = ข้ามถนน" },
+      { lesson: "17", hanzi: "离", pinyin: "lí", thSound: "หลี", thai: "ห่างจาก", ex: "我家离学校不远 (บ้านฉันห่างจากโรงเรียนไม่ไกล)", root: "A 离 B = ระยะทางจาก A ถึง B" },
+      { lesson: "17", hanzi: "远", pinyin: "yuǎn", thSound: "เหยวี่ยน", thai: "ไกล", ex: "很远 (ไกลมาก)", root: "ตรงข้ามกับ 近 (jìn ใกล้)" },
+      { lesson: "17", hanzi: "近", pinyin: "jìn", thSound: "จิ้น", thai: "ใกล้", ex: "离这儿很近 (อยู่ใกล้จากตรงนี้มาก)", root: "ตรงข้ามกับ 远 (yuǎn ไกล)" },
+      { lesson: "17", hanzi: "地铁", pinyin: "dìtiě", thSound: "ตี้-เถี่ย", thai: "รถไฟใต้ดิน", ex: "坐地铁 (นั่งรถไฟใต้ดิน)", root: "地 (ใต้ดิน) + 铁 (รางเหล็ก)" },
+      { lesson: "17", hanzi: "北边 / 南边", pinyin: "běibian / nánbian", thSound: "เป่ย-เปียน / หนาน-เปียน", thai: "ทิศเหนือ / ทิศใต้", ex: "马路南边 (ฝั่งใต้ของถนน)", root: "北 = เหนือ, 南 = ใต้, 边 = ด้าน/ฝั่ง" }
+    ];
+
+    // --- 2. CLOZE TEST DATA WITH DEEP RATIONALE ---
+    const CLOZE_DATA = [
+      {
+        id: "c1",
+        pinyin: "Chēzhàn ______ zhèr bù yuǎn.",
+        chinese: "车站 ______ 这儿不远。",
+        thai: "ป้ายรถเมล์ ______ จากที่นี่ไม่ไกล",
+        options: [
+          { zh: "离", py: "lí (ห่างจาก)" },
+          { zh: "从", py: "cóng (จาก)" },
+          { zh: "过", py: "guò (ข้าม)" },
+          { zh: "拐", py: "guǎi (เลี้ยว)" }
+        ],
+        answer: "离",
+        explain: "<strong>เจาะลึกไวยากรณ์:</strong> ใช้โครงสร้าง <code>[สถานที่ A] + 离 (lí) + [สถานที่ B] + 不远/很近</code> เพื่อบอกระยะห่าง ส่วน <em>从 (cóng)</em> จะต้องตามด้วย <em>到 (dào)</em> เสมอ จึงผิด"
+      },
+      {
+        id: "c2",
+        pinyin: "Nǐ xiān zuò 809 lù gōnggòng qìchē, ______ huàn 334 lù.",
+        chinese: "你先坐 809 路公共汽车，______ 换 334 路。",
+        thai: "คุณนั่งรถประจำทางสาย 809 ก่อน ______ ค่อยต่อสาย 334",
+        options: [
+          { zh: "然后", py: "ránhòu (จากนั้น)" },
+          { zh: "以后", py: "yǐhòu (ภายหลัง)" },
+          { zh: "再", py: "zài (อีกครั้ง)" },
+          { zh: "从", py: "cóng (จาก)" }
+        ],
+        answer: "然后",
+        explain: "<strong>เจาะลึกไวยากรณ์:</strong> โครงสร้างบอกลำดับการกระทำ <code>先...然后... (xiān... ránhòu...)</code> = ทำสิ่งแรกก่อน 'จากนั้น' ค่อยทำสิ่งถัดไป"
+      },
+      {
+        id: "c3",
+        pinyin: "Wǒ jiā fùjìn méiyǒu ______.",
+        chinese: "我家附近没有 ______。",
+        thai: "แถวบ้านฉันไม่มี ______",
+        options: [
+          { zh: "地铁", py: "dìtiě (รถไฟใต้ดิน)" },
+          { zh: "方向", py: "fāngxiàng (ทิศทาง)" },
+          { zh: "马路", py: "mǎlù (ถนน)" },
+          { zh: "车站", py: "chēzhàn (สถานีรถ)" }
+        ],
+        answer: "地铁",
+        explain: "<strong>เจาะลึกเนื้อเรื่อง:</strong> ในบทเรียนที่ 17 ระบุชัดเจนว่า <em>我家附近没有地铁 (แถวบ้านฉันไม่มีรถไฟใต้ดิน)</em> จึงต้องเดินทางด้วยรถประจำทาง"
+      },
+      {
+        id: "c4",
+        pinyin: "Qù yínháng, cóng zhèr ______ wǎng qián zǒu.",
+        chinese: "去银行，从这儿 ______ 往前走。",
+        thai: "ไปธนาคาร จากตรงนี้เดินตรงไปข้างหน้า ______",
+        options: [
+          { zh: "一直", py: "yìzhí (ตรงไป/เรื่อยๆ)" },
+          { zh: "大概", py: "dàgài (ประมาณ)" },
+          { zh: "然后", py: "ránhòu (จากนั้น)" },
+          { zh: "离", py: "lí (ห่างจาก)" }
+        ],
+        answer: "一直",
+        explain: "<strong>เจาะลึกไวยากรณ์:</strong> คำว่า <code>一直 (yìzhí)</code> ทำหน้าที่ขยายกริยา <code>往前走 (wǎng qián zǒu)</code> แปลว่า 'เดินตรงไปเรื่อยๆ โดยไม่เลี้ยว'"
+      },
+      {
+        id: "c5",
+        pinyin: "Tiān'ānmén ______ de chēzhàn shì zài mǎlù nánbian.",
+        chinese: "天安门 ______ 的车站是在马路南边。",
+        thai: "ป้ายรถเมล์ฝั่ง ______ เทียนอันเหมินอยู่ฝั่งใต้ของถนน",
+        options: [
+          { zh: "方向", py: "fāngxiàng (ทิศทาง)" },
+          { zh: "地铁", py: "dìtiě (รถไฟใต้ดิน)" },
+          { zh: "马路", py: "mǎlù (ถนน)" },
+          { zh: "十字路口", py: "shízìlùkǒu (สี่แยก)" }
+        ],
+        answer: "方向",
+        explain: "<strong>เจาะลึกบริบท:</strong> <code>天安门方向 (Tiān'ānmén fāngxiàng)</code> = ป้ายรถเมล์ฝั่งทิศทางที่จะมุ่งหน้าไปยังจัตุรัสเทียนอันเหมิน"
+      },
+      {
+        id: "c6",
+        pinyin: "Xuéxiào lí túshūguǎn hěn jìn, ______ liǎng bǎi wǔshí mǐ.",
+        chinese: "学校离图书馆很近，______ 两百五十米。",
+        thai: "โรงเรียนอยู่ใกล้ห้องสมุดมาก ______ 250 เมตร",
+        options: [
+          { zh: "大概", py: "dàgài (ประมาณ/ราวๆ)" },
+          { zh: "一直", py: "yìzhí (ตรงไป)" },
+          { zh: "不同", py: "bù tóng (ต่างกัน)" },
+          { zh: "挺", py: "tǐng (ค่อนข้าง)" }
+        ],
+        answer: "大概",
+        explain: "<strong>เจาะลึกไวยากรณ์:</strong> <code>大概 (dàgài)</code> เป็นคำกริยาวิเศษณ์นำหน้าจำนวนตัวเลขเพื่อกะประมาณ (大概 + สองร้อยห้าสิบเมตร)"
+      },
+      {
+        id: "c7",
+        pinyin: "Dàole shízìlùkǒu wǎng yòu ______, fàndiàn zài yòubian.",
+        chinese: "到了十字路口往右 ______，饭店在右边。",
+        thai: "พอถึงสี่แยกให้ ______ ขวา ร้านอาหารอยู่ทางขวา",
+        options: [
+          { zh: "拐", py: "guǎi (เลี้ยว)" },
+          { zh: "走", py: "zǒu (เดิน)" },
+          { zh: "过", py: "guò (ข้าม)" },
+          { zh: "离", py: "lí (ห่างจาก)" }
+        ],
+        answer: "拐",
+        explain: "<strong>เจาะลึกโครงสร้าง:</strong> <code>往 (ไปทาง) + ขวา (右) + เลี้ยว (拐)</code> = 往右拐 (เลี้ยวขวา) 拐 คือคำกริยาแสดงการเปลี่ยนทิศทาง"
+      },
+      {
+        id: "c8",
+        pinyin: "Chēzhàn fāngxiàng zài mǎlù běibian ______ nánbian?",
+        chinese: "车站方向在马路北边 ______ 南边？",
+        thai: "ทิศทางป้ายรถเมล์อยู่ฝั่งทิศเหนือ ______ ฝั่งทิศใต้ของถนน?",
+        options: [
+          { zh: "还是", py: "háishi (หรือว่า)" },
+          { zh: "或者", py: "huòzhě (หรือ-บอกเล่า)" },
+          { zh: "然后", py: "ránhòu (จากนั้น)" },
+          { zh: "因为", py: "yīnwèi (เพราะว่า)" }
+        ],
+        answer: "还是",
+        explain: "<strong>เจาะลึกไวยากรณ์:</strong> <code>还是 (háishi)</code> ใช้เป็นคำว่า 'หรือ' ในประโยคคำถามเสมอ (ส่วน 或者 ใช้ในประโยคบอกเล่า)"
+      },
+      {
+        id: "c9",
+        pinyin: "Zhè ge zhōumò nǐ yǒu shénme ______?",
+        chinese: "这个周末你有什么 ______？",
+        thai: "สุดสัปดาห์นี้คุณมี ______ อะไรบ้าง?",
+        options: [
+          { zh: "安排", py: "ānpái (แผนการ/นัดหมาย)" },
+          { zh: "意思", py: "yìsi (ความหมาย)" },
+          { zh: "蛋糕", py: "dàngāo (เค้ก)" },
+          { zh: "衣服", py: "yīfu (เสื้อผ้า)" }
+        ],
+        answer: "安排",
+        explain: "<strong>เจาะลึกบทเรียนที่ 16:</strong> <code>有什么安排 (yǒu shénme ānpái)</code> = มีแผนการหรือตารางนัดหมายอะไรบ้าง"
+      },
+      {
+        id: "c10",
+        pinyin: "Měi ge zhōumò, wǒ dōu juéde ______.",
+        chinese: "每个周末，我都觉得 ______。",
+        thai: "ทุกๆ วันสุดสัปดาห์ ฉันรู้สึก ______ ไปหมด",
+        options: [
+          { zh: "没意思", py: "méi yìsi (น่าเบื่อ)" },
+          { zh: "特别", py: "tèbié (พิเศษ)" },
+          { zh: "好看", py: "hǎokàn (ดูดี)" },
+          { zh: "容易", py: "róngyì (ง่าย)" }
+        ],
+        answer: "没意思",
+        explain: "<strong>เจาะลึกสำนวน:</strong> <code>觉得没意思 (juéde méi yìsi)</code> = รู้สึกน่าเบื่อ ไม่มีอะไรสนุกให้ทำ"
+      }
+    ];
+
+    // --- 3. GRAMMAR DATA WITH PINYIN & DEEP EXPLANATIONS ---
+    const GRAMMAR_YOU_ZAI = [
+      {
+        id: "yz1",
+        pinyin: "Míngtiān wǒmen ______ qù yí cì, hǎo ma?",
+        chinese: "明天我们 ______ 去一次，好吗？",
+        thai: "พรุ่งนี้พวกเราไปอีกครั้ง ได้ไหม?",
+        options: [{ zh: "再", py: "zài (อนาคต)" }, { zh: "又", py: "yòu (อดีต/ปัจจุบัน)" }],
+        answer: "再",
+        explain: "<strong>เหตุผล:</strong> มีคำว่า <code>明天 (míngtiān - พรุ่งนี้)</code> ซึ่งเป็นเรื่องในอนาคตที่ยังไม่เกิดขึ้น ➔ ต้องใช้ <strong>再 (zài)</strong>"
+      },
+      {
+        id: "yz2",
+        pinyin: "Tā zuótiān chídào le yí cì, jīntiān ______ chídào le.",
+        chinese: "他昨天迟到了一次，今天 ______ 迟到了。",
+        thai: "เมื่อวานเขามาสายไปครั้งหนึ่ง วันนี้ก็มาสายอีกแล้ว",
+        options: [{ zh: "又", py: "yòu (อดีต/ปัจจุบัน)" }, { zh: "再", py: "zài (อนาคต)" }],
+        answer: "又",
+        explain: "<strong>เหตุผล:</strong> เหตุการณ์มาสายในวันนี้เกิดขึ้นแล้ว (มี <code>迟到了</code>) เป็นความจริงที่ซ้ำรอยเดิม ➔ ต้องใช้ <strong>又 (yòu)</strong>"
+      },
+      {
+        id: "yz3",
+        pinyin: "Wǒ chī le yì wǎn miàntiáo, ______ hē le yì bēi kāfēi.",
+        chinese: "我吃了一碗面条，______ 喝了一杯咖啡。",
+        thai: "ฉันกินบะหมี่ไปชามนึง แล้วยังดื่มกาแฟไปอีกแก้ว",
+        options: [{ zh: "又", py: "yòu" }, { zh: "再", py: "zài" }],
+        answer: "又",
+        explain: "<strong>เหตุผล:</strong> ดื่มกาแฟไปแล้ว (มี <code>喝了一杯...</code>) เกิดขึ้นจริงแล้วทั้งสองการกระทำ ➔ ต้องใช้ <strong>又 (yòu)</strong>"
+      },
+      {
+        id: "yz4",
+        pinyin: "Tiānqì lěng le, zuótiān xià yǔ, jīntiān ______ xià yǔ.",
+        chinese: "天气冷了，昨天下雨，今天 ______ 下雨。",
+        thai: "อากาศหนาวแล้ว เมื่อวานฝนตก วันนี้ก็ตกอีก",
+        options: [{ zh: "又", py: "yòu" }, { zh: "再", py: "zài" }],
+        answer: "又",
+        explain: "<strong>เหตุผล:</strong> วันก่อนตก วันนี้ก็กำลังตกอีก เป็นสภาพที่เกิดขึ้นแล้วจริง ➔ ใช้ <strong>又 (yòu)</strong>"
+      },
+      {
+        id: "yz5",
+        pinyin: "Zhè ge wèntí wǒ zuótiān wèn guò nǐ, jīntiān nǐ ______ wèn wǒ?",
+        chinese: "这个问题我昨天问过你，今天你 ______ 问我？",
+        thai: "คำถามนี้ฉันเคยถามเธอเมื่อวาน วันนี้เธอมาถามฉันอีกแล้วเหรอ?",
+        options: [{ zh: "又", py: "yòu" }, { zh: "再", py: "zài" }],
+        answer: "又",
+        explain: "<strong>เหตุผล:</strong> การถามซ้ำเกิดขึ้นแล้วในวันนี้ ➔ ใช้ <strong>又 (yòu)</strong>"
+      },
+      {
+        id: "yz6",
+        pinyin: "Wǒ xiǎng míngtiān ______ qù kàn nǐ.",
+        chinese: "我想明天 ______ 去看你。",
+        thai: "ฉันอยากจะไปหาเธออีกในวันพรุ่งนี้",
+        options: [{ zh: "再", py: "zài" }, { zh: "又", py: "yòu" }],
+        answer: "再",
+        explain: "<strong>เหตุผล:</strong> มีคำว่า <code>明天 (พรุ่งนี้)</code> และ <code>想 (อยากจะ)</code> แสดงเจตนาในอนาคต ➔ ต้องใช้ <strong>再 (zài)</strong>"
+      },
+      {
+        id: "yz7",
+        pinyin: "Tā mǎi le yì píng kělè, ______ mǎi le yì píng píjiǔ.",
+        chinese: "她买了一瓶可乐，______ 买了一瓶啤酒。",
+        thai: "เธอซื้อโคล่าไปขวดหนึ่ง แล้วก็ซื้อเบียร์ไปอีกขวดหนึ่ง",
+        options: [{ zh: "又", py: "yòu" }, { zh: "再", py: "zài" }],
+        answer: "又",
+        explain: "<strong>เหตุผล:</strong> ซื้อไปแล้วทั้งคู่ (มี <code>买了</code>) ➔ ใช้ <strong>又 (yòu)</strong>"
+      },
+      {
+        id: "yz8",
+        pinyin: "Zuótiān wǒ wàng le dài shū, jīntiān ______ wàng le.",
+        chinese: "昨天我忘了带书，今天 ______ 忘了。",
+        thai: "เมื่อวานฉันลืมเอาหนังสือมา วันนี้ก็ลืมอีกแล้ว",
+        options: [{ zh: "又", py: "yòu" }, { zh: "再", py: "zài" }],
+        answer: "又",
+        explain: "<strong>เหตุผล:</strong> ลืมอีกแล้ว เกิดขึ้นแล้วในวันนี้ ➔ ใช้ <strong>又 (yòu)</strong>"
+      },
+      {
+        id: "yz9",
+        pinyin: "Tā shàng ge yuè qù Běijīng, zhè ge yuè ______ qù le Shànghǎi.",
+        chinese: "他上个月去北京，这个月 ______ 去了上海。",
+        thai: "เดือนที่แล้วเขาไปปักกิ่ง เดือนนี้ก็ไปเซี่ยงไฮ้อีกแล้ว",
+        options: [{ zh: "又", py: "yòu" }, { zh: "再", py: "zài" }],
+        answer: "又",
+        explain: "<strong>เหตุผล:</strong> มี <code>去了</code> แสดงว่าการเดินทางไปเซี่ยงไฮ้เกิดขึ้นแล้ว ➔ ใช้ <strong>又 (yòu)</strong>"
+      },
+      {
+        id: "yz10",
+        pinyin: "Míngtiān wǒmen ______ jiànmiàn ba.",
+        chinese: "明天我们 ______ 见面吧。",
+        thai: "พรุ่งนี้พวกเราค่อยเจอกันอีกทีเถอะ",
+        options: [{ zh: "再", py: "zài" }, { zh: "又", py: "yòu" }],
+        answer: "再",
+        explain: "<strong>เหตุผล:</strong> มี <code>明天</code> และคำลงท้ายชักชวน <code>吧</code> หมายถึงการกระทำในอนาคต ➔ ใช้ <strong>再 (zài)</strong>"
+      }
+    ];
+
+    const GRAMMAR_MODAL = [
+      {
+        id: "m1",
+        pinyin: "Tā míngtiān bù shūfu, ______ lái shàngkè ma?",
+        chinese: "他明天不舒服，______ 来上课吗？",
+        thai: "พรุ่งนี้เขาไม่สบาย จะมาเรียนไหว/ได้ไหม?",
+        options: [
+          { zh: "能", py: "néng (สภาพร่างกาย/ไหว)" },
+          { zh: "会", py: "huì (ทักษะเป็น)" },
+          { zh: "可以", py: "kěyǐ (อนุญาต)" }
+        ],
+        answer: "能",
+        explain: "<strong>เหตุผล:</strong> เกี่ยวกับสภาพร่างกายและสุขภาพ (ไม่สบายจะมาไหวไหม) ➔ ต้องใช้ <strong>能 (néng)</strong>"
+      },
+      {
+        id: "m2",
+        pinyin: "Nǐ yóuyǒng yóu de hěn hǎo, nǐ cóngxiǎo jiù ______ yóuyǒng ma?",
+        chinese: "你游泳游得很好，你从小就 ______ 游泳吗？",
+        thai: "เธอว่ายน้ำเก่งมาก เธอว่ายน้ำเป็นตั้งแต่เด็กเลยเหรอ?",
+        options: [
+          { zh: "会", py: "huì (ทักษะ)" },
+          { zh: "能", py: "néng" },
+          { zh: "可以", py: "kěyǐ" }
+        ],
+        answer: "会",
+        explain: "<strong>เหตุผล:</strong> การว่ายน้ำ (游泳) เป็นทักษะที่ต้องฝึกฝนจึงทำเป็น ➔ ต้องใช้ <strong>会 (huì)</strong>"
+      },
+      {
+        id: "m3",
+        pinyin: "Zhè tiáo lù rén hěn duō, gōnggòng qìchē bù ______ kāi jìnqu.",
+        chinese: "这条路人很多，公共汽车不 ______ 开进去。",
+        thai: "ถนนเส้นนี้คนเยอะมาก รถประจำทางไม่สามารถขับเข้าไปได้",
+        options: [
+          { zh: "能", py: "néng (เงื่อนไขแวดล้อม)" },
+          { zh: "会", py: "huì" },
+          { zh: "可以", py: "kěyǐ" }
+        ],
+        answer: "能",
+        explain: "<strong>เหตุผล:</strong> เงื่อนไขสภาพแวดล้อมภายนอกไม่อำนวย (คนแน่น ถนนแคบ) ➔ ใช้ <strong>不能 (bù néng)</strong>"
+      },
+      {
+        id: "m4",
+        pinyin: "Dàwèi bù ______ kāichē, měitiān tā zuò gōnggòng qìchē qù shàngbān.",
+        chinese: "大卫不 ______ 开车，每天他坐公共汽车去上班。",
+        thai: "เดวิดขับรถไม่เป็น ทุกวันเขานั่งรถเมล์ไปทำงาน",
+        options: [
+          { zh: "会", py: "huì (ขับไม่เป็น)" },
+          { zh: "能", py: "néng" },
+          { zh: "可以", py: "kěyǐ" }
+        ],
+        answer: "会",
+        explain: "<strong>เหตุผล:</strong> การขับรถ (开车) เป็นทักษะวิชาชีพ 'ขับไม่เป็น' ➔ ต้องใช้ <strong>不会 (bú huì)</strong>"
+      },
+      {
+        id: "m5",
+        pinyin: "Nǐ jīntiān shēntǐ zěnmeyàng? ______ qù shàngkè ma?",
+        chinese: "你今天身体怎么样？______ 去上课吗？",
+        thai: "วันนี้ร่างกายเธอเป็นอย่างไรบ้าง? ไปเรียนไหวไหม?",
+        options: [
+          { zh: "能", py: "néng (ไหวไหม)" },
+          { zh: "会", py: "huì" },
+          { zh: "可以", py: "kěyǐ" }
+        ],
+        answer: "能",
+        explain: "<strong>เหตุผล:</strong> ถามถึงสภาพความพร้อมทางร่างกาย ➔ ใช้ <strong>能 (néng)</strong>"
+      },
+      {
+        id: "m6",
+        pinyin: "Wǒ mèimei sān suì jiù ______ shuō Yīngyǔ le.",
+        chinese: "我妹妹三岁就 ______ 说英语了。",
+        thai: "น้องสาวฉันอายุ 3 ขวบก็พูดภาษาอังกฤษเป็นแล้ว",
+        options: [
+          { zh: "会", py: "huì (ทักษะภาษา)" },
+          { zh: "能", py: "néng" },
+          { zh: "可以", py: "kěyǐ" }
+        ],
+        answer: "会",
+        explain: "<strong>เหตุผล:</strong> ความสามารถในการพูดภาษาต่างประเทศเกิดจากการเรียนรู้ ➔ ใช้ <strong>会 (huì)</strong>"
+      },
+      {
+        id: "m7",
+        pinyin: "Míngtiān wǒ yǒu shíjiān, wǒmen ______ yìqǐ qù kàn diànyǐng.",
+        chinese: "明天我有时间，我们 ______ 一起去看电影。",
+        thai: "พรุ่งนี้ฉันมีเวลา พวกเราสามารถไปดูหนังด้วยกันได้นะ",
+        options: [
+          { zh: "可以", py: "kěyǐ (ข้อเสนอแนะ)" },
+          { zh: "会", py: "huì" },
+          { zh: "能", py: "néng" }
+        ],
+        answer: "可以",
+        explain: "<strong>เหตุผล:</strong> เป็นการชวนหรือเสนอแนะความเป็นไปได้ (พวกเราไปด้วยกันได้นะ) ➔ ใช้ <strong>可以 (kěyǐ)</strong>"
+      },
+      {
+        id: "m8",
+        pinyin: "Yīshēng shuō tā shēngbìng le, jīntiān bù ______ chūmén.",
+        chinese: "医生说她生病了，今天不 ______ 出门。",
+        thai: "หมอบอกว่าเธอป่วย วันนี้จึงออกไปข้างนอกไม่ได้",
+        options: [
+          { zh: "能", py: "néng (ป่วย)" },
+          { zh: "会", py: "huì" },
+          { zh: "可以", py: "kěyǐ" }
+        ],
+        answer: "能",
+        explain: "<strong>เหตุผล:</strong> ป่วยตามคำสั่งแพทย์ ร่างกายไม่อำนวยให้ออกไป ➔ ใช้ <strong>不能 (bù néng)</strong>"
+      },
+      {
+        id: "m9",
+        pinyin: "Wàimiàn xià dàyǔ le, wǒmen xiànzài bù ______ chūqu.",
+        chinese: "外面下大雨了，我们现在不 ______ 出去。",
+        thai: "ข้างนอกฝนตกหนักมาก ตอนนี้พวกเราออกไปไม่ได้",
+        options: [
+          { zh: "能", py: "néng (สภาพอากาศ)" },
+          { zh: "会", py: "huì" },
+          { zh: "可以", py: "kěyǐ" }
+        ],
+        answer: "能",
+        explain: "<strong>เหตุผล:</strong> ฝนตกหนักเป็นอุปสรรคภายนอก ➔ ใช้ <strong>不能 (bù néng)</strong>"
+      },
+      {
+        id: "m10",
+        pinyin: "Túshūguǎn li bù ______ dàshēng shuōhuà.",
+        chinese: "图书馆里不 ______ 大声说话。",
+        thai: "ในห้องสมุดห้ามส่งเสียงดัง",
+        options: [
+          { zh: "可以", py: "kěyǐ (กฎระเบียบ)" },
+          { zh: "会", py: "huì" },
+          { zh: "能", py: "néng" }
+        ],
+        answer: "可以",
+        explain: "<strong>เหตุผล:</strong> กฎระเบียบข้อห้าม (ไม่อนุญาตให้ทำ) ➔ นิยมใช้ <strong>不可以 (bù kěyǐ)</strong> หรือ 不能"
+      }
+    ];
+
+    // --- 4. MAP ROUTES DATA WITH PINYIN & DEEP EXPLANATION ---
+    const MAP_ROUTES = {
+      weishengjian: {
+        title: "ตัวอย่าง: 去卫生间怎么走？ (Qù wèishēngjiān zěnme zǒu?)",
+        zh: "一直往前走，到体育馆往右拐，往前走，卫生间在左边。",
+        pinyin: "Yìzhí wǎng qián zǒu, dào tǐyùguǎn wǎng yòu guǎi, wǎng qián zǒu, wèishēngjiān zài zuǒbian.",
+        thai: "เดินตรงไปข้างหน้าเรื่อยๆ พอถึงโรงยิมให้เลี้ยวขวา เดินตรงไปข้างหน้า ห้องน้ำอยู่ทางซ้ายมือ",
+        pathD: "M 560 630 L 245 630 L 245 255 L 220 255",
+        pinX: 140,
+        pinY: 255
+      },
+      shudian: {
+        title: "ข้อ 1: 从这儿去书店怎么走？ (Cóng zhèr qù shūdiàn zěnme zǒu?)",
+        zh: "一直往前走，到体育馆往右拐，往前走，书店在右边。",
+        pinyin: "Yìzhí wǎng qián zǒu, dào tǐyùguǎn wǎng yòu guǎi, wǎng qián zǒu, shūdiàn zài yòubian.",
+        thai: "เดินตรงไปข้างหน้าเรื่อยๆ พอถึงโรงยิมให้เลี้ยวขวา เดินตรงไปข้างหน้า ร้านหนังสืออยู่ทางขวามือ",
+        pathD: "M 560 630 L 245 630 L 245 255 L 270 255",
+        pinX: 350,
+        pinY: 255
+      },
+      jiaoxuelou: {
+        title: "ข้อ 2: 从这儿去教学楼怎么走？ (Cóng zhèr qù jiàoxuélóu zěnme zǒu?)",
+        zh: "一直往前走，到体育馆往右拐，一直往前走，教学楼在前面。",
+        pinyin: "Yìzhí wǎng qián zǒu, dào tǐyùguǎn wǎng yòu guǎi, yìzhí wǎng qián zǒu, jiàoxuélóu zài qiánmiàn.",
+        thai: "เดินตรงไปข้างหน้าเรื่อยๆ พอถึงโรงยิมให้เลี้ยวขวา เดินตรงไปเรื่อยๆ อาคารเรียนอยู่ข้างหน้าตรงสุดทาง",
+        pathD: "M 560 630 L 245 630 L 245 170",
+        pinX: 245,
+        pinY: 110
+      },
+      tushuguan: {
+        title: "ข้อ 3: 从这儿去图书馆怎么走？ (Cóng zhèr qù túshūguǎn zěnme zǒu?)",
+        zh: "一直往前走，到体育馆往右拐，往前走，到操场往右拐，往前走，图书馆在左边。",
+        pinyin: "Yìzhí wǎng qián zǒu, dào tǐyùguǎn wǎng yòu guǎi, wǎng qián zǒu, dào cāochǎng wǎng yòu guǎi, wǎng qián zǒu, túshūguǎn zài zuǒbian.",
+        thai: "เดินตรงไปข้างหน้าเรื่อยๆ ถึงโรงยิมให้เลี้ยวขวา เดินไปข้างหน้า พอถึงข้างสนามให้เลี้ยวขวา เดินตรงไป ห้องสมุดอยู่ทางซ้ายมือ",
+        pathD: "M 560 630 L 245 630 L 245 465 L 450 465 L 450 325 L 470 325",
+        pinX: 555,
+        pinY: 325
+      },
+      shitang: {
+        title: "ข้อ 4: 从这儿去食堂怎么走？ (Cóng zhèr qù shítáng zěnme zǒu?)",
+        zh: "一直往前走，到体育馆往右拐，往前走，到教学楼往右拐，往前走，食堂在左边。",
+        pinyin: "Yìzhí wǎng qián zǒu, dào tǐyùguǎn wǎng yòu guǎi, wǎng qián zǒu, dào jiàoxuélóu wǎng yòu guǎi, wǎng qián zǒu, shítáng zài zuǒbian.",
+        thai: "เดินตรงไปข้างหน้าเรื่อยๆ พอถึงโรงยิมให้เลี้ยวขวา เดินตรงไป ถึงหน้าอาคารเรียนให้เลี้ยวขวา เดินตรงไป โรงอาหารอยู่ทางซ้ายมือ",
+        pathD: "M 560 630 L 245 630 L 245 185 L 450 185 L 450 110 L 470 110",
+        pinX: 555,
+        pinY: 110
+      },
+      yinhang: {
+        title: "ข้อ 5.1: 从这儿去银行怎么走？ (Cóng zhèr qù yínháng zěnme zǒu?)",
+        zh: "一直往前走，到体育馆往右拐，往前走，银行在右边。",
+        pinyin: "Yìzhí wǎng qián zǒu, dào tǐyùguǎn wǎng yòu guǎi, wǎng qián zǒu, yínháng zài yòubian.",
+        thai: "เดินตรงไปข้างหน้าเรื่อยๆ พอถึงโรงยิมให้เลี้ยวขวา เดินตรงไปข้างหน้า ธนาคารอยู่ทางขวามือ",
+        pathD: "M 560 630 L 245 630 L 245 395 L 270 395",
+        pinX: 350,
+        pinY: 395
+      },
+      dianyingyuan: {
+        title: "ข้อ 5.2: 从这儿去电影院怎么走？ (Cóng zhèr qù diànyǐngyuàn zěnme zǒu?)",
+        zh: "一直往前走，到体育馆往右拐，往前走，电影院在左边。",
+        pinyin: "Yìzhí wǎng qián zǒu, dào tǐyùguǎn wǎng yòu guǎi, wǎng qián zǒu, diànyǐngyuàn zài zuǒbian.",
+        thai: "เดินตรงไปข้างหน้าเรื่อยๆ พอถึงโรงยิมให้เลี้ยวขวา เดินตรงไปข้างหน้า โรงภาพยนตร์อยู่ทางซ้ายมือ",
+        pathD: "M 560 630 L 245 630 L 245 395 L 220 395",
+        pinX: 140,
+        pinY: 395
+      }
+    };
+
+    // --- 5. READING QUIZ DATA WITH PINYIN & DEEP EXPLANATIONS ---
+    const READING_Q1 = [
+      {
+        q: "1. “小明”来这里很多次。(“Xiǎomíng” lái zhèlǐ hěn duō cì.)",
+        thaiQ: "เสี่ยวหมิงมาที่นี่หลายครั้งแล้ว",
+        ans: false,
+        explain: "<strong>วิเคราะห์:</strong> ผิด ✕ เพราะในเนื้อเรื่องระบุว่า <code>小明第一次来这里 (dì-yī cì lái)</code> แปลว่า เพิ่งมาที่นี่เป็นครั้งแรก ไม่ใช่มาหลายครั้ง"
+      },
+      {
+        q: "2. 邮局在超市东边。(Yóujú zài chāoshì dōngbian.)",
+        thaiQ: "ไปรษณีย์อยู่ทางทิศตะวันออกของซูเปอร์มาร์เก็ต",
+        ans: false,
+        explain: "<strong>วิเคราะห์:</strong> ผิด ✕ ในเนื้อเรื่องบอกว่า <code>往西走大概 100 米 (wǎng xī zǒu)</code> คือเดินไปทางทิศตะวันตก (西) ไม่ใช่ทิศตะวันออก (东)"
+      },
+      {
+        q: "3. 邮局离超市大概 100 米。(Yóujú lí chāoshì dàgài 100 mǐ.)",
+        thaiQ: "ไปรษณีย์อยู่ห่างจากซูเปอร์มาร์เก็ตประมาณ 100 เมตร",
+        ans: true,
+        explain: "<strong>วิเคราะห์:</strong> ถูก ✓ ตรงกับข้อความในบทความ <code>大概 100 米</code> พอดี"
+      },
+      {
+        q: "4. 邮局在马路北边。(Yóujú zài mǎlù běibian.)",
+        thaiQ: "ไปรษณีย์อยู่ทางฝั่งเหนือของถนน",
+        ans: false,
+        explain: "<strong>วิเคราะห์:</strong> ผิด ✕ ในเนื้อเรื่องบอกว่า <code>马路南边的那座楼是邮局 (mǎlù nánbian)</code> คืออยู่ทางฝั่งทิศใต้ (南) ของถนน ไม่ใช่ทิศเหนือ (北)"
+      },
+      {
+        q: "5. “小明”不知道怎么去邮局。(“Xiǎomíng” bù zhīdào zěnme qù yóujú.)",
+        thaiQ: "เสี่ยวหมิงไม่รู้วิธีไปไปรษณีย์",
+        ans: true,
+        explain: "<strong>วิเคราะห์:</strong> ถูก ✓ ตรงกับประโยค <code>他不知道邮局在哪儿，所以问了一个朋友</code> (เขาไม่รู้ว่าไปรษณีย์อยู่ที่ไหนจึงถามเพื่อน)"
+      }
+    ];
+
+    const READING_Q2 = [
+      {
+        q: "1. “我”家离学校很近。(“Wǒ” jiā lí xuéxiào hěn jìn.)",
+        thaiQ: "บ้านของฉันอยู่ใกล้โรงเรียนมาก",
+        ans: true,
+        explain: "<strong>วิเคราะห์:</strong> ถูก ✓ ในบทความบอกว่า <code>我家离学校不远 (lí xuéxiào bù yuǎn)</code> คำว่า ไม่ไกล (不远) มีความหมายเดียวกับ ใกล้ (近)"
+      },
+      {
+        q: "2. “我”家附近没有公共汽车到学校。(“Wǒ” jiā fùjìn méiyǒu gōnggòng qìchē dào xuéxiào.)",
+        thaiQ: "แถวบ้านฉันไม่มีรถเมล์ไปโรงเรียน",
+        ans: false,
+        explain: "<strong>วิเคราะห์:</strong> ผิด ✕ เพราะในเรื่องบอกว่ามีรถเมล์สาย 758 และ 831 นั่งไปถึงโรงเรียนได้"
+      },
+      {
+        q: "3. 从“我”家去天安门，要先坐地铁，然后换 47 路公共汽车。(Cóng “wǒ” jiā qù Tiān'ānmén, yào xiān zuò dìtiě, ránhòu huàn 47 lù gōnggòng qìchē.)",
+        thaiQ: "จากบ้านฉันไปเทียนอันเหมิน ต้องนั่งรถไฟใต้ดินก่อนแล้วค่อยต่อสาย 47",
+        ans: false,
+        explain: "<strong>วิเคราะห์:</strong> ผิด ✕ ข้อสอบหลอกคำว่า 地铁 (รถไฟใต้ดิน) เพราะในเรื่องระบุว่าต้องนั่งรถเมล์สาย 109 (แถวบ้านไม่มีรถไฟใต้ดิน)"
+      },
+      {
+        q: "4. 758 路、831 路公共汽车都到“我们”学校。(758 lù, 831 lù gōnggòng qìchē dōu dào “wǒmen” xuéxiào.)",
+        thaiQ: "รถเมล์สาย 758 และ 831 ล้วนไปถึงโรงเรียนของเรา",
+        ans: true,
+        explain: "<strong>วิเคราะห์:</strong> ถูก ✓ ตรงกับข้อความ <code>坐 758 路、831 路公共汽车都能到学校</code>"
+      },
+      {
+        q: "5. “我”每天坐地铁去学校。(“Wǒ” měitiān zuò dìtiě qù xuéxiào.)",
+        thaiQ: "ฉันนั่งรถไฟใต้ดินไปโรงเรียนทุกวัน",
+        ans: false,
+        explain: "<strong>วิเคราะห์:</strong> ผิด ✕ เพราะในเรื่องระบุชัดเจนว่า <code>我家附近没有地铁 (แถวบ้านฉันไม่มีรถไฟใต้ดิน)</code>"
+      }
+    ];
+
+    // --- 6. TRANSLATION DATA ---
+    const TRANSLATION_DATA = [
+      {
+        lesson: "15",
+        zh: "明天是我朋友的生日，我做一个蛋糕送给她，你说好不好？",
+        pinyin: "Míngtiān shì wǒ péngyou de shēngrì, wǒ zuò yí ge dàngāo sòng gěi tā, nǐ shuō hǎo bu hǎo?",
+        thai: "พรุ่งนี้เป็นวันเกิดเพื่อนของฉัน ฉันจะทำเค้กหนึ่งก้อนมอบให้เธอ เธอว่าดีไหม?",
+        explain: "<strong>ไวยากรณ์:</strong> <code>送给 (sòng gěi)</code> = มอบให้แก่..., <code>你说好不好</code> = เป็นการถามความเห็นคู่สนทนาว่าดีไหม"
+      },
+      {
+        lesson: "15",
+        zh: "巧克力有点儿甜，她不喜欢甜的。",
+        pinyin: "Qiǎokèlì yǒudiǎnr tián, tā bù xǐhuan tián de.",
+        thai: "ช็อกโกแลตหวานไปหน่อย เธอไม่ชอบของหวาน",
+        explain: "<strong>ไวยากรณ์:</strong> <code>有点儿 (yǒudiǎnr) + คำคุณศัพท์ (甜)</code> = บอกความรู้สึกในแง่ลบว่า '...ไปหน่อย'"
+      },
+      {
+        lesson: "15",
+        zh: "那么送一束花吧，每个女孩子都喜欢花。",
+        pinyin: "Nàme sòng yí shù huā ba, měi ge nǚ háizi dōu xǐhuan huā.",
+        thai: "ถ้าอย่างนั้นก็มอบดอกไม้สักช่อสิ เด็กผู้หญิงทุกคนชอบดอกไม้ทั้งนั้น",
+        explain: "<strong>ไวยากรณ์:</strong> <code>一束花 (yí shù huā)</code> = ดอกไม้ 1 ช่อ (束 เป็นลักษณนามของดอกไม้), <code>每个...都...</code> = ทุกๆ...ล้วน..."
+      },
+      {
+        lesson: "15",
+        zh: "这个主意挺不错的。",
+        pinyin: "Zhè ge zhǔyi tǐng búcuò de.",
+        thai: "ไอเดียนี้ดีมากเลยทีเดียว / ความคิดนี้ค่อนข้างดีเลย",
+        explain: "<strong>ไวยากรณ์:</strong> <code>挺...的 (tǐng...de)</code> = ค่อนข้าง...ทีเดียว, <code>不错 (búcuò)</code> = ไม่เลว / ดีมาก"
+      },
+      {
+        lesson: "16",
+        zh: "明天又是周末，太高兴了！",
+        pinyin: "Míngtiān yòu shì zhōumò, tài gāoxìng le!",
+        thai: "พรุ่งนี้ก็เป็นสุดสัปดาห์อีกแล้ว ดีใจจังเลย!",
+        explain: "<strong>ไวยากรณ์:</strong> <code>又 (yòu)</code> = อีกแล้ว (เกิดซ้ำตามวงรอบ), <code>太...了</code> = ...เหลือเกิน"
+      },
+      {
+        lesson: "16",
+        zh: "周末可以好好儿玩儿玩儿，你不喜欢吗？",
+        pinyin: "Zhōumò kěyǐ hǎohāor wánrwanr, nǐ bù xǐhuan ma?",
+        thai: "วันสุดสัปดาห์สามารถเที่ยวเล่นได้อย่างเต็มที่ เธอไม่ชอบเหรอ?",
+        explain: "<strong>ไวยากรณ์:</strong> <code>好好儿 (hǎohāor)</code> = อย่างเต็มที่, <code>玩儿玩儿</code> ซ้ำคำกริยาแสดงความสบายๆ"
+      },
+      {
+        lesson: "16",
+        zh: "在宿舍里看看电视，洗洗衣服，做做作业，睡睡懒觉……",
+        pinyin: "Zài sùshè li kànkan diànshì, xǐxi yīfu, zuòzuo zuòyè, shuìshui lǎnjiào...",
+        thai: "อยู่ในหอพัก ดูทีวีบ้าง ซักเสื้อผ้าบ้าง ทำการบ้านบ้าง นอนตื่นสายบ้าง...",
+        explain: "<strong>ไวยากรณ์:</strong> ซ้ำคำกริยาแบบ AA (看看, 洗洗, 做做, 睡睡) สื่อถึงกิจกรรมผ่อนคลายในวันหยุด"
+      },
+      {
+        lesson: "16",
+        zh: "我每个周末都有不同的安排。",
+        pinyin: "Wǒ měi ge zhōumò dōu yǒu bù tóng de ānpái.",
+        thai: "ฉันมีแผนการที่ไม่ซ้ำกันในทุกๆ วันสุดสัปดาห์",
+        explain: "<strong>ไวยากรณ์:</strong> <code>每个...都...</code> = ทุกๆ...ล้วน..., <code>不同的安排</code> = แผนการที่แตกต่างกัน"
+      },
+      {
+        lesson: "17",
+        zh: "请问，743 路汽车到天安门吗？",
+        pinyin: "Qǐngwèn, 743 lù qìchē dào Tiān'ānmén ma?",
+        thai: "ขอถามหน่อย รถประจำทางสาย 743 ไปถึงเทียนอันเหมินไหม?",
+        explain: "<strong>ไวยากรณ์:</strong> <code>请问</code> = ขอถามหน่อย, <code>...路汽车</code> = รถประจำทางสาย..., <code>到...吗?</code> = ไปถึง...ไหม?"
+      },
+      {
+        lesson: "17",
+        zh: "你从这儿一直往前走，到十字路口往右拐，往西走大概 50 米。",
+        pinyin: "Nǐ cóng zhèr yìzhí wǎng qián zǒu, dào shízìlùkǒu wǎng yòu guǎi, wǎng xī zǒu dàgài 50 mǐ.",
+        thai: "คุณเดินตรงไปข้างหน้าจากตรงนี้เรื่อยๆ พอถึงสี่แยกให้เลี้ยวขวา เดินไปทางทิศตะวันตกประมาณ 50 เมตร",
+        explain: "<strong>ไวยากรณ์:</strong> ประโยคบอกทิศทางหลัก: <code>从 (จาก) + 一直往前走 (เดินตรงไปเรื่อยๆ) + 到 (ถึง) + 往...拐 (เลี้ยว)</code>"
+      },
+      {
+        lesson: "17",
+        zh: "天安门方向的车站是在马路北边还是南边？",
+        pinyin: "Tiān'ānmén fāngxiàng de chēzhàn shì zài mǎlù běibian háishi nánbian?",
+        thai: "ป้ายรถเมล์ฝั่งทิศทางที่จะไปเทียนอันเหมิน อยู่ฝั่งเหนือหรือฝั่งใต้ของถนน?",
+        explain: "<strong>ไวยากรณ์:</strong> <code>方向</code> = ทิศทาง, <code>还是</code> = หรือว่า (คำถามเลือกอย่างใดอย่างหนึ่ง)"
+      },
+      {
+        lesson: "17",
+        zh: "我家离车站不远，大概五百米。",
+        pinyin: "Wǒ jiā lí chēzhàn bù yuǎn, dàgài wǔbǎi mǐ.",
+        thai: "บ้านของฉันอยู่ไม่ไกลจากสถานีรถ ประมาณ 500 เมตร",
+        explain: "<strong>ไวยากรณ์:</strong> <code>A 离 B 不远</code> = A อยู่ห่างจาก B ไม่ไกล, <code>大概</code> = ประมาณ"
+      }
+    ];
+
+    // --- APPLICATION STATE ---
+    let currentTab = 'tab-blueprint';
+    let currentFilteredVocab = [...VOCAB_DATA];
+    let cardIdx = 0;
+    let currentRouteKey = 'weishengjian';
+    let isPinyinHidden = false;
+
+    // --- INITIALIZATION ---
+    window.addEventListener('DOMContentLoaded', () => {
+      renderVocabTable();
+      updateFlashcard();
+      renderClozeQuiz();
+      renderGrammarQuiz();
+      renderReadingQuiz();
+      renderTranslationList();
+      generateNewMockExam();
+    });
+
+    // --- TAB SWITCHING ---
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-pane').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+
+      const targetPane = document.getElementById(tabId);
+      if (targetPane) targetPane.classList.add('active');
+
+      const activeBtn = Array.from(document.querySelectorAll('.tab-btn')).find(b => b.getAttribute('onclick').includes(tabId));
+      if (activeBtn) activeBtn.classList.add('active');
+
+      currentTab = tabId;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // --- AUDIO PRONUNCIATION ---
+    function speakText(text) {
+      if (!('speechSynthesis' in window)) return;
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'zh-CN';
+      utterance.rate = 0.85;
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function speakCurrent(e) {
+      if (e) e.stopPropagation();
+      const word = currentFilteredVocab[cardIdx];
+      if (word) speakText(word.hanzi);
+    }
+
+    function speakRoute() {
+      const route = MAP_ROUTES[currentRouteKey];
+      if (route) speakText(route.zh);
+    }
+
+    // --- FLASHCARD LOGIC ---
+    function filterVocab(lesson, btn) {
+      document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+
+      if (lesson === 'all') {
+        currentFilteredVocab = [...VOCAB_DATA];
+      } else {
+        currentFilteredVocab = VOCAB_DATA.filter(v => v.lesson === lesson);
+      }
+      cardIdx = 0;
+      updateFlashcard();
+      renderVocabTable();
+    }
+
+    function togglePinyinDisplay() {
+      isPinyinHidden = !isPinyinHidden;
+      document.getElementById('pinyinModeLabel').innerText = isPinyinHidden ? "ซ่อนพินอิน (ฝึกจำตัวจีนล้วน)" : "แสดงพินอินตลอด";
+      updateFlashcard();
+    }
+
+    function updateFlashcard() {
+      const card = document.getElementById('flashcardElement');
+      card.classList.remove('flipped');
+
+      if (currentFilteredVocab.length === 0) return;
+      const v = currentFilteredVocab[cardIdx];
+
+      document.getElementById('fcTag').innerText = `บทที่ ${v.lesson} (${cardIdx + 1}/${currentFilteredVocab.length})`;
+      document.getElementById('fcHanzi').innerText = v.hanzi;
+      
+      const pyEl = document.getElementById('fcPinyin');
+      const thSoundEl = document.getElementById('fcThSound');
+      if (isPinyinHidden) {
+        pyEl.style.display = 'none';
+        thSoundEl.style.display = 'none';
+      } else {
+        pyEl.style.display = 'block';
+        pyEl.innerText = v.pinyin;
+        thSoundEl.style.display = 'inline-block';
+        thSoundEl.innerText = `คำอ่าน: ${v.thSound}`;
+      }
+
+      document.getElementById('fcThai').innerText = v.thai;
+      document.getElementById('fcExample').innerText = v.ex;
+      document.getElementById('fcDeepRoot').innerText = `💡 รากศัพท์ & โครงสร้าง: ${v.root}`;
+    }
+
+    function flipCard() {
+      document.getElementById('flashcardElement').classList.toggle('flipped');
+    }
+
+    function nextCard() {
+      if (cardIdx < currentFilteredVocab.length - 1) {
+        cardIdx++;
+      } else {
+        cardIdx = 0;
+      }
+      updateFlashcard();
+    }
+
+    function prevCard() {
+      if (cardIdx > 0) {
+        cardIdx--;
+      } else {
+        cardIdx = currentFilteredVocab.length - 1;
+      }
+      updateFlashcard();
+    }
+
+    function shuffleCards() {
+      for (let i = currentFilteredVocab.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [currentFilteredVocab[i], currentFilteredVocab[j]] = [currentFilteredVocab[j], currentFilteredVocab[i]];
+      }
+      cardIdx = 0;
+      updateFlashcard();
+    }
+
+    function renderVocabTable() {
+      const tbody = document.getElementById('vocabTableBody');
+      tbody.innerHTML = '';
+      currentFilteredVocab.forEach(v => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><span class="bp-badge badge-pinyin">บท ${v.lesson}</span></td>
+          <td class="zh" style="font-size: 1.25rem; font-weight: 700; color: #991b1b;">${v.hanzi}</td>
+          <td style="color: #0284c7; font-weight: 600;">${v.pinyin}</td>
+          <td style="color: #475569; font-weight: 500;">${v.thSound}</td>
+          <td>
+            <strong>${v.thai}</strong>
+            <div style="font-size: 0.85rem; color: #0284c7; margin-top: 2px;">${v.ex}</div>
+            <div style="font-size: 0.8rem; color: #64748b;">${v.root}</div>
+          </td>
+          <td><button class="btn-speak" onclick="speakText('${v.hanzi}')">🔊</button></td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    // --- CLOZE QUIZ LOGIC ---
+    function renderClozeQuiz() {
+      const container = document.getElementById('clozeQuizList');
+      container.innerHTML = '';
+
+      CLOZE_DATA.forEach((q, idx) => {
+        const card = document.createElement('div');
+        card.className = 'quiz-card';
+        card.innerHTML = `
+          <div class="quiz-pinyin">${idx + 1}. ${q.pinyin}</div>
+          <div class="quiz-question zh">${idx + 1}. ${q.chinese}</div>
+          <div class="quiz-thai-trans">คำแปล: ${q.thai}</div>
+          <div class="quiz-options">
+            ${q.options.map(opt => `
+              <button class="opt-btn zh" onclick="checkChoice('${q.id}', '${opt.zh}', '${q.answer}', this, 'fb_${q.id}')">
+                <span>${opt.zh}</span>
+                <span class="opt-py">${opt.py}</span>
+              </button>
+            `).join('')}
+          </div>
+          <div id="fb_${q.id}" class="feedback-box"></div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // --- GRAMMAR QUIZ LOGIC ---
+    function renderGrammarQuiz() {
+      // You / Zai
+      const yzContainer = document.getElementById('grammarYouZaiList');
+      yzContainer.innerHTML = '';
+      GRAMMAR_YOU_ZAI.forEach((q, idx) => {
+        const card = document.createElement('div');
+        card.className = 'quiz-card';
+        card.innerHTML = `
+          <div class="quiz-pinyin">${idx + 1}. ${q.pinyin}</div>
+          <div class="quiz-question zh">${idx + 1}. ${q.chinese}</div>
+          <div class="quiz-thai-trans">คำแปล: ${q.thai}</div>
+          <div class="quiz-options">
+            ${q.options.map(opt => `
+              <button class="opt-btn zh" onclick="checkChoice('${q.id}', '${opt.zh}', '${q.answer}', this, 'fb_${q.id}')">
+                <span>${opt.zh}</span>
+                <span class="opt-py">${opt.py}</span>
+              </button>
+            `).join('')}
+          </div>
+          <div id="fb_${q.id}" class="feedback-box"></div>
+        `;
+        yzContainer.appendChild(card);
+      });
+
+      // Modal (Neng/Hui/Keyi)
+      const mContainer = document.getElementById('grammarModalList');
+      mContainer.innerHTML = '';
+      GRAMMAR_MODAL.forEach((q, idx) => {
+        const card = document.createElement('div');
+        card.className = 'quiz-card';
+        card.innerHTML = `
+          <div class="quiz-pinyin">${idx + 1}. ${q.pinyin}</div>
+          <div class="quiz-question zh">${idx + 1}. ${q.chinese}</div>
+          <div class="quiz-thai-trans">คำแปล: ${q.thai}</div>
+          <div class="quiz-options">
+            ${q.options.map(opt => `
+              <button class="opt-btn zh" onclick="checkChoice('${q.id}', '${opt.zh}', '${q.answer}', this, 'fb_${q.id}')">
+                <span>${opt.zh}</span>
+                <span class="opt-py">${opt.py}</span>
+              </button>
+            `).join('')}
+          </div>
+          <div id="fb_${q.id}" class="feedback-box"></div>
+        `;
+        mContainer.appendChild(card);
+      });
+    }
+
+    function checkChoice(qId, selected, correct, btn, fbId) {
+      const parent = btn.parentElement;
+      const fbBox = document.getElementById(fbId);
+
+      parent.querySelectorAll('.opt-btn').forEach(b => {
+        b.classList.remove('selected-correct', 'selected-wrong');
+      });
+
+      let item = CLOZE_DATA.find(x => x.id === qId) 
+              || GRAMMAR_YOU_ZAI.find(x => x.id === qId) 
+              || GRAMMAR_MODAL.find(x => x.id === qId);
+
+      if (selected === correct) {
+        btn.classList.add('selected-correct');
+        fbBox.className = 'feedback-box correct';
+        fbBox.innerHTML = `<strong>ถูกต้อง! (✓)</strong> ${item ? item.explain : ''}`;
+      } else {
+        btn.classList.add('selected-wrong');
+        fbBox.className = 'feedback-box wrong';
+        fbBox.innerHTML = `<strong>ยังไม่ถูกต้อง (✕)</strong> คำตอบที่ถูกคือ <strong>${correct}</strong><br>${item ? item.explain : ''}`;
+      }
+    }
+
+    // --- MAP SIMULATOR LOGIC ---
+    function showRoute(key) {
+      currentRouteKey = key;
+      const route = MAP_ROUTES[key];
+      if (!route) return;
+
+      document.querySelectorAll('.dest-btn').forEach(b => b.classList.remove('active'));
+      const activeBtn = Array.from(document.querySelectorAll('.dest-btn')).find(b => b.getAttribute('onclick').includes(key));
+      if (activeBtn) activeBtn.classList.add('active');
+
+      const pathEl = document.getElementById('routePath');
+      pathEl.setAttribute('d', route.pathD);
+
+      const anim = document.getElementById('pathAnimation');
+      anim.beginElement();
+
+      const pin = document.getElementById('targetPin');
+      pin.style.display = 'block';
+      document.getElementById('pinCircle').setAttribute('cx', route.pinX);
+      document.getElementById('pinCircle').setAttribute('cy', route.pinY);
+      document.getElementById('pinText').setAttribute('x', route.pinX);
+      document.getElementById('pinText').setAttribute('y', route.pinY + 4);
+
+      document.querySelectorAll('.bldg-group rect').forEach(r => {
+        if (!r.getAttribute('width').includes('10') && !r.getAttribute('height').includes('10')) {
+          r.setAttribute('fill', '#f8fafc');
+          r.setAttribute('stroke', '#334155');
+        }
+      });
+
+      const bldgId = `b_${key}`;
+      const targetBldg = document.getElementById(bldgId);
+      if (targetBldg) {
+        const bgRect = targetBldg.querySelector('rect');
+        if (bgRect) {
+          bgRect.setAttribute('fill', '#fef2f2');
+          bgRect.setAttribute('stroke', '#dc2626');
+        }
+      }
+
+      const display = document.getElementById('routeAnswerDisplay');
+      display.style.display = 'block';
+      document.getElementById('routeAnsTitle').innerText = route.title;
+      document.getElementById('routeAnsZh').innerText = route.zh;
+      document.getElementById('routeAnsPinyin').innerText = route.pinyin;
+      document.getElementById('routeAnsThai').innerText = route.thai;
+    }
+
+    // --- READING COMPREHENSION LOGIC ---
+    function renderReadingQuiz() {
+      const renderSection = (data, containerId, prefix) => {
+        const container = document.getElementById(containerId);
+        container.innerHTML = '';
+        data.forEach((item, idx) => {
+          const div = document.createElement('div');
+          div.className = 'quiz-card';
+          div.style.padding = '12px 16px';
+          div.innerHTML = `
+            <div style="font-size: 1.05rem; font-weight: 700; margin-bottom: 2px;" class="zh">${item.q}</div>
+            <div style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 8px;">แปลคำถาม: ${item.thaiQ}</div>
+            <div class="quiz-options">
+              <button class="opt-btn" onclick="checkTF('${prefix}_${idx}', true, ${item.ans}, '${item.explain.replace(/'/g, "\\'")}', this)">✓ ถูก (对 duì)</button>
+              <button class="opt-btn" onclick="checkTF('${prefix}_${idx}', false, ${item.ans}, '${item.explain.replace(/'/g, "\\'")}', this)">✕ ผิด (错 cuò)</button>
+            </div>
+            <div id="fb_${prefix}_${idx}" class="feedback-box"></div>
+          `;
+          container.appendChild(div);
+        });
+      };
+
+      renderSection(READING_Q1, 'readingQuiz1', 'rq1');
+      renderSection(READING_Q2, 'readingQuiz2', 'rq2');
+    }
+
+    function checkTF(id, selected, expected, explain, btn) {
+      const parent = btn.parentElement;
+      const fbBox = document.getElementById(`fb_${id}`);
+
+      parent.querySelectorAll('.opt-btn').forEach(b => b.classList.remove('selected-correct', 'selected-wrong'));
+
+      if (selected === expected) {
+        btn.classList.add('selected-correct');
+        fbBox.className = 'feedback-box correct';
+        fbBox.innerHTML = `<strong>ถูกต้อง!</strong> ${explain}`;
+      } else {
+        btn.classList.add('selected-wrong');
+        fbBox.className = 'feedback-box wrong';
+        fbBox.innerHTML = `<strong>ไม่ถูกต้อง!</strong> ${explain}`;
+      }
+    }
+
+    // --- TRANSLATION LIST LOGIC ---
+    function renderTranslationList() {
+      const container = document.getElementById('translationList');
+      container.innerHTML = '';
+
+      TRANSLATION_DATA.forEach((item, idx) => {
+        const card = document.createElement('div');
+        card.className = 'quiz-card';
+        card.innerHTML = `
+          <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 6px;">
+            <span class="bp-badge badge-pinyin">บท ${item.lesson}</span>
+            <button class="btn-speak" onclick="speakText('${item.zh}')">🔊 ฟังเสียง</button>
+          </div>
+          <div class="zh" style="font-size: 1.25rem; font-weight: 700; color: #991b1b; margin-bottom: 4px;">${idx + 1}. ${item.zh}</div>
+          <div style="font-size: 1rem; color: #0284c7; font-weight: 600; margin-bottom: 8px;">${item.pinyin}</div>
+          <div style="background: #f8fafc; border-left: 4px solid #16a34a; padding: 10px 14px; border-radius: 0 8px 8px 0; margin-bottom: 8px;">
+            <strong style="color: #15803d;">แปลไทย:</strong> ${item.thai}
+          </div>
+          <div class="deep-explain" style="margin-top: 4px;">
+            ${item.explain}
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+        // --- DYNAMIC FULL MOCK EXAM SYSTEM (130+ QUESTION POOL) ---
+    const MOCK_BANK = {
+  "part1a": [
+    {
+      "zh": "图书馆",
+      "py": "túshūguǎn",
+      "sound": "ถู-ซู-กวั่น",
+      "ans": "ห้องสมุด",
+      "distractors": [
+        "โรงอาหาร",
+        "สนามกีฬา",
+        "อาคารเรียน"
+      ],
+      "exp": "图书馆 (túshūguǎn) = ห้องสมุด (图 รูปภาพ + 书 หนังสือ + 馆 อาคาร)"
+    },
+    {
+      "zh": "借",
+      "py": "jiè",
+      "sound": "เจี้ย",
+      "ans": "ยืม",
+      "distractors": [
+        "คืน",
+        "ซื้อ",
+        "ขาย"
+      ],
+      "exp": "借 (jiè) = ยืม (หมวดคน 亻 แสดงการยืมระหว่างบุคคล)"
+    },
+    {
+      "zh": "还",
+      "py": "huán",
+      "sound": "ฮว๋าน",
+      "ans": "คืน (สิ่งของ)",
+      "distractors": [
+        "ยืม",
+        "ขอ",
+        "แลก"
+      ],
+      "exp": "还 (huán) = คืน (ระวัง: ถ้าอ่าน hái จะแปลว่า 'ยังคง')"
+    },
+    {
+      "zh": "借条",
+      "py": "jiètiáo",
+      "sound": "เจี้ย-เถียว",
+      "ans": "สัญญายืม / ใบยืม",
+      "distractors": [
+        "ตั๋วรถ",
+        "ใบเสร็จ",
+        "บัตรประชาชน"
+      ],
+      "exp": "借条 (jiètiáo) = เอกสารการยืม / สัญญายืม"
+    },
+    {
+      "zh": "干净",
+      "py": "gānjìng",
+      "sound": "กาน-จิ้ง",
+      "ans": "สะอาด",
+      "distractors": [
+        "เงียบสงบ",
+        "สกปรก",
+        "สวยงาม"
+      ],
+      "exp": "干净 (gānjìng) = สะอาด (干 แห้ง + 净 บริสุทธิ์/เกลี้ยง)"
+    },
+    {
+      "zh": "安静",
+      "py": "ānjìng",
+      "sound": "อาน-จิ้ง",
+      "ans": "เงียบสงบ",
+      "distractors": [
+        "สะอาด",
+        "เสียงดัง",
+        "วุ่นวาย"
+      ],
+      "exp": "安静 (ānjìng) = เงียบสงบ (安 สงบ + 静 นิ่ง)"
+    },
+    {
+      "zh": "体育馆",
+      "py": "tǐyùguǎn",
+      "sound": "ถี่-ยู่-กวั่น",
+      "ans": "โรงยิม / โรงพละ",
+      "distractors": [
+        "ห้องสมุด",
+        "สนามกีฬา",
+        "อาคารเรียน"
+      ],
+      "exp": "体育馆 (tǐyùguǎn) = โรงพละ/โรงยิม (体育 กีฬา + 馆 อาคาร)"
+    },
+    {
+      "zh": "操场",
+      "py": "cāochǎng",
+      "sound": "เชา-ฉ่าง",
+      "ans": "สนามกีฬา / ลานกีฬา",
+      "distractors": [
+        "โรงอาหาร",
+        "สี่แยก",
+        "หอพัก"
+      ],
+      "exp": "操场 (cāochǎng) = สนามกีฬา/ลานกว้างกลางแจ้ง (操 ฝึก + 场 ลานกว้างหมวดดิน 土)"
+    },
+    {
+      "zh": "卫生间",
+      "py": "wèishēngjiān",
+      "sound": "เว่ย-เซิง-เจียน",
+      "ans": "ห้องน้ำ / สุขา",
+      "distractors": [
+        "ห้องนอน",
+        "ห้องเรียน",
+        "ห้องทำงาน"
+      ],
+      "exp": "卫生间 (wèishēngjiān) = ห้องน้ำ (卫生 สุขอนามัย + 间 ห้อง)"
+    },
+    {
+      "zh": "教学楼",
+      "py": "jiàoxuélóu",
+      "sound": "เจี้ยว-เสวีย-โหลว",
+      "ans": "อาคารเรียน / ตึกเรียน",
+      "distractors": [
+        "หอพัก",
+        "โรงพละ",
+        "โรงอาหาร"
+      ],
+      "exp": "教学楼 (jiàoxuélóu) = อาคารเรียน (教学 การเรียนการสอน + 楼 ตึก)"
+    },
+    {
+      "zh": "蛋糕",
+      "py": "dàngāo",
+      "sound": "ต้าน-เกา",
+      "ans": "ขนมเค้ก",
+      "distractors": [
+        "ของขวัญ",
+        "ช็อกโกแลต",
+        "ขนมปัง"
+      ],
+      "exp": "蛋糕 (dàngāo) = เค้ก (蛋 ไข่ + 糕 ขนมแป้งฟู)"
+    },
+    {
+      "zh": "礼物",
+      "py": "lǐwù",
+      "sound": "หลี่-อู้",
+      "ans": "ของขวัญ",
+      "distractors": [
+        "เค้ก",
+        "ดอกไม้",
+        "เสื้อผ้า"
+      ],
+      "exp": "礼物 (lǐwù) = ของขวัญ (礼 มารยาท + 物 สิ่งของ)"
+    },
+    {
+      "zh": "准备",
+      "py": "zhǔnbèi",
+      "sound": "จุ่น-เป้ย",
+      "ans": "เตรียมตัว / ตระเตรียม",
+      "distractors": [
+        "เริ่มต้น",
+        "ตัดสินใจ",
+        "เดินทาง"
+      ],
+      "exp": "准备 (zhǔnbèi) = เตรียมตัว/จัดเตรียม เช่น 准备礼物"
+    },
+    {
+      "zh": "拐",
+      "py": "guǎi",
+      "sound": "กวั่ย",
+      "ans": "เลี้ยว",
+      "distractors": [
+        "ตรงไป",
+        "หยุด",
+        "ข้าม"
+      ],
+      "exp": "拐 (guǎi) = เลี้ยว เช่น 往右拐 (เลี้ยวขวา)"
+    },
+    {
+      "zh": "十字路口",
+      "py": "shízìlùkǒu",
+      "sound": "สือ-จื้อ-ลู่-โข่ว",
+      "ans": "สี่แยก",
+      "distractors": [
+        "สามแยก",
+        "ป้ายรถเมล์",
+        "สถานีรถไฟ"
+      ],
+      "exp": "十字路口 (shízìlùkǒu) = สี่แยก (ตัดกันรูปเลขสิบ 十)"
+    },
+    {
+      "zh": "主意",
+      "py": "zhǔyi",
+      "sound": "จู่-ยิ",
+      "ans": "ความคิด / ไอเดีย",
+      "distractors": [
+        "ความสุข",
+        "เรื่องราว",
+        "ปัญหา"
+      ],
+      "exp": "主意 (zhǔyi) = ไอเดีย เช่น 主意挺不错的"
+    },
+    {
+      "zh": "巧克力",
+      "py": "qiǎokèlì",
+      "sound": "เฉี่ยว-เค่อ-ลี่",
+      "ans": "ช็อกโกแลต",
+      "distractors": [
+        "ลูกอม",
+        "ไอศกรีม",
+        "ขนมเค้ก"
+      ],
+      "exp": "巧克力 (qiǎokèlì) = ช็อกโกแลต (ทับศัพท์เสียง)"
+    },
+    {
+      "zh": "一直",
+      "py": "yìzhí",
+      "sound": "อี้-จื๋อ",
+      "ans": "ตรงไปเรื่อยๆ / ตลอด",
+      "distractors": [
+        "บางครั้ง",
+        "เลี้ยวโค้ง",
+        "หยุด"
+      ],
+      "exp": "一直 (yìzhí) = ตรงไปตลอด เช่น 一直往前走"
+    },
+    {
+      "zh": "甜",
+      "py": "tián",
+      "sound": "เถียน",
+      "ans": "หวาน",
+      "distractors": [
+        "เค็ม",
+        "เผ็ด",
+        "เปรี้ยว"
+      ],
+      "exp": "甜 (tián) = หวาน เช่น 有点儿甜 (หวานไปหน่อย)"
+    },
+    {
+      "zh": "束",
+      "py": "shù",
+      "sound": "ซู่",
+      "ans": "ช่อ (ลักษณนาม)",
+      "distractors": [
+        "ใบ",
+        "เล่ม",
+        "ชิ้น"
+      ],
+      "exp": "束 (shù) = ช่อ (ลักษณนามดอกไม้ เช่น 一束花)"
+    },
+    {
+      "zh": "方向",
+      "py": "fāngxiàng",
+      "sound": "ฟัง-เซี่ยง",
+      "ans": "ทิศทาง",
+      "distractors": [
+        "สถานที่",
+        "ระยะทาง",
+        "ป้ายรถ"
+      ],
+      "exp": "方向 (fāngxiàng) = ทิศทาง เช่น 天安门方向"
+    },
+    {
+      "zh": "马路",
+      "py": "mǎlù",
+      "sound": "หม่า-ลู่",
+      "ans": "ถนนใหญ่ / ถนน",
+      "distractors": [
+        "สะพานลอย",
+        "ซอย",
+        "ทางเท้า"
+      ],
+      "exp": "马路 (mǎlù) = ถนนใหญ่ เช่น 过马路 (ข้ามถนน)"
+    },
+    {
+      "zh": "大概",
+      "py": "dàgài",
+      "sound": "ต้า-ก้าย",
+      "ans": "ประมาณ / ราวๆ",
+      "distractors": [
+        "แน่นอน",
+        "ทั้งหมด",
+        "จริงๆ"
+      ],
+      "exp": "大概 (dàgài) = ประมาณ/ราวๆ เช่น 大概两百米"
+    },
+    {
+      "zh": "晚饭",
+      "py": "wǎnfàn",
+      "sound": "หว่าน-ฟั่น",
+      "ans": "อาหารเย็น / ข้าวเย็น",
+      "distractors": [
+        "อาหารเช้า",
+        "อาหารกลางวัน",
+        "ของว่าง"
+      ],
+      "exp": "晚饭 (wǎnfàn) = ข้าวเย็น (晚 ค่ำ + 饭 ข้าว)"
+    },
+    {
+      "zh": "方便",
+      "py": "fāngbiàn",
+      "sound": "ฟาง-เปี้ยน",
+      "ans": "สะดวก / สะดวกสบาย",
+      "distractors": [
+        "สบายกาย",
+        "รวดเร็ว",
+        "ง่ายดาย"
+      ],
+      "exp": "方便 (fāngbiàn) = สะดวกสบาย (การสัญจร)"
+    }
+  ],
+  "part1b": [
+    {
+      "thai": "จักรยาน",
+      "ans": "自行车",
+      "distractors": [
+        "公共汽车",
+        "出租车",
+        "摩托车"
+      ],
+      "exp": "自行车 (zìxíngchē) = จักรยาน (ขี่จักรยาน: 骑自行车)"
+    },
+    {
+      "thai": "รถประจำทาง / รถเมล์",
+      "ans": "公共汽车",
+      "distractors": [
+        "出租车",
+        "自行车",
+        "地铁"
+      ],
+      "exp": "公共汽车 (gōnggòng qìchē) = รถเมล์ (นั่งรถเมล์: 坐公共汽车)"
+    },
+    {
+      "thai": "รถแท็กซี่",
+      "ans": "出租车",
+      "distractors": [
+        "公共汽车",
+        "地铁",
+        "火车"
+      ],
+      "exp": "出租车 (chūzūchē) = รถแท็กซี่ หรือ 打车"
+    },
+    {
+      "thai": "รถไฟใต้ดิน",
+      "ans": "地铁",
+      "distractors": [
+        "飞机",
+        "公共汽车",
+        "火车站"
+      ],
+      "exp": "地铁 (dìtiě) = รถไฟใต้ดิน (地 ใต้ดิน + 铁 รางเหล็ก)"
+    },
+    {
+      "thai": "เดิน / เดินเท้า",
+      "ans": "走路",
+      "distractors": [
+        "跑步",
+        "骑车",
+        "坐车"
+      ],
+      "exp": "走路 (zǒulù) = เดินด้วยเท้า"
+    },
+    {
+      "thai": "ขี่ (จักรยาน/ม้า)",
+      "ans": "骑",
+      "distractors": [
+        "坐",
+        "开",
+        "走"
+      ],
+      "exp": "骑 (qí) = ขี่ (ใช้กับยานพาหนะที่ต้องคร่อมทรงตัว เช่น 骑自行车)"
+    },
+    {
+      "thai": "นั่ง (รถเมล์/รถไฟ)",
+      "ans": "坐",
+      "distractors": [
+        "骑",
+        "开",
+        "等"
+      ],
+      "exp": "坐 (zuò) = นั่งโดยสาร เช่น 坐公共汽车, 坐出租车"
+    },
+    {
+      "thai": "น่าเบื่อ / ไม่มีอะไรสนุก",
+      "ans": "没意思",
+      "distractors": [
+        "睡懒觉",
+        "看起来",
+        "好好儿"
+      ],
+      "exp": "没意思 (méi yìsi) = น่าเบื่อ ไม่มีอะไรสนุก"
+    },
+    {
+      "thai": "นอนตื่นสาย",
+      "ans": "睡懒觉",
+      "distractors": [
+        "看电视",
+        "去跳舞",
+        "包饺子"
+      ],
+      "exp": "睡懒觉 (shuì lǎnjiào) = นอนตื่นสาย (懒 = ขี้เกียจ)"
+    },
+    {
+      "thai": "แผนการ / จัดการ / กำหนดการ",
+      "ans": "安排",
+      "distractors": [
+        "不同",
+        "主意",
+        "打算"
+      ],
+      "exp": "安排 (ānpái) = แผนการ/นัดหมาย เช่น 有什么安排"
+    },
+    {
+      "thai": "ดูเหมือนว่า / ดูท่าทาง",
+      "ans": "看起来",
+      "distractors": [
+        "没意思",
+        "好好儿",
+        "舒服"
+      ],
+      "exp": "看起来 (kàn qilai) = ดูเหมือนว่า ดูท่าทาง"
+    },
+    {
+      "thai": "ห่อเกี๊ยว",
+      "ans": "包饺子",
+      "distractors": [
+        "做蛋糕",
+        "买衣服",
+        "洗衣服"
+      ],
+      "exp": "包饺子 (bāo jiǎozi) = ห่อเกี๊ยว (包 ห่อ + 饺子 เกี๊ยว)"
+    },
+    {
+      "thai": "เต้นรำ",
+      "ans": "跳舞",
+      "distractors": [
+        "唱歌",
+        "听音乐",
+        "看电影"
+      ],
+      "exp": "跳舞 (tiào wǔ) = เต้นรำ เช่น 去迪厅跳舞"
+    },
+    {
+      "thai": "การแสดงดนตรี / คอนเสิร์ต",
+      "ans": "音乐会",
+      "distractors": [
+        "电影院",
+        "图书馆",
+        "迪厅"
+      ],
+      "exp": "音乐会 (yīnyuèhuì) = คอนเสิร์ต/งานแสดงดนตรี"
+    },
+    {
+      "thai": "อย่างเต็มที่ / อย่างดี",
+      "ans": "好好儿",
+      "distractors": [
+        "特别",
+        "看起来",
+        "大概"
+      ],
+      "exp": "好好儿 (hǎohāor) = อย่างเต็มที่ เช่น 好好儿玩儿玩儿"
+    },
+    {
+      "thai": "ดูโทรทัศน์ / ดูทีวี",
+      "ans": "看电视",
+      "distractors": [
+        "看电影",
+        "看书",
+        "听音乐"
+      ],
+      "exp": "看电视 (kàn diànshì) = ดูโทรทัศน์"
+    },
+    {
+      "thai": "เดินเล่น / ช้อปปิ้ง",
+      "ans": "逛商店",
+      "distractors": [
+        "买东西",
+        "出去玩儿",
+        "去散步"
+      ],
+      "exp": "逛商店 (guàng shāngdiàn) = เดินเล่นซื้อของตามห้าง/ร้านค้า"
+    },
+    {
+      "thai": "ไม่เหมือนกัน / แตกต่าง",
+      "ans": "不同",
+      "distractors": [
+        "一样",
+        "特别",
+        "便宜"
+      ],
+      "exp": "不同 (bù tóng) = ไม่เหมือนกัน แตกต่าง (不 ไม่ + 同 เหมือน)"
+    },
+    {
+      "thai": "สบาย (ทางกายภาพ/เบาะนั่ง)",
+      "ans": "舒服",
+      "distractors": [
+        "方便",
+        "高兴",
+        "安静"
+      ],
+      "exp": "舒服 (shūfu) = สบายทางกายภาพ เช่น 坐出租车很舒服"
+    },
+    {
+      "thai": "หอพัก",
+      "ans": "宿舍",
+      "distractors": [
+        "教室",
+        "食堂",
+        "书店"
+      ],
+      "exp": "宿舍 (sùshè) = หอพักนักศึกษา"
+    }
+  ],
+  "part2": [
+    {
+      "qZh": "车站 ______ 这儿不远。",
+      "qPy": "Chēzhàn ______ zhèr bù yuǎn.",
+      "thai": "ป้ายรถเมล์ ______ จากที่นี่ไม่ไกล",
+      "ans": "离",
+      "distractors": [
+        "从",
+        "过",
+        "拐"
+      ],
+      "exp": "ใช้โครงสร้างบอกระยะห่าง: สถานที่ A + 离 (lí) + สถานที่ B + 不远"
+    },
+    {
+      "qZh": "你先坐 809 路公共汽车，______ 换 334 路。",
+      "qPy": "Nǐ xiān zuò 809 lù... ______ huàn 334 lù.",
+      "thai": "คุณนั่งสาย 809 ก่อน ______ ค่อยต่อสาย 334",
+      "ans": "然后",
+      "distractors": [
+        "以后",
+        "再",
+        "从"
+      ],
+      "exp": "โครงสร้างลำดับ: 先...然后... (ทำสิ่งแรกก่อน 'จากนั้น' ค่อยทำสิ่งถัดไป)"
+    },
+    {
+      "qZh": "我家附近没有 ______。",
+      "qPy": "Wǒ jiā fùjìn méiyǒu ______.",
+      "thai": "แถวบ้านฉันไม่มี ______",
+      "ans": "地铁",
+      "distractors": [
+        "方向",
+        "马路",
+        "车站"
+      ],
+      "exp": "ในบทเรียนที่ 17: 我家附近没有地铁 (แถวบ้านฉันไม่มีรถไฟใต้ดิน)"
+    },
+    {
+      "qZh": "去银行，从这儿 ______ 往前走。",
+      "qPy": "Qù yínháng, cóng zhèr ______ wǎng qián zǒu.",
+      "thai": "ไปธนาคาร จากตรงนี้เดินตรงไปข้างหน้า ______",
+      "ans": "一直",
+      "distractors": [
+        "大概",
+        "然后",
+        "离"
+      ],
+      "exp": "一直 (yìzhí) + 往前走 = เดินตรงไปข้างหน้าเรื่อยๆ"
+    },
+    {
+      "qZh": "天安门 ______ 的车站是在马路南边。",
+      "qPy": "Tiān'ānmén ______ de chēzhàn shì zài mǎlù nánbian.",
+      "thai": "ป้ายรถเมล์ฝั่ง ______ เทียนอันเหมินอยู่ฝั่งใต้ของถนน",
+      "ans": "方向",
+      "distractors": [
+        "地铁",
+        "马路",
+        "十字路口"
+      ],
+      "exp": "天安门方向 (Tiān'ānmén fāngxiàng) = ทิศทางที่จะไปเทียนอันเหมิน"
+    },
+    {
+      "qZh": "学校离图书馆很近，______ 两百五十米。",
+      "qPy": "Xuéxiào lí túshūguǎn hěn jìn, ______ liǎng bǎi wǔshí mǐ.",
+      "thai": "โรงเรียนอยู่ใกล้ห้องสมุดมาก ______ 250 เมตร",
+      "ans": "大概",
+      "distractors": [
+        "一直",
+        "不同",
+        "挺"
+      ],
+      "exp": "大概 (dàgài) + จำนวนตัวเลข = กะประมาณราวๆ"
+    },
+    {
+      "qZh": "到了十字路口往右 ______，饭店在右边。",
+      "qPy": "Dàole shízìlùkǒu wǎng yòu ______, fàndiàn zài yòubian.",
+      "thai": "พอถึงสี่แยกให้ ______ ขวา ร้านอาหารอยู่ทางขวา",
+      "ans": "拐",
+      "distractors": [
+        "走",
+        "过",
+        "离"
+      ],
+      "exp": "往右拐 (wǎng yòu guǎi) = เลี้ยวขวา"
+    },
+    {
+      "qZh": "车站方向在马路北边 ______ 南边？",
+      "qPy": "Chēzhàn fāngxiàng zài mǎlù běibian ______ nánbian?",
+      "thai": "ทิศทางป้ายรถเมล์อยู่ฝั่งทิศเหนือ ______ ฝั่งทิศใต้ของถนน?",
+      "ans": "还是",
+      "distractors": [
+        "或者",
+        "然后",
+        "因为"
+      ],
+      "exp": "还是 (háishi) ใช้ถาม 'หรือว่า' ในประโยคคำถามเสมอ"
+    },
+    {
+      "qZh": "这个周末你有什么 ______？",
+      "qPy": "Zhè ge zhōumò nǐ yǒu shénme ______?",
+      "thai": "สุดสัปดาห์นี้คุณมี ______ อะไรบ้าง?",
+      "ans": "安排",
+      "distractors": [
+        "意思",
+        "蛋糕",
+        "衣服"
+      ],
+      "exp": "有什么安排 (yǒu shénme ānpái) = มีแผนการหรือกำหนดการอะไร"
+    },
+    {
+      "qZh": "每个周末，我都觉得 ______。",
+      "qPy": "Měi ge zhōumò, wǒ dōu juéde ______.",
+      "thai": "ทุกๆ วันสุดสัปดาห์ ฉันรู้สึก ______ ไปหมด",
+      "ans": "没意思",
+      "distractors": [
+        "特别",
+        "好看",
+        "容易"
+      ],
+      "exp": "觉得没意思 (juéde méi yìsi) = รู้สึกน่าเบื่อ ไม่มีอะไรทำ"
+    },
+    {
+      "qZh": "我打算明天去图书馆 ______ 一本书。",
+      "qPy": "Wǒ dǎsuan míngtiān qù túshūguǎn ______ yì běn shū.",
+      "thai": "ฉันวางแผนว่าพรุ่งนี้จะไปห้องสมุดเพื่อ ______ หนังสือหนึ่งเล่ม",
+      "ans": "借",
+      "distractors": [
+        "还",
+        "买",
+        "送"
+      ],
+      "exp": "去图书馆借书 = ไปห้องสมุดเพื่อยืมหนังสือ"
+    },
+    {
+      "qZh": "下星期五我一定把词典 ______ 给你。",
+      "qPy": "Xià xīngqīwǔ wǒ yídìng bǎ cídiǎn ______ gěi nǐ.",
+      "thai": "วันศุกร์หน้าฉันจะเอาพจนานุกรม ______ ให้คุณแน่นอน",
+      "ans": "还",
+      "distractors": [
+        "借",
+        "拿",
+        "买"
+      ],
+      "exp": "把词典还给你 = คืนพจนานุกรมให้แก่คุณ (还 = คืน)"
+    },
+    {
+      "qZh": "骑自行车去学校很 ______。",
+      "qPy": "Qí zìxíngchē qù xuéxiào hěn ______.",
+      "thai": "ขี่จักรยานไปโรงเรียน ______ มาก",
+      "ans": "方便",
+      "distractors": [
+        "舒服",
+        "干净",
+        "特别"
+      ],
+      "exp": "很方便 = สะดวกสบายมาก (ความสะดวกในการเดินทาง)"
+    },
+    {
+      "qZh": "从这儿到天安门，你得 ______ 809 路。",
+      "qPy": "Cóng zhèr dào Tiān'ānmén, nǐ děi ______ 809 lù.",
+      "thai": "จากที่นี่ไปเทียนอันเหมิน คุณต้อง ______ สาย 809",
+      "ans": "坐",
+      "distractors": [
+        "骑",
+        "开",
+        "走"
+      ],
+      "exp": "坐 + สายรถประจำทาง = นั่งโดยสารรถสาย..."
+    },
+    {
+      "qZh": "弟弟很喜欢 ______ 自行车去公园。",
+      "qPy": "Dìdi hěn xǐhuan ______ zìxíngchē qù gōngyuán.",
+      "thai": "น้องชายชอบ ______ จักรยานไปสวนสาธารณะมาก",
+      "ans": "骑",
+      "distractors": [
+        "坐",
+        "开",
+        "拐"
+      ],
+      "exp": "骑自行车 = ขี่จักรยาน (กริยา 骑 ใช้กับจักรยาน/มอเตอร์ไซค์)"
+    },
+    {
+      "qZh": "马路上车很多，你 ______ 马路要小心。",
+      "qPy": "Mǎlù shang chē hěn duō, nǐ ______ mǎlù yào xiǎoxīn.",
+      "thai": "บนถนนรถเยอะมาก คุณ ______ ถนนต้องระวัง",
+      "ans": "过",
+      "distractors": [
+        "拐",
+        "走",
+        "离"
+      ],
+      "exp": "过马路 (guò mǎlù) = ข้ามถนน"
+    },
+    {
+      "qZh": "我们宿舍每天都很 ______。",
+      "qPy": "Wǒmen sùshè měitiān dōu hěn ______.",
+      "thai": "หอพักของพวกเราทุกวัน ______ มาก",
+      "ans": "干净",
+      "distractors": [
+        "方便",
+        "安排",
+        "打算"
+      ],
+      "exp": "很干净 (hěn gānjìng) = สะอาดมาก"
+    },
+    {
+      "qZh": "明天是我妈妈的生日，我打算 ______ 一件礼物。",
+      "qPy": "Míngtiān shì wǒ māma de shēngrì, wǒ dǎsuan ______ yí jiàn lǐwù.",
+      "thai": "พรุ่งนี้เป็นวันเกิดคุณแม่ ฉันวางแผนว่าจะ ______ ของขวัญหนึ่งชิ้น",
+      "ans": "准备",
+      "distractors": [
+        "安排",
+        "借",
+        "还"
+      ],
+      "exp": "准备礼物 (zhǔnbèi lǐwù) = ตระเตรียมของขวัญ"
+    },
+    {
+      "qZh": "他送给我一 ______ 漂亮的鲜花。",
+      "qPy": "Tā sòng gěi wǒ yì ______ piàoliang de xiānhuā.",
+      "thai": "เขามอบดอกไม้สดแสนสวยหนึ่ง ______ ให้แก่ฉัน",
+      "ans": "束",
+      "distractors": [
+        "本",
+        "件",
+        "个"
+      ],
+      "exp": "一束花 (yí shù huā) = ดอกไม้ 1 ช่อ (束 เป็นลักษณนามช่อดอกไม้)"
+    },
+    {
+      "qZh": "这个主意 ______ 不错的，我们听你的吧。",
+      "qPy": "Zhè ge zhǔyi ______ búcuò de, wǒmen tīng nǐ de ba.",
+      "thai": "ไอเดียนี้ ______ ดีทีเดียว พวกเราเอาตามคุณเถอะ",
+      "ans": "挺",
+      "distractors": [
+        "太",
+        "真",
+        "很"
+      ],
+      "exp": "โครงสร้าง 挺...的 (tǐng...de) = ค่อนข้าง...ทีเดียว"
+    }
+  ],
+  "part3a": [
+    {
+      "qZh": "明天我们 ______ 去一次，好吗？",
+      "qPy": "Míngtiān wǒmen ______ qù yí cì, hǎo ma?",
+      "thai": "พรุ่งนี้พวกเราไปอีกครั้ง ได้ไหม?",
+      "ans": "再",
+      "distractors": [
+        "又"
+      ],
+      "exp": "มีคำว่า 明天 (พรุ่งนี้) แสดงอนาคตที่ยังไม่เกิดขึ้น ➔ ต้องใช้ 再 (zài)"
+    },
+    {
+      "qZh": "他昨天迟到了一次，今天 ______ 迟到了。",
+      "qPy": "Tā zuótiān chídào le yí cì, jīntiān ______ chídào le.",
+      "thai": "เมื่อวานเขามาสายไปรอบนึง วันนี้ก็มาสายอีกแล้ว",
+      "ans": "又",
+      "distractors": [
+        "再"
+      ],
+      "exp": "มี 迟到了 เกิดขึ้นแล้วจริงในวันนี้ ➔ ต้องใช้ 又 (yòu)"
+    },
+    {
+      "qZh": "我吃了一碗面条，______ 喝了一杯咖啡。",
+      "qPy": "Wǒ chī le yì wǎn miàntiáo, ______ hē le yì bēi kāfēi.",
+      "thai": "ฉันกินบะหมี่ไปชามนึง แล้วก็ดื่มกาแฟไปอีกแก้ว",
+      "ans": "又",
+      "distractors": [
+        "再"
+      ],
+      "exp": "การกระทำทั้งสองเกิดขึ้นแล้ว (มี 喝了一杯...) ➔ ใช้ 又 (yòu)"
+    },
+    {
+      "qZh": "天气冷了，昨天下雨，今天 ______ 下雨。",
+      "qPy": "Tiānqì lěng le, zuótiān xià yǔ, jīntiān ______ xià yǔ.",
+      "thai": "อากาศหนาวแล้ว เมื่อวานฝนตก วันนี้ก็ตกอีก",
+      "ans": "又",
+      "distractors": [
+        "再"
+      ],
+      "exp": "ฝนตกซ้ำเกิดขึ้นแล้วจริงในวันนี้ ➔ ใช้ 又 (yòu)"
+    },
+    {
+      "qZh": "这个问题我昨天问过你，今天你 ______ 问我？",
+      "qPy": "Zhè ge wèntí wǒ zuótiān wèn guò nǐ, jīntiān nǐ ______ wèn wǒ?",
+      "thai": "คำถามนี้เมื่อวานฉันเคยถามเธอ วันนี้เธอมาถามฉันอีกแล้วเหรอ?",
+      "ans": "又",
+      "distractors": [
+        "再"
+      ],
+      "exp": "การถามซ้ำเกิดขึ้นแล้วในวันนี้ ➔ ใช้ 又 (yòu)"
+    },
+    {
+      "qZh": "我想明天 ______ 去看你。",
+      "qPy": "Wǒ xiǎng míngtiān ______ qù kàn nǐ.",
+      "thai": "ฉันอยากจะไปหาเธออีกในวันพรุ่งนี้",
+      "ans": "再",
+      "distractors": [
+        "又"
+      ],
+      "exp": "มี 明天 (พรุ่งนี้) และ 想 (อยากจะ) เป็นความตั้งใจในอนาคต ➔ ใช้ 再 (zài)"
+    },
+    {
+      "qZh": "她买了一瓶可乐，______ 买了一瓶啤酒。",
+      "qPy": "Tā mǎi le yì píng kělè, ______ mǎi le yì píng píjiǔ.",
+      "thai": "เธอซื้อโคล่าไปขวดนึง แล้วก็ซื้อเบียร์ไปอีกขวดนึง",
+      "ans": "又",
+      "distractors": [
+        "再"
+      ],
+      "exp": "ซื้อไปแล้วทั้งสองสิ่ง (买了...) ➔ ใช้ 又 (yòu)"
+    },
+    {
+      "qZh": "昨天我忘了带书，今天 ______ 忘了。",
+      "qPy": "Zuótiān wǒ wàng le dài shū, jīntiān ______ wàng le.",
+      "thai": "เมื่อวานฉันลืมเอาหนังสือมา วันนี้ก็ลืมอีกแล้ว",
+      "ans": "又",
+      "distractors": [
+        "再"
+      ],
+      "exp": "ลืมอีกแล้ว เกิดขึ้นจริงแล้วในวันนี้ ➔ ใช้ 又 (yòu)"
+    },
+    {
+      "qZh": "他上个月去北京，这个月 ______ 去了上海。",
+      "qPy": "Tā shàng ge yuè qù Běijīng, zhè ge yuè ______ qù le Shànghǎi.",
+      "thai": "เดือนที่แล้วเขาไปปักกิ่ง เดือนนี้ก็ไปเซี่ยงไฮ้อีกแล้ว",
+      "ans": "又",
+      "distractors": [
+        "再"
+      ],
+      "exp": "มี 去了 แสดงว่าการไปเซี่ยงไฮ้เกิดขึ้นแล้ว ➔ ใช้ 又 (yòu)"
+    },
+    {
+      "qZh": "明天我们 ______ 见面吧。",
+      "qPy": "Míngtiān wǒmen ______ jiànmiàn ba.",
+      "thai": "พรุ่งนี้พวกเราค่อยเจอกันอีกทีเถอะ",
+      "ans": "再",
+      "distractors": [
+        "又"
+      ],
+      "exp": "มี 明天 และคำลงท้ายชวน 吧 สื่อถึงอนาคต ➔ ใช้ 再 (zài)"
+    },
+    {
+      "qZh": "这本词典很好，我打算 ______ 买一本。",
+      "qPy": "Zhè běn cídiǎn hěn hǎo, wǒ dǎsuan ______ mǎi yì běn.",
+      "thai": "พจนานุกรมเล่มนี้ดีมาก ฉันวางแผนจะซื้ออีกเล่มหนึ่ง",
+      "ans": "再",
+      "distractors": [
+        "又"
+      ],
+      "exp": "มี 打算 (วางแผนว่าจะ) เป็นเจตนาในอนาคต ➔ ใช้ 再 (zài)"
+    },
+    {
+      "qZh": "你刚才说得太快了，请 ______ 说一遍。",
+      "qPy": "Nǐ gāngcái shuō de tài kuài le, qǐng ______ shuō yí biàn.",
+      "thai": "เมื่อกี้เธอพูดเร็วเกินไป ได้โปรดพูดซ้ำอีกรอบหนึ่ง",
+      "ans": "再",
+      "distractors": [
+        "又"
+      ],
+      "exp": "ประโยคขอร้องให้ทำซ้ำในอนาคต (请...再说一遍) ➔ ใช้ 再 (zài)"
+    },
+    {
+      "qZh": "他上星期感冒了，这星期 ______ 感冒了。",
+      "qPy": "Tā shàng xīngqī gǎnmào le, zhè xīngqī ______ gǎnmào le.",
+      "thai": "สัปดาห์ก่อนเขาเป็นหวัด สัปดาห์นี้ก็เป็นหวัดอีกแล้ว",
+      "ans": "又",
+      "distractors": [
+        "再"
+      ],
+      "exp": "เป็นหวัดซ้ำเกิดขึ้นแล้วจริง (มี 了) ➔ ใช้ 又 (yòu)"
+    },
+    {
+      "qZh": "欢迎你下星期 ______ 来我们学校玩儿。",
+      "qPy": "Huānyíng nǐ xià xīngqī ______ lái wǒmen xuéxiào wánr.",
+      "thai": "ยินดีต้อนรับให้คุณมาเที่ยวโรงเรียนพวกเราอีกในสัปดาห์หน้า",
+      "ans": "再",
+      "distractors": [
+        "又"
+      ],
+      "exp": "คำเชิญชวนในอนาคต 下星期 ➔ ใช้ 再 (zài)"
+    },
+    {
+      "qZh": "明天 ______ 是周末，太高兴了！",
+      "qPy": "Míngtiān ______ shì zhōumò, tài gāoxìng le!",
+      "thai": "พรุ่งนี้ก็เป็นสุดสัปดาห์อีกแล้ว ดีใจจังเลย!",
+      "ans": "又",
+      "distractors": [
+        "再"
+      ],
+      "exp": "วงรอบตามธรรมชาติที่เวียนมาถึงอีกครั้ง ใช้สำนวน 又...了 / 又是... ➔ ใช้ 又 (yòu)"
+    }
+  ],
+  "part3b": [
+    {
+      "qZh": "他学了三年汉语，现在 ______ 说得很流利。",
+      "qPy": "Tā xué le sān nián hànyǔ, xiànzài ______ shuō de hěn liúlì.",
+      "thai": "เขาเรียนภาษาจีนมาสามปี ตอนนี้สามารถพูดได้อย่างคล่องแคล่ว",
+      "ans": "会",
+      "distractors": [
+        "能",
+        "可以"
+      ],
+      "exp": "ทักษะความสามารถที่เกิดจากการเรียนรู้ฝึกฝน (学了三年) ➔ ใช้ 会 (huì)"
+    },
+    {
+      "qZh": "他明天不舒服，______ 来上课吗？",
+      "qPy": "Tā míngtiān bù shūfu, ______ lái shàngkè ma?",
+      "thai": "พรุ่งนี้เขาไม่สบาย จะมาเรียนไหว/ได้ไหม?",
+      "ans": "能",
+      "distractors": [
+        "会",
+        "可以"
+      ],
+      "exp": "สภาพความพร้อมทางร่างกาย (ไม่สบายจะมาไหวไหม) ➔ ใช้ 能 (néng)"
+    },
+    {
+      "qZh": "你游泳游得很好，你从小就 ______ 游泳吗？",
+      "qPy": "Nǐ yóuyǒng yóu de hěn hǎo, nǐ cóngxiǎo jiù ______ yóuyǒng ma?",
+      "thai": "เธอว่ายน้ำเก่งมาก เธอว่ายน้ำเป็นตั้งแต่เด็กเลยเหรอ?",
+      "ans": "会",
+      "distractors": [
+        "能",
+        "可以"
+      ],
+      "exp": "ว่ายน้ำ (游泳) เป็นทักษะที่ต้องฝึกฝนจึงทำเป็น ➔ ใช้ 会 (huì)"
+    },
+    {
+      "qZh": "这条路人很多，公共汽车不 ______ 开进去。",
+      "qPy": "Zhè tiáo lù rén hěn duō, gōnggòng qìchē bù ______ kāi jìnqu.",
+      "thai": "ถนนเส้นนี้คนเยอะมาก รถประจำทางไม่สามารถขับเข้าไปได้",
+      "ans": "能",
+      "distractors": [
+        "会",
+        "可以"
+      ],
+      "exp": "เงื่อนไขสภาพแวดล้อมภายนอกไม่อำนวย ➔ ใช้ 不能 (bù néng)"
+    },
+    {
+      "qZh": "大卫不 ______ 开车，每天他坐公共汽车去上班。",
+      "qPy": "Dàwèi bù ______ kāichē, měitiān tā zuò gōnggòng qìchē qù shàngbān.",
+      "thai": "เดวิดขับรถไม่เป็น ทุกวันเขานั่งรถเมล์ไปทำงาน",
+      "ans": "会",
+      "distractors": [
+        "能",
+        "可以"
+      ],
+      "exp": "ขับรถ (开车) เป็นทักษะ 'ขับไม่เป็น' ➔ ใช้ 不会 (bú huì)"
+    },
+    {
+      "qZh": "我今天头很疼，不 ______ 去打球。",
+      "qPy": "Wǒ jīntiān tóu hěn téng, bù ______ qù dǎ qiú.",
+      "thai": "วันนี้ฉันปวดหัวมาก ไปเล่นบอลไม่ไหว",
+      "ans": "能",
+      "distractors": [
+        "会",
+        "可以"
+      ],
+      "exp": "ร่างกายไม่พร้อม (ปวดหัว) ➔ ใช้ 不能 (bù néng)"
+    },
+    {
+      "qZh": "我妹妹三岁就 ______ 说英语了。",
+      "qPy": "Wǒ mèimei sān suì jiù ______ shuō Yīngyǔ le.",
+      "thai": "น้องสาวฉันอายุ 3 ขวบก็พูดภาษาอังกฤษเป็นแล้ว",
+      "ans": "会",
+      "distractors": [
+        "能",
+        "可以"
+      ],
+      "exp": "ความสามารถทางภาษาเกิดจากการเรียนรู้ ➔ ใช้ 会 (huì)"
+    },
+    {
+      "qZh": "明天我有时间，我们 ______ 一起去看电影。",
+      "qPy": "Míngtiān wǒ yǒu shíjiān, wǒmen ______ yìqǐ qù kàn diànyǐng.",
+      "thai": "พรุ่งนี้ฉันมีเวลา พวกเราสามารถไปดูหนังด้วยกันได้นะ",
+      "ans": "可以",
+      "distractors": [
+        "会",
+        "能"
+      ],
+      "exp": "ข้อเสนอแนะหรือความเป็นไปได้ (พวกเราไปด้วยกันได้นะ) ➔ ใช้ 可以 (kěyǐ)"
+    },
+    {
+      "qZh": "医生说她生病了，今天不 ______ 出门。",
+      "qPy": "Yīshēng shuō tā shēngbìng le, jīntiān bù ______ chūmén.",
+      "thai": "หมอบอกว่าเธอป่วย วันนี้จึงออกไปข้างนอกไม่ได้",
+      "ans": "能",
+      "distractors": [
+        "会",
+        "可以"
+      ],
+      "exp": "ป่วย สภาพร่างกายไม่อำนวยตามคำสั่งแพทย์ ➔ ใช้ 不能 (bù néng)"
+    },
+    {
+      "qZh": "外面下大雨了，我们现在不 ______ 出去。",
+      "qPy": "Wàimiàn xià dàyǔ le, wǒmen xiànzài bù ______ chūqu.",
+      "thai": "ข้างนอกฝนตกหนักมาก ตอนนี้พวกเราออกไปไม่ได้",
+      "ans": "能",
+      "distractors": [
+        "会",
+        "可以"
+      ],
+      "exp": "ฝนตกหนักเป็นอุปสรรคทางสถานการณ์ ➔ ใช้ 不能 (bù néng)"
+    },
+    {
+      "qZh": "图书馆里不 ______ 大声说话。",
+      "qPy": "Túshūguǎn li bù ______ dàshēng shuōhuà.",
+      "thai": "ในห้องสมุดห้าม/ไม่อนุญาตให้ส่งเสียงดัง",
+      "ans": "可以",
+      "distractors": [
+        "会",
+        "能"
+      ],
+      "exp": "กฎระเบียบข้อห้าม (ไม่อนุญาต) ➔ ใช้ 不可以 (bù kěyǐ)"
+    },
+    {
+      "qZh": "老师，请问我 ______ 进教室吗？",
+      "qPy": "Lǎoshī, qǐngwèn wǒ ______ jìn jiàoshì ma?",
+      "thai": "อาจารย์ครับ ขอถามหน่อยผมขออนุญาตเข้าห้องเรียนได้ไหม?",
+      "ans": "可以",
+      "distractors": [
+        "会",
+        "能"
+      ],
+      "exp": "การขออนุญาตอย่างสุภาพ ➔ ใช้ 可以 (kěyǐ)"
+    },
+    {
+      "qZh": "他喝了酒，今天不 ______ 开车。",
+      "qPy": "Tā hē le jiǔ, jīntiān bù ______ kāichē.",
+      "thai": "เขาดื่มเหล้ามา วันนี้ขับรถไม่ได้ (สภาพไม่พร้อม/ผิดกฎหมาย)",
+      "ans": "能",
+      "distractors": [
+        "会",
+        "可以"
+      ],
+      "exp": "ดื่มเหล้า สภาพร่างกายไม่พร้อมขับ ➔ ใช้ 不能 (bù néng)"
+    },
+    {
+      "qZh": "你包的饺子真好看，你在哪儿学会 ______ 包饺子的？",
+      "qPy": "Nǐ bāo de jiǎozi zhēn hǎokàn, nǐ zài nǎr xuéhuì ______ bāo jiǎozi de?",
+      "thai": "เกี๊ยวที่เธอห่อสวยจัง เธอเรียนรู้วิธีห่อเกี๊ยวเป็นมาจากที่ไหน?",
+      "ans": "会",
+      "distractors": [
+        "能",
+        "可以"
+      ],
+      "exp": "การห่อเกี๊ยวเป็นทักษะฝีมือที่เรียนรู้มา ➔ ใช้ 会 (huì)"
+    },
+    {
+      "qZh": "请问，这里 ______ 用信用卡付钱吗？",
+      "qPy": "Qǐngwèn, zhèlǐ ______ yòng xìnyòngkǎ fù qián ma?",
+      "thai": "ขอถามหน่อย ที่นี่สามารถใช้บัตรเครดิตจ่ายเงินได้ไหม?",
+      "ans": "可以",
+      "distractors": [
+        "会",
+        "能"
+      ],
+      "exp": "ถามถึงเงื่อนไขการอนุญาต/ระบบที่ร้านรองรับ ➔ ใช้ 可以 (kěyǐ)"
+    }
+  ],
+  "part4": [
+    {
+      "qZh": "从这儿去书店怎么走？(Qù shūdiàn zěnme zǒu?)",
+      "target": "书店 (ร้านหนังสือ)",
+      "ans": "一直往前走，到体育馆往右拐，往前走，书店在右边。",
+      "distractors": [
+        "一直往前走，到体育馆往右拐，往前走，书店在左边。",
+        "一直往前走，到操场往左拐，书店在前面。",
+        "一直往前走，到教学楼往右拐，书店在左边。"
+      ],
+      "exp": "จากแผนที่ใบงาน 17: เดินตรงไปถึงโรงยิมเลี้ยวขวา เดินไปข้างหน้า ร้านหนังสือ (书店) อยู่ฝั่งขวา (右边)"
+    },
+    {
+      "qZh": "从这儿去教学楼怎么走？(Qù jiàoxuélóu zěnme zǒu?)",
+      "target": "教学楼 (อาคารเรียน)",
+      "ans": "一直往前走，到体育馆往右拐，一直往前走，教学楼在前面。",
+      "distractors": [
+        "一直往前走，到商店往右拐，教学楼在右边。",
+        "一直往前走，到体育馆往左拐，教学楼在左边。",
+        "一直往前走，到银行往右拐，教学楼在右边。"
+      ],
+      "exp": "จากแผนที่ใบงาน 17: เดินตรงไปถึงโรงยิมเลี้ยวขวา เดินตรงไปเรื่อยๆ อาคารเรียน (教学楼) อยู่ข้างหน้าตรงสุดทาง (在前面)"
+    },
+    {
+      "qZh": "从这儿去电影院怎么走？(Qù diànyǐngyuàn zěnme zǒu?)",
+      "target": "电影院 (โรงภาพยนตร์)",
+      "ans": "一直往前走，到体育馆往右拐，往前走，电影院在左边。",
+      "distractors": [
+        "一直往前走，到体育馆往右拐，往前走，电影院在右边。",
+        "一直往前走，到银行往左拐，电影院在前面。",
+        "一直往前走，到操场往右拐，电影院在左边。"
+      ],
+      "exp": "จากแผนที่ใบงาน 17: เดินตรงไปถึงโรงยิมเลี้ยวขวา เดินไปข้างหน้า โรงภาพยนตร์ (电影院) อยู่ฝั่งซ้าย (左边) ตรงข้ามธนาคาร"
+    },
+    {
+      "qZh": "从这儿去银行怎么走？(Qù yínháng zěnme zǒu?)",
+      "target": "银行 (ธนาคาร)",
+      "ans": "一直往前走，到体育馆往右拐，往前走，银行在右边。",
+      "distractors": [
+        "一直往前走，到体育馆往右拐，往前走，银行在左边。",
+        "一直往前走，到教学楼往左拐，银行在前面。",
+        "一直往前走，到书店往右拐，银行在左边。"
+      ],
+      "exp": "จากแผนที่ใบงาน 17: เดินตรงไปถึงโรงยิมเลี้ยวขวา เดินไปข้างหน้า ธนาคาร (银行) อยู่ฝั่งขวา (右边)"
+    },
+    {
+      "qZh": "去卫生间怎么走？(Qù wèishēngjiān zěnme zǒu?)",
+      "target": "卫生间 (ห้องน้ำ)",
+      "ans": "一直往前走，到体育馆往右拐，往前走，卫生间在左边。",
+      "distractors": [
+        "一直往前走，到体育馆往右拐，往前走，卫生间在右边。",
+        "一直往前走，到操场往右拐，卫生间在前面。",
+        "一直往前走，到教学楼往右拐，卫生间在左边。"
+      ],
+      "exp": "จากแผนที่ใบงาน 17: ตัวอย่างข้อสอบระบุชัดเจน ห้องน้ำ (卫生间) อยู่ฝั่งซ้าย (左边) ตรงข้ามร้านหนังสือ"
+    },
+    {
+      "qZh": "从这儿去食堂怎么走？(Qù shítáng zěnme zǒu?)",
+      "target": "食堂 (โรงอาหาร)",
+      "ans": "一直往前走，到体育馆往右拐，往前走，到教学楼往右拐，往前走，食堂在左边。",
+      "distractors": [
+        "一直往前走，到体育馆往右拐，往前走，食堂在右边。",
+        "一直往前走，到操场往左拐，食堂在前面。",
+        "一直往前走，到书店往右拐，食堂在右边。"
+      ],
+      "exp": "จากแผนที่ใบงาน 17: เดินไปถึงหน้าอาคารเรียน เลี้ยวขวาเข้าไป โรงอาหาร (食堂) อยู่ฝั่งซ้ายมือ (在左边)"
+    },
+    {
+      "qZh": "从这儿去图书馆怎么走？(Qù túshūguǎn zěnme zǒu?)",
+      "target": "图书馆 (ห้องสมุด)",
+      "ans": "一直往前走，到体育馆往右拐，往前走，到操场往右拐，往前走，图书馆在左边。",
+      "distractors": [
+        "一直往前走，到体育馆往左拐，图书馆在右边。",
+        "一直往前走，到教学楼往右拐，图书馆在前面。",
+        "一直往前走，到银行往左拐，图书馆在左边。"
+      ],
+      "exp": "จากแผนที่ใบงาน 17: เดินถึงข้างสนาม เลี้ยวขวาเดินตรงไป ห้องสมุด (图书馆) อยู่ฝั่งซ้าย (左边)"
+    },
+    {
+      "qZh": "从这儿去体育馆怎么走？(Qù tǐyùguǎn zěnme zǒu?)",
+      "target": "体育馆 (โรงยิม)",
+      "ans": "一直往前走，体育馆就在前面。",
+      "distractors": [
+        "一直往前走，到十字路口往右拐，体育馆在右边。",
+        "一直往前走，到操场往左拐，体育馆在左边。",
+        "一直往前走，到银行往右拐，体育馆在前面。"
+      ],
+      "exp": "จากจุดเริ่มต้นทางเข้าด้านล่าง: เดินตรงไปข้างหน้าตลอด โรงยิม (体育馆) อยู่ตรงหน้าแยกเลี้ยวแรก"
+    }
+  ],
+  "part5": [
+    {
+      "passage": "xiaoming",
+      "qZh": "“小明”来这里很多次。",
+      "thaiQ": "เสี่ยวหมิงมาที่นี่หลายครั้งแล้ว",
+      "ans": "错 (ผิด)",
+      "distractors": [
+        "对 (ถูก)"
+      ],
+      "exp": "ในบทความระบุว่า: 小明第一次来这里 (เพิ่งมาครั้งแรก) จึงผิด ✕"
+    },
+    {
+      "passage": "xiaoming",
+      "qZh": "邮局在超市东边。",
+      "thaiQ": "ไปรษณีย์อยู่ทางทิศตะวันออกของซูเปอร์มาร์เก็ต",
+      "ans": "错 (ผิด)",
+      "distractors": [
+        "对 (ถูก)"
+      ],
+      "exp": "ในเรื่องบอกว่า: 往西走大概 100 米 (เดินไปทางทิศตะวันตก 西) ไม่ใช่ทิศตะวันออก จึงผิด ✕"
+    },
+    {
+      "passage": "xiaoming",
+      "qZh": "邮局离超市大概 100 米。",
+      "thaiQ": "ไปรษณีย์อยู่ห่างจากซูเปอร์มาร์เก็ตประมาณ 100 เมตร",
+      "ans": "对 (ถูก)",
+      "distractors": [
+        "错 (ผิด)"
+      ],
+      "exp": "ถูกต้อง ✓ ตรงกับข้อความ 往西走大概 100 米"
+    },
+    {
+      "passage": "xiaoming",
+      "qZh": "邮局在马路北边。",
+      "thaiQ": "ไปรษณีย์อยู่ทางฝั่งเหนือของถนน",
+      "ans": "错 (ผิด)",
+      "distractors": [
+        "对 (ถูก)"
+      ],
+      "exp": "ในเรื่องบอกว่า: 马路南边的那座楼是邮局 (อยู่ฝั่งใต้ 南边) จึงผิด ✕"
+    },
+    {
+      "passage": "xiaoming",
+      "qZh": "“小明”不知道怎么去邮局。",
+      "thaiQ": "เสี่ยวหมิงไม่รู้วิธีไปไปรษณีย์",
+      "ans": "对 (ถูก)",
+      "distractors": [
+        "错 (ผิด)"
+      ],
+      "exp": "ถูกต้อง ✓ ตรงกับประโยค 他不知道邮局在哪儿，所以问了一个朋友"
+    },
+    {
+      "passage": "xiaoming",
+      "qZh": "小明打算骑自行车去邮局寄包裹。",
+      "thaiQ": "เสี่ยวหมิงตั้งใจจะขี่จักรยานไปส่งพัสดุที่ไปรษณีย์",
+      "ans": "对 (ถูก)",
+      "distractors": [
+        "错 (ผิด)"
+      ],
+      "exp": "ถูกต้อง ✓ ตรงกับบทความที่ระบุว่าขี่จักรยานไปส่งพัสดุ"
+    },
+    {
+      "passage": "xiaoming",
+      "qZh": "明天是小明的妈妈的生日。",
+      "thaiQ": "พรุ่งนี้เป็นวันเกิดของคุณแม่เสี่ยวหมิง",
+      "ans": "对 (ถูก)",
+      "distractors": [
+        "错 (ผิด)"
+      ],
+      "exp": "ถูกต้อง ✓ ตรงกับประโยคเปิดเรื่อง 明天是小明的妈妈的生日"
+    },
+    {
+      "passage": "myhome",
+      "qZh": "“我”家离学校很近。",
+      "thaiQ": "บ้านของฉันอยู่ใกล้โรงเรียนมาก",
+      "ans": "对 (ถูก)",
+      "distractors": [
+        "错 (ผิด)"
+      ],
+      "exp": "ถูกต้อง ✓ ในเรื่องบอก 我家离学校不远 (ไม่ไกล = ใกล้ 近)"
+    },
+    {
+      "passage": "myhome",
+      "qZh": "“我”家附近没有公共汽车到学校。",
+      "thaiQ": "แถวบ้านฉันไม่มีรถเมล์ไปโรงเรียน",
+      "ans": "错 (ผิด)",
+      "distractors": [
+        "对 (ถูก)"
+      ],
+      "exp": "ผิด ✕ เพราะในเรื่องระบุว่ามีรถเมล์สาย 758 และ 831 นั่งไปถึงโรงเรียนได้"
+    },
+    {
+      "passage": "myhome",
+      "qZh": "从“我”家去天安门，要先坐地铁，然后换 47 路。",
+      "thaiQ": "จากบ้านฉันไปเทียนอันเหมิน ต้องนั่งรถไฟใต้ดินก่อนแล้วค่อยต่อสาย 47",
+      "ans": "错 (ผิด)",
+      "distractors": [
+        "对 (ถูก)"
+      ],
+      "exp": "ผิด ✕ ข้อสอบหลอกคำว่า 地铁 เพราะในเรื่องระบุว่าต้องนั่งรถเมล์สาย 109 (แถวบ้านไม่มีรถไฟใต้ดิน)"
+    },
+    {
+      "passage": "myhome",
+      "qZh": "758 路、831 路公共汽车都到“我们”学校。",
+      "thaiQ": "รถเมล์สาย 758 และ 831 ล้วนไปถึงโรงเรียนของเรา",
+      "ans": "对 (ถูก)",
+      "distractors": [
+        "错 (ผิด)"
+      ],
+      "exp": "ถูกต้อง ✓ ตรงกับประโยค 坐 758 路、831 路公共汽车都能到学校"
+    },
+    {
+      "passage": "myhome",
+      "qZh": "“我”每天坐地铁去学校。",
+      "thaiQ": "ฉันนั่งรถไฟใต้ดินไปโรงเรียนทุกวัน",
+      "ans": "错 (ผิด)",
+      "distractors": [
+        "对 (ถูก)"
+      ],
+      "exp": "ผิด ✕ เพราะในเรื่องระบุชัดเจนว่า 我家附近没有地铁 (แถวบ้านไม่มีรถไฟใต้ดิน)"
+    }
+  ],
+  "part6": [
+    {
+      "qZh": "明天是我朋友的生日，我做一个蛋糕送给她，你说好不好？",
+      "qPy": "Míngtiān shì wǒ péngyou de shēngrì, wǒ zuò yí ge dàngāo sòng gěi tā, nǐ shuō hǎo bu hǎo?",
+      "ans": "พรุ่งนี้เป็นวันเกิดเพื่อนของฉัน ฉันจะทำเค้กหนึ่งก้อนมอบให้เธอ เธอว่าดีไหม?",
+      "distractors": [
+        "เมื่อวานเป็นวันเกิดเพื่อนฉัน ฉันซื้อเค้กให้เขา ดีมากเลย",
+        "พรุ่งนี้เพื่อนจะมาหาฉันที่บ้าน เราจะทำเค้กด้วยกันดีไหม?",
+        "วันเกิดของฉันพรุ่งนี้ เพื่อนทำเค้กให้ฉันก้อนหนึ่ง น่ากินมาก"
+      ],
+      "exp": "แปลตรงตามสำนวน 送给她 = มอบให้เธอ, 你说好不好 = เธอว่าดีไหม"
+    },
+    {
+      "qZh": "巧克力有点儿甜，她不喜欢甜的。",
+      "qPy": "Qiǎokèlì yǒudiǎnr tián, tā bù xǐhuan tián de.",
+      "ans": "ช็อกโกแลตหวานไปหน่อย เธอไม่ชอบของหวาน",
+      "distractors": [
+        "ช็อกโกแลตอร่อยมาก เธอชอบกินของหวาน",
+        "ช็อกโกแลตนี้ไม่ค่อยหวาน เธอชอบมาก",
+        "ช็อกโกแลตแพงไปหน่อย เธอเลยไม่ซื้อ"
+      ],
+      "exp": "有点儿甜 = หวานไปหน่อย (สื่อความหมายเชิงลบ), 不喜欢甜的 = ไม่ชอบของหวาน"
+    },
+    {
+      "qZh": "那么送一束花吧，每个女孩子都喜欢花。",
+      "qPy": "Nàme sòng yí shù huā ba, měi ge nǚ háizi dōu xǐhuan huā.",
+      "ans": "ถ้าอย่างนั้นก็มอบดอกไม้สักช่อสิ เด็กผู้หญิงทุกคนชอบดอกไม้ทั้งนั้น",
+      "distractors": [
+        "งั้นซื้อดอกไม้ให้เพื่อนนะ เพราะทุกคนชอบดอกไม้เหมือนกัน",
+        "ถ้าให้ดอกไม้หนึ่งดอก ผู้หญิงทุกคนจะไม่ชอบ",
+        "ดอกไม้นี้สวยมาก ฉันอยากมอบให้ผู้หญิงทุกคน"
+      ],
+      "exp": "一束花 = ดอกไม้ 1 ช่อ (束 ลักษณนามดอกไม้), 每个...都... = ทุกๆ...ล้วน..."
+    },
+    {
+      "qZh": "这个主意挺不错的。",
+      "qPy": "Zhè ge zhǔyi tǐng búcuò de.",
+      "ans": "ไอเดียนี้ดีมากเลยทีเดียว / ความคิดนี้ค่อนข้างดีเลย",
+      "distractors": [
+        "ความคิดนี้ไม่ค่อยดีเท่าไหร่",
+        "เรื่องนี้ไม่มีความหมายอะไรเลย",
+        "ของขวัญชิ้นนี้น่ารักมากทีเดียว"
+      ],
+      "exp": "主意 = ความคิด/ไอเดีย, 挺...的 = ค่อนข้าง...ทีเดียว, 不错 = ไม่เลว/ดีมาก"
+    },
+    {
+      "qZh": "明天又是周末，太高兴了！",
+      "qPy": "Míngtiān yòu shì zhōumò, tài gāoxìng le!",
+      "ans": "พรุ่งนี้ก็เป็นสุดสัปดาห์อีกแล้ว ดีใจจังเลย!",
+      "distractors": [
+        "พรุ่งนี้จะไปเที่ยววันหยุด มีความสุขมาก",
+        "สัปดาห์หน้าเป็นวันเกิดเพื่อน ดีใจเหลือเกิน",
+        "สุดสัปดาห์นี้ไม่มีเรียน ดีใจที่สุด"
+      ],
+      "exp": "又是周末 = เป็นสุดสัปดาห์อีกแล้ว (又 แสดงการวนรอบซ้ำ), 太高兴了 = ดีใจเหลือเกิน"
+    },
+    {
+      "qZh": "周末可以好好儿玩儿玩儿，你不喜欢吗？",
+      "qPy": "Zhōumò kěyǐ hǎohāor wánrwanr, nǐ bù xǐhuan ma?",
+      "ans": "วันสุดสัปดาห์สามารถเที่ยวเล่นได้อย่างเต็มที่ เธอไม่ชอบเหรอ?",
+      "distractors": [
+        "วันหยุดสุดสัปดาห์น่าเบื่อมาก เธอไม่ชอบใช่ไหม?",
+        "สุดสัปดาห์เธอจะไปเที่ยวเล่นที่ไหนบ้าง ชอบไหม?",
+        "วันหยุดพักผ่อนสบายๆ ไม่ต้องไปไหน เธอชอบไหม?"
+      ],
+      "exp": "好好儿玩儿玩儿 = เที่ยวเล่นได้อย่างเต็มที่, 你不喜欢吗 = เธอไม่ชอบเหรอ"
+    },
+    {
+      "qZh": "在宿舍里看看电视，洗洗衣服，做做作业，睡睡懒觉……",
+      "qPy": "Zài sùshè li kànkan diànshì, xǐxi yīfu, zuòzuo zuòyè, shuìshui lǎnjiào...",
+      "ans": "อยู่ในหอพัก ดูทีวีบ้าง ซักเสื้อผ้าบ้าง ทำการบ้านบ้าง นอนตื่นสายบ้าง...",
+      "distractors": [
+        "อยู่ในห้องนอน อ่านหนังสือ ทำการบ้าน แล้วก็นอนหลับสบาย",
+        "อยู่ที่บ้าน ดูหนังกับเพื่อน ซักผ้า แล้วก็นอนดึกทุกวัน",
+        "ไปหอพักเพื่อน ดูทีวี ทำกับข้าว แล้วก็คุยกันทั้งคืน"
+      ],
+      "exp": "ซ้ำคำกริยา AA แสดงการทำกิจกรรมผ่อนคลายสบายๆ ในวันหยุด"
+    },
+    {
+      "qZh": "我每个周末都有不同的安排。",
+      "qPy": "Wǒ měi ge zhōumò dōu yǒu bù tóng de ānpái.",
+      "ans": "ฉันมีแผนการที่ไม่ซ้ำกันในทุกๆ วันสุดสัปดาห์",
+      "distractors": [
+        "ทุกวันสุดสัปดาห์ฉันไม่มีแผนจะไปไหนเลย",
+        "สุดสัปดาห์นี้ฉันมีแผนจะไปเที่ยวกับเพื่อนหลายคน",
+        "เพื่อนของฉันมีแผนการเดินทางในวันหยุดที่แตกต่างกัน"
+      ],
+      "exp": "不同的安排 = แผนการที่ไม่เหมือนกัน/ไม่ซ้ำกัน"
+    },
+    {
+      "qZh": "请问，743 路汽车到天安门吗？",
+      "qPy": "Qǐngwèn, 743 lù qìchē dào Tiān'ānmén ma?",
+      "ans": "ขอถามหน่อย รถประจำทางสาย 743 ไปถึงเทียนอันเหมินไหม?",
+      "distractors": [
+        "ขอถามหน่อย ป้ายรถเมล์สาย 743 อยู่ทางไหน?",
+        "ขอโทษนะครับ มีรถไฟใต้ดินไปเทียนอันเหมินไหม?",
+        "ขอถามหน่อย รถเมล์คันนี้จะไปจอดที่ไหนบ้าง?"
+      ],
+      "exp": "请问 = ขอถามหน่อย, ...路汽车 = รถเมล์สาย..., 到...吗 = ไปถึง...ไหม"
+    },
+    {
+      "qZh": "你从这儿一直往前走，到十字路口往右拐，往西走大概 50 米。",
+      "qPy": "Nǐ cóng zhèr yìzhí wǎng qián zǒu, dào shízìlùkǒu wǎng yòu guǎi, wǎng xī zǒu dàgài 50 mǐ.",
+      "ans": "คุณเดินตรงไปข้างหน้าจากตรงนี้เรื่อยๆ พอถึงสี่แยกให้เลี้ยวขวา เดินไปทางทิศตะวันตกประมาณ 50 เมตร",
+      "distractors": [
+        "คุณเดินจากที่นี่ไปทางซ้าย ถึงสามแยกเลี้ยวขวา เดินไปประมาณ 50 เมตร",
+        "จากตรงนี้เดินตรงไป ถึงสี่แยกเลี้ยวซ้าย เดินไปทางทิศตะวันออก 50 เมตร",
+        "คุณเดินตรงไปตามถนน ถึงทางแยกให้เลี้ยวขวา เดินไป 500 เมตร"
+      ],
+      "exp": "一直往前走 (เดินตรงไปเรื่อยๆ) + 十字路口 (สี่แยก) + 往右拐 (เลี้ยวขวา) + 往西走 (เดินไปทางทิศตะวันตก)"
+    },
+    {
+      "qZh": "天安门方向的车站是在马路北边还是南边？",
+      "qPy": "Tiān'ānmén fāngxiàng de chēzhàn shì zài mǎlù běibian háishi nánbian?",
+      "ans": "ป้ายรถเมล์ฝั่งทิศทางที่จะไปเทียนอันเหมิน อยู่ฝั่งเหนือหรือฝั่งใต้ของถนน?",
+      "distractors": [
+        "ป้ายรถเมล์สายเทียนอันเหมินจะมาตอนเช้าหรือตอนบ่าย?",
+        "คุณจะนั่งรถเมล์ไปเทียนอันเหมินหรือรถไฟใต้ดิน?",
+        "ถนนฝั่งทิศเหนือมีทางไปเทียนอันเหมินใช่หรือไม่?"
+      ],
+      "exp": "方向 = ทิศทาง, 还是 = หรือว่า (คำถามเลือกอย่างใดอย่างหนึ่ง), 北边/南边 = ฝั่งเหนือ/ฝั่งใต้"
+    },
+    {
+      "qZh": "我家离车站不远，大概五百米。",
+      "qPy": "Wǒ jiā lí chēzhàn bù yuǎn, dàgài wǔbǎi mǐ.",
+      "ans": "บ้านของฉันอยู่ไม่ไกลจากสถานีรถ ประมาณ 500 เมตร",
+      "distractors": [
+        "บ้านของฉันอยู่ใกล้โรงเรียน นั่งรถไป 500 เมตร",
+        "สถานีรถอยู่ไกลจากบ้านฉันมาก ประมาณ 5 กิโลเมตร",
+        "จากบ้านฉันเดินไปป้ายรถเมล์ใช้เวลา 5 นาที"
+      ],
+      "exp": "A 离 B 不远 = A อยู่ห่างจาก B ไม่ไกล, 大概 = ประมาณ"
+    },
+    {
+      "qZh": "这本书我看了两遍，很有意思。",
+      "qPy": "Zhè běn shū wǒ kàn le liǎng biàn, hěn yǒu yìsi.",
+      "ans": "หนังสือเล่มนี้ฉันอ่านไปแล้วสองรอบ น่าสนใจมาก",
+      "distractors": [
+        "หนังสือสองเล่มนี้ฉันอ่านจบแล้ว สนุกมาก",
+        "ฉันอ่านหนังสือเล่มนี้มาสองวัน มีประโยชน์มาก",
+        "หนังสือเล่มนี้ยากมาก ฉันอ่านไม่เข้าใจเลย"
+      ],
+      "exp": "两遍 (liǎng biàn) = สองรอบ/สองเที่ยว (อ่านตั้งแต่ต้นจนจบ), 很有意思 = น่าสนใจมาก"
+    },
+    {
+      "qZh": "坐出租车虽然很舒服，但是有点儿贵。",
+      "qPy": "Zuò chūzūchē suīrán hěn shūfu, dànshì yǒudiǎnr guì.",
+      "ans": "การนั่งรถแท็กซี่แม้ว่าจะนั่งสบายมาก แต่ว่าค่อนข้างแพงไปหน่อย",
+      "distractors": [
+        "นั่งรถแท็กซี่สะดวกสบายมาก และราคาไม่แพงเลย",
+        "แม้ว่าแท็กซี่จะแพง แต่ฉันก็นั่งทุกวันเพราะสบาย",
+        "นั่งรถเมล์แม้จะไม่สบายเท่าแท็กซี่ แต่ประหยัดเงิน"
+      ],
+      "exp": "虽然...但是... = แม้ว่า...แต่ว่า..., 舒服 = สบาย, 有点儿贵 = แพงไปหน่อย"
+    },
+    {
+      "qZh": "今天我有事，不能跟你一起去买东西了。",
+      "qPy": "Jīntiān wǒ yǒu shì, bù néng gēn nǐ yìqǐ qù mǎi dōngxi le.",
+      "ans": "วันนี้ฉันติดธุระ ไม่สามารถไปซื้อของพร้อมกับคุณได้แล้ว",
+      "distractors": [
+        "วันนี้ฉันไม่มีเงิน เลยไปซื้อของกับคุณไม่ได้",
+        "วันนี้ฉันมีเรียน ไม่ว่างคุยโทรศัพท์กับคุณ",
+        "พรุ่งนี้ฉันติดธุระ ไปเดินห้างกับคุณไม่ได้แล้ว"
+      ],
+      "exp": "有事 = มีธุระ/ติดธุระ, 不能 = ไม่สามารถ (ติดอุปสรรคทางสถานการณ์)"
+    }
+  ]
+};
+
+    let examSessionCount = 1;
+    let currentExamQuestions = [];
+    let currentExamSubmitted = false;
+    let examTimerSeconds = 40 * 60;
+    let examTimerInterval = null;
+    let examTimerPaused = false;
+    let mockPinyinHidden = false;
+
+    // Helper: Fisher-Yates array shuffle
+    function shuffleArray(arr) {
+      const a = [...arr];
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    // Helper: Pick n random unique items from array
+    function sampleRandom(arr, n) {
+      const shuffled = shuffleArray(arr);
+      return shuffled.slice(0, Math.min(n, shuffled.length));
+    }
+
+    // Generate fresh randomized mock exam based on mode
+    function generateNewMockExam() {
+      const modeSelect = document.getElementById('mockExamMode');
+      const mode = modeSelect ? modeSelect.value : 'standard';
+
+      let counts = {};
+      let timerDuration = 40;
+
+      if (mode === 'full') {
+        // ชุดจัดเต็ม 45 ข้อตามโครงสร้างใบงาน
+        counts = { p1a: 5, p1b: 5, p2: 10, p3a: 5, p3b: 5, p4: 5, p5: 5, p6: 5 };
+        timerDuration = 60;
+      } else if (mode === 'speed') {
+        // ชุดด่วนสปีดรัน 15 ข้อ
+        counts = { p1a: 2, p1b: 2, p2: 3, p3a: 2, p3b: 2, p4: 1, p5: 1, p6: 2 };
+        timerDuration = 20;
+      } else {
+        // ชุดมาตรฐาน 30 ข้อ (30 คะแนน)
+        counts = { p1a: 3, p1b: 3, p2: 6, p3a: 3, p3b: 3, p4: 4, p5: 4, p6: 4 };
+        timerDuration = 40;
+      }
+
+      // Select randomized items from bank
+      const s1a = sampleRandom(MOCK_BANK.part1a, counts.p1a).map(item => ({
+        part: 1,
+        partName: "ตอนที่ 1: คำศัพท์ (จีน ➔ ไทย)",
+        type: "p1a",
+        qText: item.zh,
+        qPy: item.py,
+        qSound: item.sound,
+        audioText: item.zh,
+        ans: item.ans,
+        opts: shuffleArray([item.ans, ...item.distractors]),
+        exp: item.exp
+      }));
+
+      const s1b = sampleRandom(MOCK_BANK.part1b, counts.p1b).map(item => ({
+        part: 1,
+        partName: "ตอนที่ 1: คำศัพท์ (ไทย ➔ จีน)",
+        type: "p1b",
+        qText: `คำว่า '${item.thai}' ในภาษาจีนตรงกับข้อใด?`,
+        qPy: "",
+        qSound: "",
+        audioText: item.ans,
+        ans: item.ans,
+        opts: shuffleArray([item.ans, ...item.distractors]),
+        exp: item.exp
+      }));
+
+      const s2 = sampleRandom(MOCK_BANK.part2, counts.p2).map(item => ({
+        part: 2,
+        partName: "ตอนที่ 2: เติมคำในช่องว่าง (ตัวเลือกจีนล้วน)",
+        type: "p2",
+        qText: item.qZh,
+        qPy: item.qPy,
+        qThai: item.thai,
+        audioText: item.qZh.replace('______', item.ans),
+        ans: item.ans,
+        opts: shuffleArray([item.ans, ...item.distractors]),
+        exp: item.exp
+      }));
+
+      const s3a = sampleRandom(MOCK_BANK.part3a, counts.p3a).map(item => ({
+        part: 3,
+        partName: "ตอนที่ 3: ไวยากรณ์ (又 vs 再)",
+        type: "p3a",
+        qText: item.qZh,
+        qPy: item.qPy,
+        qThai: item.thai,
+        audioText: item.qZh.replace('______', item.ans),
+        ans: item.ans,
+        opts: shuffleArray([item.ans, ...item.distractors]),
+        exp: item.exp
+      }));
+
+      const s3b = sampleRandom(MOCK_BANK.part3b, counts.p3b).map(item => ({
+        part: 3,
+        partName: "ตอนที่ 3: ไวยากรณ์ (能 vs 会 vs 可以)",
+        type: "p3b",
+        qText: item.qZh,
+        qPy: item.qPy,
+        qThai: item.thai,
+        audioText: item.qZh.replace('______', item.ans),
+        ans: item.ans,
+        opts: shuffleArray([item.ans, ...item.distractors]),
+        exp: item.exp
+      }));
+
+      const s4 = sampleRandom(MOCK_BANK.part4, counts.p4).map(item => ({
+        part: 4,
+        partName: "ตอนที่ 4: การบอกทางจากแผนที่ใบงาน 17",
+        type: "p4",
+        qText: `จากแผนที่: '${item.qZh}' ควรบอกทางอย่างไร?`,
+        target: item.target,
+        audioText: item.ans,
+        ans: item.ans,
+        opts: shuffleArray([item.ans, ...item.distractors]),
+        exp: item.exp
+      }));
+
+      const s5 = sampleRandom(MOCK_BANK.part5, counts.p5).map(item => ({
+        part: 5,
+        partName: "ตอนที่ 5: การอ่านจับใจความ (ถูก/ผิด)",
+        type: "p5",
+        passage: item.passage,
+        qText: item.qZh,
+        thaiQ: item.thaiQ,
+        audioText: item.qZh,
+        ans: item.ans,
+        opts: shuffleArray([item.ans, ...item.distractors]),
+        exp: item.exp
+      }));
+
+      const s6 = sampleRandom(MOCK_BANK.part6, counts.p6).map(item => ({
+        part: 6,
+        partName: "ตอนที่ 6: แปลประโยคเป็นภาษาไทย",
+        type: "p6",
+        qText: item.qZh,
+        qPy: item.qPy,
+        audioText: item.qZh,
+        ans: item.ans,
+        opts: shuffleArray([item.ans, ...item.distractors]),
+        exp: item.exp
+      }));
+
+      // Assemble full list preserving parts order
+      currentExamQuestions = [
+        ...s1a, ...s1b,
+        ...s2,
+        ...s3a, ...s3b,
+        ...s4,
+        ...s5,
+        ...s6
+      ];
+
+      currentExamSubmitted = false;
+
+      // Update badge displays
+      const sessionEl = document.getElementById('examSessionBadge');
+      if (sessionEl) sessionEl.innerText = `รอบทำสอบที่ ${examSessionCount}`;
+      examSessionCount++;
+
+      const countEl = document.getElementById('examTotalCountBadge');
+      if (countEl) countEl.innerText = `จำนวนข้อ: ${currentExamQuestions.length} ข้อ`;
+
+      // Reset & Start Timer
+      startTimer(timerDuration * 60);
+
+      // Hide score bar
+      const scoreBar = document.getElementById('mockScoreBar');
+      if (scoreBar) scoreBar.style.display = 'none';
+
+      // Render the exam questions
+      renderCurrentExam();
+
+      // Scroll to top of exam
+      const pane = document.getElementById('tab-mock');
+      if (pane) {
+        pane.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    // Render questions to DOM with section headers & reference helpers
+    function renderCurrentExam() {
+      const container = document.getElementById('mockExamContainer');
+      container.innerHTML = '';
+
+      let currentPartHeader = 0;
+
+      currentExamQuestions.forEach((q, idx) => {
+        // Render Section Header when entering a new Part
+        if (q.part !== currentPartHeader) {
+          currentPartHeader = q.part;
+          const secHeader = document.createElement('div');
+          secHeader.style.margin = idx === 0 ? '10px 0 16px 0' : '30px 0 16px 0';
+          secHeader.style.padding = '12px 18px';
+          secHeader.style.background = '#fef2f2';
+          secHeader.style.borderLeft = '5px solid #991b1b';
+          secHeader.style.borderRadius = '0 8px 8px 0';
+
+          let secTitle = '';
+          let secDesc = '';
+          let refHelper = '';
+
+          if (q.part === 1) {
+            secTitle = '🎯 ตอนที่ 1: คำศัพท์ (Vocabulary)';
+            secDesc = 'ข้อ 1-5 ตัวจีนเป็นไทย (ไม่มีพินอิน) | ข้อ 6-10 ไทยเป็นจีน (ยานพาหนะและการเดินทาง)';
+          } else if (q.part === 2) {
+            secTitle = '🧩 ตอนที่ 2: เติมคำในช่องว่าง (Cloze Test)';
+            secDesc = 'ตัวเลือกคำศัพท์เป็นตัวจีนล้วน ไม่มีพินอิน! ในประโยคมีพินอินกำกับ';
+          } else if (q.part === 3) {
+            secTitle = '⚖️ ตอนที่ 3: ไวยากรณ์เชิงลึก (Grammar Selection)';
+            secDesc = 'แยกแยะการใช้ 又 vs 再 และ 能 vs 会 vs 可以 ให้ถูกต้องตามบริบท';
+          } else if (q.part === 4) {
+            secTitle = '🗺️ ตอนที่ 4: การบอกทางจากแผนที่ (Giving Directions)';
+            secDesc = 'ดูแผนที่ใบงาน 17 บอกเส้นทางจากจุดเริ่มต้น (ประตูเข้าด้านล่าง)';
+            refHelper = `
+              <div style="margin-top: 10px; background: white; border: 1px dashed #cbd5e1; border-radius: 8px; padding: 12px 14px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;" onclick="toggleMockMapRef()">
+                  <strong style="color: #991b1b; font-size: 0.95rem;">🗺️ แผนผังจำลองใบงาน 17 อ้างอิง (คลิกเพื่อซ่อน/แสดง)</strong>
+                  <span id="mapRefToggleIcon" style="font-size: 0.85rem; color: #64748b;">▲ ปิดดูแผนผัง</span>
+                </div>
+                <div id="mockMapRefBody" style="display: block; margin-top: 10px; text-align: center;">
+                  
+<div style="background: white; border: 2px solid #cbd5e1; border-radius: 12px; padding: 14px; margin: 14px auto; max-width: 540px; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+  <div style="text-align: center; margin-bottom: 10px;">
+    <span style="font-weight: 700; color: #991b1b; font-size: 1.1rem;">🗺️ แผนผังจำลองใบงานบทที่ 17 (Campus Map)</span>
+    <div style="font-size: 0.84rem; color: #64748b; margin-top: 2px;">(สามารถกดปุ่มชื่อสถานที่ด้านล่างแผนผังเพื่อไฮไลท์เส้นทาง หรือดูเทียบขณะตอบข้อสอบ)</div>
+  </div>
+
+  <svg id="mockCampusMapSvg" viewBox="0 0 700 850" style="width: 100%; height: auto; display: block; border-radius: 8px; border: 1px solid #e2e8f0; background: #f1f5f9;" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Roads -->
+    <rect x="0" y="0" width="700" height="850" fill="#f1f5f9" />
+
+    <!-- North Arrow Indicator -->
+    <g transform="translate(40, 40)">
+      <circle cx="20" cy="20" r="18" fill="#ffffff" stroke="#94a3b8" stroke-width="2" />
+      <path d="M 20 6 L 26 22 L 20 18 L 14 22 Z" fill="#dc2626" />
+      <text x="20" y="34" font-size="10" text-anchor="middle" font-weight="bold" fill="#64748b">北 (Běi/เหนือ)</text>
+    </g>
+
+    <!-- Buildings -->
+    <!-- Top Left: 教学楼 (Teaching Building) -->
+    <g id="mock_b_jiaoxuelou" class="bldg-group" style="transition: all 0.2s;">
+      <rect x="60" y="50" width="370" height="120" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+      <rect x="220" y="164" width="50" height="10" fill="#0f172a" />
+      <text x="245" y="105" font-size="28" font-family="'Noto Sans SC', sans-serif" font-weight="bold" text-anchor="middle" fill="#0f172a">教学楼</text>
+      <text x="245" y="130" font-size="13" text-anchor="middle" fill="#0284c7">Jiàoxuélóu (เจี้ยว-เสวีย-โหลว)</text>
+      <text x="245" y="150" font-size="12" text-anchor="middle" fill="#64748b">อาคารเรียน</text>
+    </g>
+
+    <!-- Top Right: 食堂 (Canteen) -->
+    <g id="mock_b_shitang" class="bldg-group" style="transition: all 0.2s;">
+      <rect x="470" y="50" width="170" height="120" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+      <rect x="466" y="85" width="10" height="45" fill="#0f172a" />
+      <text x="555" y="105" font-size="28" font-family="'Noto Sans SC', sans-serif" font-weight="bold" text-anchor="middle" fill="#0f172a">食堂</text>
+      <text x="555" y="130" font-size="13" text-anchor="middle" fill="#0284c7">Shítáng (สือ-ถัง)</text>
+      <text x="555" y="150" font-size="12" text-anchor="middle" fill="#64748b">โรงอาหาร</text>
+    </g>
+
+    <!-- Mid-Upper Left: 卫生间 (Restroom) -->
+    <g id="mock_b_weishengjian" class="bldg-group" style="transition: all 0.2s;">
+      <rect x="60" y="200" width="160" height="110" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+      <rect x="214" y="235" width="10" height="40" fill="#0f172a" />
+      <text x="140" y="250" font-size="26" font-family="'Noto Sans SC', sans-serif" font-weight="bold" text-anchor="middle" fill="#0f172a">卫生间</text>
+      <text x="140" y="275" font-size="12" text-anchor="middle" fill="#0284c7">Wèishēngjiān</text>
+      <text x="140" y="295" font-size="12" text-anchor="middle" fill="#64748b">ห้องน้ำ (ตัวอย่าง)</text>
+    </g>
+
+    <!-- Mid-Upper Center: 书店 (Bookstore) -->
+    <g id="mock_b_shudian" class="bldg-group" style="transition: all 0.2s;">
+      <rect x="270" y="200" width="160" height="110" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+      <rect x="424" y="235" width="10" height="40" fill="#0f172a" />
+      <text x="350" y="250" font-size="26" font-family="'Noto Sans SC', sans-serif" font-weight="bold" text-anchor="middle" fill="#0f172a">书店</text>
+      <text x="350" y="275" font-size="12" text-anchor="middle" fill="#0284c7">Shūdiàn (ซู-เตี้ยน)</text>
+      <text x="350" y="295" font-size="12" text-anchor="middle" fill="#64748b">ร้านหนังสือ</text>
+    </g>
+
+    <!-- Mid Right: 图书馆 (Library) -->
+    <g id="mock_b_tushuguan" class="bldg-group" style="transition: all 0.2s;">
+      <rect x="470" y="200" width="170" height="250" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+      <rect x="466" y="280" width="10" height="50" fill="#0f172a" />
+      <text x="555" y="320" font-size="28" font-family="'Noto Sans SC', sans-serif" font-weight="bold" text-anchor="middle" fill="#0f172a">图书馆</text>
+      <text x="555" y="348" font-size="13" text-anchor="middle" fill="#0284c7">Túshūguǎn</text>
+      <text x="555" y="370" font-size="12" text-anchor="middle" fill="#64748b">ห้องสมุด</text>
+    </g>
+
+    <!-- Mid-Lower Left: 电影院 (Cinema) -->
+    <g id="mock_b_dianyingyuan" class="bldg-group" style="transition: all 0.2s;">
+      <rect x="60" y="340" width="160" height="110" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+      <rect x="214" y="375" width="10" height="40" fill="#0f172a" />
+      <text x="140" y="390" font-size="26" font-family="'Noto Sans SC', sans-serif" font-weight="bold" text-anchor="middle" fill="#0f172a">电影院</text>
+      <text x="140" y="415" font-size="12" text-anchor="middle" fill="#0284c7">Diànyǐngyuàn</text>
+      <text x="140" y="435" font-size="12" text-anchor="middle" fill="#64748b">โรงภาพยนตร์</text>
+    </g>
+
+    <!-- Mid-Lower Center: 银行 (Bank) -->
+    <g id="mock_b_yinhang" class="bldg-group" style="transition: all 0.2s;">
+      <rect x="270" y="340" width="160" height="110" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+      <rect x="424" y="375" width="10" height="40" fill="#0f172a" />
+      <text x="350" y="390" font-size="26" font-family="'Noto Sans SC', sans-serif" font-weight="bold" text-anchor="middle" fill="#0f172a">银行</text>
+      <text x="350" y="415" font-size="12" text-anchor="middle" fill="#0284c7">Yínháng (อิ๋น-หัง)</text>
+      <text x="350" y="435" font-size="12" text-anchor="middle" fill="#64748b">ธนาคาร</text>
+    </g>
+
+    <!-- Bottom Left: 体育馆 (Gymnasium) -->
+    <g id="mock_b_tiyuguan" class="bldg-group" style="transition: all 0.2s;">
+      <rect x="60" y="480" width="160" height="230" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+      <rect x="110" y="476" width="45" height="10" fill="#0f172a" />
+      <text x="140" y="590" font-size="28" font-family="'Noto Sans SC', sans-serif" font-weight="bold" text-anchor="middle" fill="#0f172a">体育馆</text>
+      <text x="140" y="618" font-size="13" text-anchor="middle" fill="#0284c7">Tǐyùguǎn (ถี่-ยวี่-กวั่น)</text>
+      <text x="140" y="640" font-size="12" text-anchor="middle" fill="#64748b">โรงยิม / โรงพละ</text>
+    </g>
+
+    <!-- Bottom Center: 操场 (Sports Field / Playground) -->
+    <g id="mock_b_caochang" class="bldg-group" style="transition: all 0.2s;">
+      <rect x="270" y="480" width="370" height="120" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+      <rect x="360" y="594" width="45" height="10" fill="#0f172a" />
+      <text x="455" y="530" font-size="28" font-family="'Noto Sans SC', sans-serif" font-weight="bold" text-anchor="middle" fill="#0f172a">操场</text>
+      <text x="455" y="558" font-size="13" text-anchor="middle" fill="#0284c7">Cāochǎng (เชา-ฉั่ง)</text>
+      <text x="455" y="580" font-size="12" text-anchor="middle" fill="#64748b">สนามเด็กเล่น/สนามกีฬา</text>
+    </g>
+
+    <!-- Bottom Center-Lower: 商店 (Shop) -->
+    <g id="mock_b_shangdian" class="bldg-group" style="transition: all 0.2s;">
+      <rect x="270" y="660" width="180" height="120" rx="6" fill="#f8fafc" stroke="#334155" stroke-width="3" />
+      <rect x="340" y="656" width="45" height="10" fill="#0f172a" />
+      <text x="360" y="710" font-size="28" font-family="'Noto Sans SC', sans-serif" font-weight="bold" text-anchor="middle" fill="#0f172a">商店</text>
+      <text x="360" y="738" font-size="13" text-anchor="middle" fill="#0284c7">Shāngdiàn (ซาง-เตี้ยน)</text>
+      <text x="360" y="760" font-size="12" text-anchor="middle" fill="#64748b">ร้านค้า</text>
+    </g>
+
+    <!-- Starting Point: Person & Arrow -->
+    <g id="mock_start_point">
+      <g transform="translate(560, 680)">
+        <circle cx="15" cy="8" r="7" fill="#0284c7" />
+        <path d="M 15 16 L 15 38 M 15 24 L 5 32 M 15 24 L 25 32 M 15 38 L 8 55 M 15 38 L 22 55" stroke="#0284c7" stroke-width="4" stroke-linecap="round" />
+      </g>
+      <path d="M 540 630 L 460 630" stroke="#0284c7" stroke-width="6" stroke-linecap="round" />
+      <polygon points="450,630 468,623 468,637" fill="#0284c7" />
+      <text x="575" y="755" font-size="13" font-weight="bold" fill="#0284c7" text-anchor="middle">จุดเริ่มต้น (这儿 zhèr)</text>
+    </g>
+
+    <!-- Animated Route Path on Mock Map -->
+    <path id="mockRoutePath" d="" fill="none" stroke="#dc2626" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Target Marker Pin on Mock Map -->
+    <g id="mockTargetPin" style="display: none;">
+      <circle id="mockPinCircle" cx="0" cy="0" r="14" fill="#dc2626" />
+      <text x="0" y="5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">🎯</text>
+    </g>
+  </svg>
+
+  <!-- Quick Interactive Route Buttons -->
+  <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px; justify-content: center;">
+    <button type="button" class="btn btn-sm" style="font-size: 0.82rem; padding: 5px 9px; background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1;" onclick="showMockMapRoute('weishengjian')">📍 卫生间 (ห้องน้ำ)</button>
+    <button type="button" class="btn btn-sm" style="font-size: 0.82rem; padding: 5px 9px; background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1;" onclick="showMockMapRoute('shudian')">📍 书店 (ร้านหนังสือ)</button>
+    <button type="button" class="btn btn-sm" style="font-size: 0.82rem; padding: 5px 9px; background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1;" onclick="showMockMapRoute('jiaoxuelou')">📍 教学楼 (อาคารเรียน)</button>
+    <button type="button" class="btn btn-sm" style="font-size: 0.82rem; padding: 5px 9px; background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1;" onclick="showMockMapRoute('dianyingyuan')">📍 电影院 (โรงหนัง)</button>
+    <button type="button" class="btn btn-sm" style="font-size: 0.82rem; padding: 5px 9px; background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1;" onclick="showMockMapRoute('yinhang')">📍 银行 (ธนาคาร)</button>
+    <button type="button" class="btn btn-sm" style="font-size: 0.82rem; padding: 5px 9px; background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1;" onclick="showMockMapRoute('shitang')">📍 食堂 (โรงอาหาร)</button>
+    <button type="button" class="btn btn-sm" style="font-size: 0.82rem; padding: 5px 9px; background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1;" onclick="showMockMapRoute('tushuguan')">📍 图书馆 (ห้องสมุด)</button>
+    <button type="button" class="btn btn-sm" style="font-size: 0.82rem; padding: 5px 9px; background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5;" onclick="clearMockMapRoute()">🔄 ล้างเส้นทาง</button>
+  </div>
+
+  <div style="background: #f8fafc; border-top: 1px dashed #cbd5e1; margin-top: 12px; padding: 10px 12px; border-radius: 8px; font-size: 0.85rem; line-height: 1.6; color: #334155;">
+    🚩 <strong>จุดเริ่มต้น:</strong> เดินตรงไปถึง <strong>体育馆 (โรงยิม)</strong> ➔ เลี้ยวขวา (往右拐)<br>
+    • <strong>左边 (ฝั่งซ้าย):</strong> 卫生间 (ห้องน้ำ), 电影院 (โรงหนัง)<br>
+    • <strong>右边 (ฝั่งขวา):</strong> 书店 (ร้านหนังสือ), 银行 (ธนาคาร)<br>
+    • <strong>前面 (ตรงหน้าสุดทาง):</strong> 教学楼 (อาคารเรียน)<br>
+    • <strong>食堂 (โรงอาหาร):</strong> ถึงหน้าอาคารเรียนเลี้ยวขวา อยู่ฝั่งซ้ายมือ
+  </div>
+</div>
+
+                </div>
+              </div>
+`;
+          } else if (q.part === 5) {
+            secTitle = '📖 ตอนที่ 5: การอ่านจับใจความ ถูก/ผิด (Reading Comprehension)';
+            secDesc = 'เนื้อเรื่องมีพินอิน แต่โจทย์คำถามไม่มีพินอิน อ่านจับประเด็นดักทางคำหลอก';
+            refHelper = `
+              <div style="margin-top: 10px; background: white; border: 1px dashed #cbd5e1; border-radius: 8px; padding: 10px 14px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;" onclick="toggleMockPassageRef()">
+                  <strong style="color: #0369a1; font-size: 0.92rem;">📖 คลิกเพื่อเปิด/ซ่อนบทความอ้างอิง (小明去邮局 & 我家离学校不远)</strong>
+                  <span id="passageRefToggleIcon" style="font-size: 0.85rem; color: #64748b;">▼ เปิดดูบทความ</span>
+                </div>
+                <div id="mockPassageRefBody" style="display: none; margin-top: 10px; font-size: 0.88rem; line-height: 1.6; color: #334155;">
+                  <div style="background: #f0f9ff; padding: 10px; border-radius: 6px; margin-bottom: 8px;">
+                    <strong>เรื่องที่ 1: 小明去邮局</strong><br>
+                    明天是小明的妈妈的生日，小明想寄一件礼物给妈妈。今天下午他打算去邮局寄包裹。邮局离学校不太远，他打算骑自行车去。他不知道邮局在哪儿，所以问了一个朋友……
+                  </div>
+                  <div style="background: #f0fdf4; padding: 10px; border-radius: 6px;">
+                    <strong>เรื่องที่ 2: 我家离学校不远</strong><br>
+                    我家离学校不远，坐 758 路、831 路公共汽车都能到学校。我家附近没有地铁。去天安门要先坐 109 路公共汽车，然后换 47 路……
+                  </div>
+                </div>
+              </div>
+            `;
+          } else if (q.part === 6) {
+            secTitle = '✍️ ตอนที่ 6: แปลประโยคเป็นภาษาไทย (Sentence Translation)';
+            secDesc = 'ประโยคสนทนาหลักจากบทที่ 15, 16, 17 แปลไทยให้สละสลวยถูกต้อง';
+          }
+
+          secHeader.innerHTML = `
+            <div style="font-weight: 700; color: #991b1b; font-size: 1.15rem;">${secTitle}</div>
+            <div style="font-size: 0.86rem; color: #475569; margin-top: 2px;">${secDesc}</div>
+            ${refHelper}
+          `;
+          container.appendChild(secHeader);
+        }
+
+        // Create Question Card
+        const card = document.createElement('div');
+        card.className = 'quiz-card mock-card';
+        card.id = `mock_card_${idx}`;
+        card.setAttribute('data-mock-idx', idx);
+        card.setAttribute('data-part', q.part);
+
+        // Header inside card
+        let qContent = '';
+
+        if (q.type === 'p1a') {
+          qContent = `
+            <div style="display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;">
+              <span class="zh" style="font-size: 1.55rem; font-weight: 700; color: #991b1b;">${q.qText}</span>
+              <span class="mock-pinyin" style="font-size: 1.05rem; color: #0284c7; font-weight: 600;">${q.qPy} (${q.qSound})</span>
+              <span style="font-size: 0.95rem; color: var(--text-muted);">แปลว่าอะไร?</span>
+            </div>
+          `;
+        } else if (q.type === 'p2' || q.type === 'p3a' || q.type === 'p3b') {
+          qContent = `
+            <div class="zh" style="font-size: 1.3rem; font-weight: 700; color: #1e293b; margin-bottom: 4px;">${q.qText}</div>
+            <div class="mock-pinyin" style="font-size: 0.98rem; color: #0284c7; font-weight: 600; margin-bottom: 4px;">${q.qPy}</div>
+            <div style="font-size: 0.88rem; color: var(--text-muted);">${q.qThai ? 'ความหมาย: ' + q.qThai : ''}</div>
+          `;
+        } else if (q.type === 'p4') {
+          let destKey = '';
+          if (q.target) {
+            if (q.target.includes('书店')) destKey = 'shudian';
+            else if (q.target.includes('教学楼')) destKey = 'jiaoxuelou';
+            else if (q.target.includes('电影院')) destKey = 'dianyingyuan';
+            else if (q.target.includes('银行')) destKey = 'yinhang';
+            else if (q.target.includes('卫生间')) destKey = 'weishengjian';
+            else if (q.target.includes('食堂')) destKey = 'shitang';
+            else if (q.target.includes('图书馆')) destKey = 'tushuguan';
+            else if (q.target.includes('体育馆')) destKey = 'tiyuguan';
+          }
+          qContent = `
+            <div style="font-size: 1.15rem; font-weight: 700; color: #1e293b; margin-bottom: 6px;">${q.qText}</div>
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 4px;">
+              <div style="font-size: 0.92rem; color: #64748b;">เป้าหมาย: <strong style="color: #991b1b;">${q.target}</strong></div>
+              ${destKey ? `<button type="button" class="btn btn-sm" style="background: #eff6ff; border: 1px solid #bfdbfe; color: #1d4ed8; font-size: 0.85rem; padding: 4px 10px;" onclick="showMockMapRoute('${destKey}')">🗺️ ไฮไลท์เส้นทางบนแผนผังด้านบน</button>` : ''}
+            </div>
+          `;
+        } else if (q.type === 'p5') {
+          qContent = `
+            <div style="font-size: 0.85rem; color: #0284c7; font-weight: 600; margin-bottom: 4px;">
+              [จากบทความ: ${q.passage === 'xiaoming' ? '小明去邮局' : '我家离学校不远'}]
+            </div>
+            <div class="zh" style="font-size: 1.25rem; font-weight: 700; color: #1e293b; margin-bottom: 4px;">${q.qText}</div>
+            <div style="font-size: 0.88rem; color: var(--text-muted);">แปลคำถาม: ${q.thaiQ}</div>
+          `;
+        } else if (q.type === 'p6') {
+          qContent = `
+            <div class="zh" style="font-size: 1.28rem; font-weight: 700; color: #991b1b; margin-bottom: 4px;">${q.qText}</div>
+            <div class="mock-pinyin" style="font-size: 0.98rem; color: #0284c7; font-weight: 600; margin-bottom: 8px;">${q.qPy}</div>
+            <div style="font-size: 0.88rem; color: var(--text-muted);">แปลเป็นภาษาไทยข้อใดถูกต้องและสละสลวยที่สุด?</div>
+          `;
+        } else {
+          qContent = `
+            <div style="font-size: 1.15rem; font-weight: 700; color: #1e293b;">${q.qText}</div>
+          `;
+        }
+
+        card.innerHTML = `
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; border-bottom: 1px solid #f1f5f9; padding-bottom: 8px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="background: #e2e8f0; color: #334155; font-weight: 700; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem;">ข้อ ${idx + 1}</span>
+              <span style="font-size: 0.82rem; color: #64748b;">${q.partName}</span>
+            </div>
+            <button class="btn-speak" onclick="speakText('${q.audioText.replace(/'/g, "\\'") }')">🔊 ฟังเสียง</button>
+          </div>
+          ${qContent}
+          <div class="quiz-options" style="margin-top: 14px;">
+            ${q.opts.map((opt, oIdx) => `
+              <label style="display: flex; align-items: center; gap: 10px; width: 100%; cursor: pointer; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--border-color); background: #f8fafc; transition: background 0.15s;">
+                <input type="radio" name="mock_q_${idx}" value="${opt.replace(/"/g, '&quot;')}" onchange="onSelectMockRadio(${idx})">
+                <span style="font-size: 1rem; color: #1e293b; font-weight: 500;">${opt}</span>
+              </label>
+            `).join('')}
+          </div>
+          <div id="mock_fb_${idx}" class="feedback-box" style="margin-top: 12px;"></div>
+        `;
+
+        container.appendChild(card);
+      });
+
+      // Apply initial pinyin visibility state
+      applyMockPinyinState();
+    }
+
+    function onSelectMockRadio(idx) {
+      const card = document.getElementById(`mock_card_${idx}`);
+      if (card && !currentExamSubmitted) {
+        card.style.borderColor = '#94a3b8';
+      }
+    }
+
+    // Toggle Pinyin for mock exam
+    function toggleMockPinyin() {
+      mockPinyinHidden = !mockPinyinHidden;
+      applyMockPinyinState();
+    }
+
+    function applyMockPinyinState() {
+      const btnText = document.getElementById('mockPinyinBtnText');
+      if (btnText) {
+        btnText.innerText = mockPinyinHidden ? 'แสดงพินอิน' : 'ซ่อนพินอิน (ฝึกจำตัวจีน)';
+      }
+      document.querySelectorAll('.mock-pinyin').forEach(el => {
+        el.style.display = mockPinyinHidden ? 'none' : 'inline';
+      });
+    }
+
+    // Toggle Collapsible Map and Passages in Mock Exam
+    function toggleMockMapRef() {
+      const el = document.getElementById('mockMapRefBody');
+      const icon = document.getElementById('mapRefToggleIcon');
+      if (el) {
+        const isHidden = el.style.display === 'none';
+        el.style.display = isHidden ? 'block' : 'none';
+        if (icon) icon.innerText = isHidden ? '▲ ปิดดูแผนผัง' : '▼ เปิดดูแผนผัง';
+      }
+    }
+
+    function toggleMockPassageRef() {
+      const el = document.getElementById('mockPassageRefBody');
+      const icon = document.getElementById('passageRefToggleIcon');
+      if (el) {
+        const isHidden = el.style.display === 'none';
+        el.style.display = isHidden ? 'block' : 'none';
+        if (icon) icon.innerText = isHidden ? '▲ ปิดดูบทความ' : '▼ เปิดดูบทความ';
+      }
+    }
+
+    // Timer Controls
+    
+    // Interactive Route Highlight on Mock Exam Map
+    function showMockMapRoute(key) {
+      const refBody = document.getElementById('mockMapRefBody');
+      const toggleIcon = document.getElementById('mapRefToggleIcon');
+      if (refBody) {
+        refBody.style.display = 'block';
+        if (toggleIcon) toggleIcon.innerText = '▲ ปิดดูแผนผัง';
+      }
+
+      const routePath = document.getElementById('mockRoutePath');
+      const targetPin = document.getElementById('mockTargetPin');
+
+      // Reset styles of all mock building rects
+      document.querySelectorAll('#mockCampusMapSvg .bldg-group rect:first-child').forEach(r => {
+        r.setAttribute('stroke', '#334155');
+        r.setAttribute('stroke-width', '3');
+        r.setAttribute('fill', '#f8fafc');
+      });
+
+      const route = MAP_ROUTES[key];
+      if (!route) return;
+
+      if (routePath) {
+        routePath.setAttribute('d', route.pathD);
+      }
+
+      if (targetPin) {
+        targetPin.style.display = 'block';
+        targetPin.setAttribute('transform', `translate(${route.pinX}, ${route.pinY})`);
+      }
+
+      // Highlight target building
+      const bldg = document.getElementById('mock_b_' + key);
+      if (bldg) {
+        const mainRect = bldg.querySelector('rect:first-child');
+        if (mainRect) {
+          mainRect.setAttribute('stroke', '#dc2626');
+          mainRect.setAttribute('stroke-width', '4');
+          mainRect.setAttribute('fill', '#fef2f2');
+        }
+      }
+
+      // Smooth scroll to the mock map
+      const mockSvg = document.getElementById('mockCampusMapSvg');
+      if (mockSvg) {
+        mockSvg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+
+    function clearMockMapRoute() {
+      const routePath = document.getElementById('mockRoutePath');
+      const targetPin = document.getElementById('mockTargetPin');
+      if (routePath) routePath.setAttribute('d', '');
+      if (targetPin) targetPin.style.display = 'none';
+
+      document.querySelectorAll('#mockCampusMapSvg .bldg-group rect:first-child').forEach(r => {
+        r.setAttribute('stroke', '#334155');
+        r.setAttribute('stroke-width', '3');
+        r.setAttribute('fill', '#f8fafc');
+      });
+    }
+
+    function startTimer(durationSeconds) {
+      stopTimer();
+      examTimerSeconds = durationSeconds;
+      examTimerPaused = false;
+      updateTimerDisplay();
+
+      const toggleBtn = document.getElementById('timerToggleBtn');
+      if (toggleBtn) toggleBtn.innerText = '⏸️ พักเวลา';
+
+      examTimerInterval = setInterval(() => {
+        if (!examTimerPaused && examTimerSeconds > 0) {
+          examTimerSeconds--;
+          updateTimerDisplay();
+          if (examTimerSeconds === 0) {
+            stopTimer();
+            alert('หมดเวลาทำข้อสอบแล้ว! ระบบจะประมวลผลคะแนนของคุณอัตโนมัติ');
+            submitMockExam();
+          }
+        }
+      }, 1000);
+    }
+
+    function stopTimer() {
+      if (examTimerInterval) {
+        clearInterval(examTimerInterval);
+        examTimerInterval = null;
+      }
+    }
+
+    function toggleTimer() {
+      examTimerPaused = !examTimerPaused;
+      const toggleBtn = document.getElementById('timerToggleBtn');
+      if (toggleBtn) {
+        toggleBtn.innerText = examTimerPaused ? '▶️ จับเวลาต่อ' : '⏸️ พักเวลา';
+      }
+    }
+
+    function updateTimerDisplay() {
+      const display = document.getElementById('examTimerDisplay');
+      if (!display) return;
+      const mins = Math.floor(examTimerSeconds / 60);
+      const secs = examTimerSeconds % 60;
+      display.innerText = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+      if (examTimerSeconds <= 300) {
+        display.style.color = '#ef4444';
+      } else {
+        display.style.color = '#991b1b';
+      }
+    }
+
+    // Submit and Evaluate Mock Exam
+    function submitMockExam() {
+      if (!currentExamQuestions || currentExamQuestions.length === 0) return;
+
+      currentExamSubmitted = true;
+      stopTimer();
+
+      let totalScore = 0;
+      let partScores = {
+        1: { correct: 0, total: 0, name: 'ตอน 1: ศัพท์' },
+        2: { correct: 0, total: 0, name: 'ตอน 2: เติมคำ' },
+        3: { correct: 0, total: 0, name: 'ตอน 3: ไวยากรณ์' },
+        4: { correct: 0, total: 0, name: 'ตอน 4: บอกทาง' },
+        5: { correct: 0, total: 0, name: 'ตอน 5: อ่านจับใจความ' },
+        6: { correct: 0, total: 0, name: 'ตอน 6: แปลประโยค' }
+      };
+
+      currentExamQuestions.forEach((q, idx) => {
+        const radios = document.getElementsByName(`mock_q_${idx}`);
+        let selectedVal = null;
+        for (let r of radios) {
+          if (r.checked) selectedVal = r.value;
+        }
+
+        const card = document.getElementById(`mock_card_${idx}`);
+        const fb = document.getElementById(`mock_fb_${idx}`);
+
+        const isCorrect = selectedVal === q.ans;
+        if (partScores[q.part]) {
+          partScores[q.part].total++;
+          if (isCorrect) partScores[q.part].correct++;
+        }
+
+        if (isCorrect) {
+          totalScore++;
+          card.classList.add('mock-is-correct');
+          card.classList.remove('mock-is-wrong');
+          card.style.borderColor = '#22c55e';
+          card.style.background = '#f0fdf4';
+          fb.className = 'feedback-box correct';
+          fb.style.display = 'block';
+          fb.innerHTML = `<strong>ถูกต้อง! (✓)</strong> ${q.exp}`;
+        } else {
+          card.classList.add('mock-is-wrong');
+          card.classList.remove('mock-is-correct');
+          card.style.borderColor = '#ef4444';
+          card.style.background = '#fef2f2';
+          fb.className = 'feedback-box wrong';
+          fb.style.display = 'block';
+          fb.innerHTML = `
+            <strong>ไม่ถูกต้อง (✕)</strong> คำตอบที่ถูกต้องคือ: <strong style="color: #15803d; font-size: 1.05rem;">${q.ans}</strong><br>
+            <div style="margin-top: 4px; color: #334155;">💡 <strong>คำอธิบาย:</strong> ${q.exp}</div>
+          `;
+        }
+      });
+
+      // Update Summary Bar
+      const totalQ = currentExamQuestions.length;
+      const scoreBar = document.getElementById('mockScoreBar');
+      scoreBar.style.display = 'flex';
+
+      document.getElementById('mockScoreVal').innerText = `${totalScore} / ${totalQ} คะแนน`;
+
+      const pct = (totalScore / totalQ) * 100;
+      let gradeHtml = '';
+      if (pct >= 85) {
+        gradeHtml = `<span style="color: #16a34a;">เกรด A ยอดเยี่ยมมาก! พร้อมสอบวันพรุ่งนี้ 100% 🌟🎉</span>`;
+      } else if (pct >= 75) {
+        gradeHtml = `<span style="color: #0284c7;">เกรด B+ เยี่ยมมาก ผ่านสบาย ทบทวนจุดพลาดอีกนิดได้คะแนนเต็ม! 👍</span>`;
+      } else if (pct >= 60) {
+        gradeHtml = `<span style="color: #eab308;">เกรด C+ ผ่านเกณฑ์แล้ว ทบทวนข้อที่ตอบผิดด้านล่างด่วน! 📚</span>`;
+      } else {
+        gradeHtml = `<span style="color: #dc2626;">ต้องเร่งทบทวน! ดูข้อผิดแล้วเปิดดูแท็บไวยากรณ์ & การ์ดศัพท์อีกรอบ ⚠️</span>`;
+      }
+      document.getElementById('mockGradeVal').innerHTML = gradeHtml;
+
+      // Render Part breakdown badges
+      const bdContainer = document.getElementById('mockPartBreakdown');
+      bdContainer.innerHTML = '';
+      Object.keys(partScores).forEach(pKey => {
+        const p = partScores[pKey];
+        if (p.total > 0) {
+          const pPct = Math.round((p.correct / p.total) * 100);
+          const badge = document.createElement('div');
+          badge.style.background = pPct >= 80 ? '#dcfce7' : (pPct >= 60 ? '#fef9c3' : '#fee2e2');
+          badge.style.color = pPct >= 80 ? '#15803d' : (pPct >= 60 ? '#854d0e' : '#991b1b');
+          badge.style.padding = '4px 10px';
+          badge.style.borderRadius = '6px';
+          badge.style.fontSize = '0.85rem';
+          badge.style.fontWeight = '600';
+          badge.innerHTML = `${p.name}: <strong>${p.correct}/${p.total}</strong> (${pPct}%)`;
+          bdContainer.appendChild(badge);
+        }
+      });
+
+      // Scroll to score bar
+      scoreBar.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    // Filter cards by status
+    function filterMockQuestions(filterType) {
+      const cards = document.querySelectorAll('.mock-card');
+      cards.forEach(card => {
+        if (filterType === 'all') {
+          card.style.display = 'block';
+        } else if (filterType === 'wrong') {
+          card.style.display = card.classList.contains('mock-is-wrong') ? 'block' : 'none';
+        } else if (filterType === 'correct') {
+          card.style.display = card.classList.contains('mock-is-correct') ? 'block' : 'none';
+        }
+      });
+    }
+
+    function startMockExam() {
+      generateNewMockExam();
+    }
+
+  </script>
+</body>
+</html>
